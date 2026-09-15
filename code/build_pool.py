@@ -17,7 +17,7 @@ RAW = ROOT / "results" / "openalex_raw"
 # (id, journal_file, title_fragment, theme, role, ml_methods, bd_context)
 SELECTION = [
     ("TBD-1", "IEEE_TBD", "PEXP", "Scalable & interpretable ML", "selected", "tree-based parallel model interpretation", "big data; parallel framework"),
-    ("TBD-2", "IEEE_TBD", "Blockchain-Empowered Federated Learning", "Federated & privacy-preserving learning", "selected", "federated learning + blockchain incentives/security", "distributed training across parties"),
+    ("TBD-2", "IEEE_TBD", "TS-MLLM", "LLMs & foundation models", "selected", "multimodal LLM framework for industrial time-series analysis (PHM)", "industrial time-series big data (explicit in title)"),
     ("TBD-3", "IEEE_TBD", "GraphLLM", "LLMs & foundation models", "selected", "LLM for graph reasoning", "graph-structured large data"),
     ("TBD-4", "IEEE_TBD", "Knowledge Aggregation Transformer Network", "Time series & streaming", "selected", "transformer for multivariate time series classification", "high-volume sensor/time-series data"),
     ("TBD-5", "IEEE_TBD", "Enhanced Approaches for Anomaly Detection in Streaming Data", "Security & anomaly detection", "selected", "statistical + ML anomaly detection", "data streams (velocity)"),
@@ -26,7 +26,7 @@ SELECTION = [
     ("BDR-3", "BDR", "Opinion fraud detection on massive datasets", "Platforms & infrastructure", "selected", "fraud detection ML on Spark", "massive datasets; Spark cluster"),
     ("BDR-4", "BDR", "Heterogeneous Graph-based Risk Assessment for Internet Financial Companies", "Applications & domains", "selected", "heterogeneous graph-based risk assessment", "company big data (explicit in title)"),
     ("BDR-5", "BDR", "Large-scale least squares regression", "Scalable & interpretable ML", "selected", "fast spectral embedding + random Fourier features regression", "large-scale data"),
-    ("JoBD-1", "JoBD", "Big Data Analytics in IoT, social media", "Platforms & infrastructure", "selected", "multi-domain BD analytics survey (IoT, social, NLP, security)", "IoT/social-media/NLP/security data"),
+    ("JoBD-1", "JoBD", "large-scale plant disease detection", "Applications & domains", "selected", "deep learning framework for large-scale plant disease detection", "big data analytics in precision agriculture (explicit in title)"),
     ("JoBD-2", "JoBD", "privacy-enhanced framework for collaborative Big Data analysis in healthcare", "Healthcare applications", "selected", "adaptive privacy-preserving collaborative analytics", "healthcare big data"),
     ("JoBD-3", "JoBD", "Advancing multimodal emotion recognition in big data", "Applications & domains", "selected", "GAN + dynamic prompt engineering, multimodal deep learning", "multimodal big data (explicit in title)"),
     ("JoBD-4", "JoBD", "Cloud based real-time multivariate multi-step prediction of systolic blood pressure", "Healthcare + fog/cloud streaming", "selected", "temporal convolutional network (TCN) multi-step forecasting", "fog/cloud streaming pipeline with Apache Spark (explicit in title)"),
@@ -52,9 +52,14 @@ SELECTION = [
     ("JoBD-A4", "JoBD", "BlueEdge", "alternate", "alternate", "big-data cleaning via mobile edge computing", "edge computing"),
     ("JoBD-A5", "JoBD", "Data science, big data, and machine learning are coming of age", "alternate", "alternate", "field-maturation position paper", "cross-domain"),
     ("JoBD-A6", "JoBD", "renewable energy systems", "alternate", "alternate", "AI/ML for renewable energy systems (review)", "energy-system big data"),
-    ("JoBD-A7", "JoBD", "large-scale plant disease detection", "alternate", "alternate", "DL framework for large-scale plant disease detection", "big data analytics (explicit in title)"),
-    ("TBD-A6", "IEEE_TBD", "TS-MLLM", "alternate", "alternate", "multimodal LLM for industrial time-series big data", "industrial big data (explicit in title)"),
+    ("JoBD-A7", "JoBD", "Towards precision in IoT-based healthcare", "alternate", "alternate", "hybrid framework: neural fuzzy classifier + metaheuristic feature extraction", "large-scale heterogeneous high-dimensional IoT healthcare data (explicit)"),
+    ("TBD-A6", "IEEE_TBD", "Hierarchical Multi-Relational Graph Representation", "alternate", "alternate", "hierarchical multi-relational graph representation learning (HMGRL)", "large-scale drug-drug interaction prediction; heterogeneous data sources"),
     ("BDR-A6", "BDR", "Optimization of differential privacy mechanism", "alternate", "alternate", "differential privacy optimization", "big data publishing"),
+    ("AIR-A6", "AIR", "Physics-informed machine learning for advancing computational", "alternate", "alternate", "physics-informed ML for medical imaging (research article)", "data-driven imaging workflows"),
+    ("AIR-A7", "AIR", "Exploring privacy mechanisms and metrics in federated learning", "alternate", "alternate", "privacy mechanisms/metrics in federated learning (research-type)", "distributed learning systems"),
+    ("AIR-A8", "AIR", "Scaling transformers for time series", "alternate", "alternate", "pretrained large models vs small-scale models for TS forecasting", "scaling of transformer models"),
+    ("AIR-A9", "AIR", "XAI-HD", "alternate", "alternate", "explainable AI framework for heart disease detection", "clinical data pipelines"),
+    ("AIR-A10", "AIR", "Cloud-edge-end collaborative caching", "alternate", "alternate", "deep learning/RL for caching and offloading decisions", "cloud-edge-end and UAV networks"),
     ("AIR-A1", "AIR", "Agentic AI systems in the age of generative models", "alternate", "alternate", "agentic AI + cloud scalability", "cloud-scale generative systems"),
     ("AIR-A2", "AIR", "Safeguarding large language models", "alternate", "alternate", "LLM safety survey", "large-scale LLM deployment"),
     ("AIR-A3", "AIR", "Graph neural networks for anomaly detection", "alternate", "alternate", "GNN anomaly detection survey", "dynamic temporal graphs"),
@@ -119,11 +124,12 @@ for pid, jf, frag, theme, role, ml, bd in SELECTION:
     json.dumps(pool, ensure_ascii=False, indent=1), encoding="utf-8")
 
 # Article-type classification for the "research papers" requirement audit.
-# AIR is a review-oriented journal; its articles are reviews by design.
+# Supervisor clarified 2026-09-15: "research papers" = original research articles.
+# TBD/BDR/JoBD selections are 15/15 original research; the five AIR review
+# articles are kept as an approved exception (AIR is review-designated).
 TYPE_OVERRIDES = {
-    "TBD-2": "survey", "JoBD-1": "survey + benchmark",
-    "AIR-1": "survey", "AIR-2": "review", "AIR-3": "review",
-    "AIR-4": "review", "AIR-5": "survey",
+    "AIR-1": "review", "AIR-2": "review", "AIR-3": "review",
+    "AIR-4": "review", "AIR-5": "review",
 }
 
 with (ROOT / "results" / "table1.csv").open("w", newline="", encoding="utf-8-sig") as f:

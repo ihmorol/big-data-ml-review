@@ -21,6 +21,8 @@ At least **20 research papers** selected from exactly these four journals:
 
 ≈3–5 papers per source. **Math note:** 4 journals × max 5 = 20, so hitting "≥20 papers from these four journals" forces **exactly 5 from each journal**. Plan 5 + 5 + 5 + 5.
 
+**Supervisor clarification (2026-09-15):** "research papers" means **original research articles**. Enforced for TBD/BDR/JoBD (15/15 selections are original research); AIR's five selections are review articles kept as a documented exception (AIR is review-designated, and the assignment names it as both source and format template). Ready-made swaps if the exception is rejected: AIR-A6…A10 in `../trackers/papers-pool.md`.
+
 Selection criteria:
 - Relevant to **Big Data and Machine Learning**
 - Published during the **2025–2027** review period (note: as of Sep 2026 only 2025–2026 papers exist; if 2027 becomes reachable before submission, top up. Confirm with the instructor only if it seems to matter.)

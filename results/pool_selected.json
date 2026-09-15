@@ -41,34 +41,35 @@
   "journal_file": "IEEE_TBD",
   "journal": "IEEE Transactions on Big Data",
   "role": "selected",
-  "theme": "Federated & privacy-preserving learning",
-  "ml_methods": "federated learning + blockchain incentives/security",
-  "bd_context": "distributed training across parties",
-  "doi": "10.1109/tbdata.2025.3541560",
-  "title": "Blockchain-Empowered Federated Learning: Benefits, Challenges, and Solutions",
-  "date": "2025-02-13",
-  "year": "2025",
+  "theme": "LLMs & foundation models",
+  "ml_methods": "multimodal LLM framework for industrial time-series analysis (PHM)",
+  "bd_context": "industrial time-series big data (explicit in title)",
+  "doi": "10.1109/tbdata.2026.3695338",
+  "title": "TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis",
+  "date": "2026-01-01",
+  "year": "2026",
   "is_oa": false,
   "oa_status": "closed",
-  "cited_by": 25,
+  "cited_by": 0,
   "authors": [
-   "Zeju Cai",
-   "Jianguo Chen",
-   "Yuting Fan",
-   "Zibin Zheng",
-   "Keqin Li"
+   "Haiteng Wang",
+   "Yugong Li",
+   "Y C Zhu",
+   "Jingheng Yan",
+   "Lei Ren",
+   "Laurence T. Yang"
   ],
   "biblio": {
-   "volume": "11",
-   "issue": "5",
-   "first_page": "2244",
-   "last_page": "2263"
+   "volume": null,
+   "issue": null,
+   "first_page": "1",
+   "last_page": "14"
   },
-  "abstract": "Federated learning (FL) is a distributed machine learning approach that protects user data privacy by training models locally on clients and aggregating them on a parameter server. While effective at preserving privacy, FL systems face limitations such as single points of failure, lack of incentives, and inadequate security. To address these challenges, blockchain technology is integrated into FL systems to provide stronger security, fairness, and scalability. However, blockchain-empowered FL (BC-FL) systems introduce additional demands on network, computing, and storage resources. This survey provides a comprehensive review of recent research on BC-FL systems, analyzing the benefits and challenges associated with blockchain integration. We explore why blockchain is applicable to FL, how it can be implemented, and the challenges and existing solutions for its integration. Additionally, we offer insights on future research directions for the BC-FL system.",
+  "abstract": "Accurate analysis of industrial time-series big data is critical for the Prognostics and Health Management (PHM) of industrial equipment. While recent advancements in Large Language Models (LLMs) have shown promise in time-series analysis, existing methods typically focus on single-modality adaptations, failing to exploit the complementary nature of temporal signals, frequency-domain visual representations, and textual knowledge information. In this paper, we propose TS-MLLM, a unified multi-modal large language model framework that is the first to jointly model industrial temporal signals, frequency-domain images, and textual domain knowledge. Specifically, we first develop an Industrial time-series Patch Modeling branch to capture long-range temporal dynamics. To integrate cross-modal priors, we introduce a Spectrum-aware Vision-Language Model Adaptation (SVLMA) mechanism that enables the model to internalize frequency-domain patterns and semantic context. Furthermore, a Temporal-centric Multi-modal Attention Fusion (TMAF) mechanism is designed to actively retrieve relevant visual and textual cues using temporal features as queries, ensuring deep cross-modal alignment. Extensive experiments on multiple industrial benchmarks demonstrate that TS-MLLM significantly outperforms state-of-the-art methods, particularly in few-shot and complex scenarios. The results validate our framework's superior robustness, efficiency, and generalization capabilities for industrial time-series prediction.",
   "crossref": {
-   "cr_title": "Blockchain-Empowered Federated Learning: Benefits, Challenges, and Solutions",
+   "cr_title": "TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis",
    "cr_journal": "IEEE Transactions on Big Data",
-   "cr_year": 2025,
+   "cr_year": 2026,
    "cr_type": "journal-article"
   },
   "verified": true
@@ -368,18 +369,21 @@
   "journal_file": "JoBD",
   "journal": "Journal Of Big Data",
   "role": "selected",
-  "theme": "Platforms & infrastructure",
-  "ml_methods": "multi-domain BD analytics survey (IoT, social, NLP, security)",
-  "bd_context": "IoT/social-media/NLP/security data",
-  "doi": "10.1186/s40537-025-01192-9",
-  "title": "Big Data Analytics in IoT, social media, NLP, and information security: trends, challenges, and applications",
-  "date": "2025-06-17",
+  "theme": "Applications & domains",
+  "ml_methods": "deep learning framework for large-scale plant disease detection",
+  "bd_context": "big data analytics in precision agriculture (explicit in title)",
+  "doi": "10.1186/s40537-025-01265-9",
+  "title": "A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture",
+  "date": "2025-08-21",
   "year": "2025",
   "is_oa": true,
   "oa_status": "gold",
-  "cited_by": 18,
+  "cited_by": 14,
   "authors": [
-   "Kamal Taha"
+   "Mahmoud Khaled Elfouly",
+   "Amr Abdelaziz",
+   "Wael H. Gomaa",
+   "Mohammed Abdalla"
   ],
   "biblio": {
    "volume": "12",
@@ -387,9 +391,9 @@
    "first_page": null,
    "last_page": null
   },
-  "abstract": "This paper presents a comprehensive, domain-specific survey and experimental evaluation of machine learning techniques for Big Data Analytics across four critical domains: IoT, Social Media, Natural Language Processing (NLP), and Information Security. A novel taxonomic framework is introduced to classify and analyze the suitability of algorithms based on empirical, experimental, and computational perspectives. The study integrates large-scale experimental benchmarking of key techniques—including CNN, XGBoost, Self-Supervised Learning (SSL), Graph Neural Networks (GNN), ELM, KNN, and Decision Trees—using real-world and synthetic datasets, and evaluates them across five performance metrics: accuracy, F1-score, precision, recall, and computational time. Key findings reveal that: (1) GNN and Self-Supervised Learning (SSL) are top performers in terms of predictive performance and efficiency in domains such as IoT and Social Media, (2) XGBoost and CNN offer superior accuracy and robustness across structured and unstructured data tasks, though CNN incurs higher computational costs, (3) ELM and Decision Trees are better suited for lightweight or interpretable applications, and (4) KNN generally underperforms in scalability and predictive strength for large-scale tasks. The taxonomy and experiments collectively demonstrate the need for context-aware algorithm selection, particularly for real-time and scalable Big Data applications. By aligning algorithmic properties with domain-specific challenges, this study offers actionable insights for researchers and practitioners seeking effective analytic strategies in the evolving landscape of Big Data.",
+  "abstract": "Abstract Wheat and corn are essential crops for global food security, but wheat yellow rust and the corn northern leaf spot are significant threats. Proper assessment of the severity of the disease is the key to effective control and minimizing crop loss. Traditional methods don’t work effectively, and current deep learning models have problems like focusing too little on severity assessment, only being able to be used for a single crop or disease, and relying on small datasets, all of which make them less reliable in the real world. This paper addresses these issues. It introduces WY-CN-NASNetLarge, a deep-learning model based on the NASNetLarge architecture. The model is trained using transfer learning, fine-tuning, and several datasets, such as Yellow-Rust-19, Corn Disease and Severity (CD&S), and PlantVillage. These help the model work well in a variety of disease conditions. Data augmentation, the AdamW optimizer, dropout training, and mixed precision training enhance performance and prevent overfitting. The model has 97.33% accuracy for classifying disease severity. It is higher than ResNet152v2, InceptionResNetV2, and DenseNet201. This approach is effective and quick for identifying multiple diseases and rating their severity. It can also help manage diseases in agriculture and prevent crop loss.",
   "crossref": {
-   "cr_title": "Big Data Analytics in IoT, social media, NLP, and information security: trends, challenges, and applications",
+   "cr_title": "A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture",
    "cr_journal": "Journal of Big Data",
    "cr_year": 2025,
    "cr_type": "journal-article"
@@ -1309,20 +1313,20 @@
   "journal": "Journal Of Big Data",
   "role": "alternate",
   "theme": "alternate",
-  "ml_methods": "DL framework for large-scale plant disease detection",
-  "bd_context": "big data analytics (explicit in title)",
-  "doi": "10.1186/s40537-025-01265-9",
-  "title": "A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture",
-  "date": "2025-08-21",
+  "ml_methods": "hybrid framework: neural fuzzy classifier + metaheuristic feature extraction",
+  "bd_context": "large-scale heterogeneous high-dimensional IoT healthcare data (explicit)",
+  "doi": "10.1186/s40537-025-01243-1",
+  "title": "Towards precision in IoT-based healthcare systems: a hybrid optimized framework for big data classification",
+  "date": "2025-07-28",
   "year": "2025",
   "is_oa": true,
   "oa_status": "gold",
-  "cited_by": 14,
+  "cited_by": 10,
   "authors": [
-   "Mahmoud Khaled Elfouly",
-   "Amr Abdelaziz",
-   "Wael H. Gomaa",
-   "Mohammed Abdalla"
+   "Satheeshkumar Palanisamy",
+   "Vigneshwaran Thangaraju",
+   "Jeevitha Kandasamy",
+   "Ayodeji Olalekan Salau"
   ],
   "biblio": {
    "volume": "12",
@@ -1330,9 +1334,9 @@
    "first_page": null,
    "last_page": null
   },
-  "abstract": "Abstract Wheat and corn are essential crops for global food security, but wheat yellow rust and the corn northern leaf spot are significant threats. Proper assessment of the severity of the disease is the key to effective control and minimizing crop loss. Traditional methods don’t work effectively, and current deep learning models have problems like focusing too little on severity assessment, only being able to be used for a single crop or disease, and relying on small datasets, all of which make them less reliable in the real world. This paper addresses these issues. It introduces WY-CN-NASNetLarge, a deep-learning model based on the NASNetLarge architecture. The model is trained using transfer learning, fine-tuning, and several datasets, such as Yellow-Rust-19, Corn Disease and Severity (CD&S), and PlantVillage. These help the model work well in a variety of disease conditions. Data augmentation, the AdamW optimizer, dropout training, and mixed precision training enhance performance and prevent overfitting. The model has 97.33% accuracy for classifying disease severity. It is higher than ResNet152v2, InceptionResNetV2, and DenseNet201. This approach is effective and quick for identifying multiple diseases and rating their severity. It can also help manage diseases in agriculture and prevent crop loss.",
+  "abstract": "The rapid expansion of IoT-enabled healthcare systems has resulted in the generation of large-scale, heterogeneous, and high-dimensional medical data. However, traditional machine learning models often struggle with issues such as data imbalance, redundant features, and noise, limiting their reliability in clinical diagnostics. To overcome these limitations, this study proposes a hybrid framework that combines Lionized Heap Optimizer (LHO) for intelligent feature extraction with a Hierarchy Golden Eagle-Based Self-Constructing Neural Fuzzy (HGE-SNF) classifier for robust disease prediction. The proposed model was developed in MATLAB R2023b and tested using real-world datasets involving five disease categories: COVID-19, heart disease, diabetes, kidney disorders, and cancer. After preprocessing and feature selection, 114 key features were retained from an initial high-dimensional dataset exceeding 200 attributes, involving over 8000 total patient records. Performance evaluation was conducted using standard classification metrics, such as Accuracy, Precision, Sensitivity, Specificity, AUC, F-measure, MCC, and NPV. While the model achieved high scores across these metrics (e.g., AUC up to 0.995, Sensitivity and Specificity above 98%), we report these results conservatively and contextualize them with statistical validations, including cross-validation and multiple-run averaging. Comparative analysis against state-of-the-art models such as PSO-DNN, WOA-BRNN, and Adaptive E-Bat DBN is presented in detail, demonstrating the proposed model’s consistent superiority in classification performance and computational efficiency across diverse disease types. This research presents a scalable, interpretable, and resource-conscious solution for real-time medical data classification in IoT-based healthcare settings. Its modular design and adaptive behavior make it suitable for integration into edge-based clinical monitoring systems and decision support applications. KEYWORDS: Big data, Healthcare, Optimization, Classification, Feature Extraction and COVID-19 database.",
   "crossref": {
-   "cr_title": "A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture",
+   "cr_title": "Towards precision in IoT-based healthcare systems: a hybrid optimized framework for big data classification",
    "cr_journal": "Journal of Big Data",
    "cr_year": 2025,
    "cr_type": "journal-article"
@@ -1345,34 +1349,33 @@
   "journal": "IEEE Transactions on Big Data",
   "role": "alternate",
   "theme": "alternate",
-  "ml_methods": "multimodal LLM for industrial time-series big data",
-  "bd_context": "industrial big data (explicit in title)",
-  "doi": "10.1109/tbdata.2026.3695338",
-  "title": "TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis",
-  "date": "2026-01-01",
-  "year": "2026",
+  "ml_methods": "hierarchical multi-relational graph representation learning (HMGRL)",
+  "bd_context": "large-scale drug-drug interaction prediction; heterogeneous data sources",
+  "doi": "10.1109/tbdata.2025.3536924",
+  "title": "Hierarchical Multi-Relational Graph Representation Learning for Large-Scale Prediction of Drug-Drug Interactions",
+  "date": "2025-01-30",
+  "year": "2025",
   "is_oa": false,
   "oa_status": "closed",
-  "cited_by": 0,
+  "cited_by": 15,
   "authors": [
-   "Haiteng Wang",
-   "Yugong Li",
-   "Y C Zhu",
-   "Jingheng Yan",
-   "Lei Ren",
-   "Laurence T. Yang"
+   "Mengying Jiang",
+   "Guizhong Liu",
+   "Yuanchao Su",
+   "Weiqiang Jin",
+   "Biao Zhao"
   ],
   "biblio": {
-   "volume": null,
-   "issue": null,
-   "first_page": "1",
-   "last_page": "14"
+   "volume": "11",
+   "issue": "3",
+   "first_page": "961",
+   "last_page": "975"
   },
-  "abstract": "Accurate analysis of industrial time-series big data is critical for the Prognostics and Health Management (PHM) of industrial equipment. While recent advancements in Large Language Models (LLMs) have shown promise in time-series analysis, existing methods typically focus on single-modality adaptations, failing to exploit the complementary nature of temporal signals, frequency-domain visual representations, and textual knowledge information. In this paper, we propose TS-MLLM, a unified multi-modal large language model framework that is the first to jointly model industrial temporal signals, frequency-domain images, and textual domain knowledge. Specifically, we first develop an Industrial time-series Patch Modeling branch to capture long-range temporal dynamics. To integrate cross-modal priors, we introduce a Spectrum-aware Vision-Language Model Adaptation (SVLMA) mechanism that enables the model to internalize frequency-domain patterns and semantic context. Furthermore, a Temporal-centric Multi-modal Attention Fusion (TMAF) mechanism is designed to actively retrieve relevant visual and textual cues using temporal features as queries, ensuring deep cross-modal alignment. Extensive experiments on multiple industrial benchmarks demonstrate that TS-MLLM significantly outperforms state-of-the-art methods, particularly in few-shot and complex scenarios. The results validate our framework's superior robustness, efficiency, and generalization capabilities for industrial time-series prediction.",
+  "abstract": "Most existing methods for predicting drug-drug interactions (DDI) predominantly concentrate on capturing the explicit relationships among drugs, overlooking the valuable implicit correlations present between drug pairs (DPs), which leads to weak predictions. To address this issue, this paper introduces a hierarchical multi-relational graph representation learning (HMGRL) approach. Within the framework of HMGRL, we leverage a wealth of drug-related heterogeneous data sources to construct heterogeneous graphs, where nodes represent drugs and edges denote clear and various associations. The relational graph convolutional network (RGCN) is employed to capture diverse explicit relationships between drugs from these heterogeneous graphs. Additionally, a multi-view differentiable spectral clustering (MVDSC) module is developed to capture multiple valuable implicit correlations between DPs. Within the MVDSC, we utilize multiple DP features to construct graphs, where nodes represent DPs and edges denote different implicit correlations. Subsequently, multiple DP representations are generated through graph cutting, each emphasizing distinct implicit correlations. The graph-cutting strategy enables our HMGRL to identify strongly connected communities of graphs, thereby reducing the fusion of irrelevant features. By combining every representation view of a DP, we create high-level DP representations for predicting DDIs. Two genuine datasets spanning three distinct tasks are adopted to gauge the efficacy of our HMGRL. Experimental outcomes unequivocally indicate that HMGRL surpasses several leading-edge methods in performance.",
   "crossref": {
-   "cr_title": "TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis",
+   "cr_title": "Hierarchical Multi-Relational Graph Representation Learning for Large-Scale Prediction of Drug-Drug Interactions",
    "cr_journal": "IEEE Transactions on Big Data",
-   "cr_year": 2026,
+   "cr_year": 2025,
    "cr_type": "journal-article"
   },
   "verified": true
@@ -1409,6 +1412,187 @@
    "cr_title": "Optimization of differential privacy mechanism for big data privacy protection",
    "cr_journal": "Big Data Research",
    "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A6",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "physics-informed ML for medical imaging (research article)",
+  "bd_context": "data-driven imaging workflows",
+  "doi": "10.1007/s10462-025-11303-w",
+  "title": "Physics-informed machine learning for advancing computational medical imaging: integrating data-driven approaches with fundamental physical principles",
+  "date": "2025-07-04",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 46,
+  "authors": [
+   "Mohsen Ahmadi",
+   "Debojit Biswas",
+   "Maohua Lin",
+   "Frank D. Vrionis",
+   "Javad Hashemi",
+   "Yufei Tang"
+  ],
+  "biblio": {
+   "volume": "58",
+   "issue": "10",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Medical imaging is a cornerstone of modern healthcare, enabling precise diagnosis, treatment planning, and disease monitoring. Traditional machine learning (ML) approaches have significantly improved medical image analysis, yet they face challenges such as data scarcity, lack of interpretability, and variability in imaging protocols. Physics-Informed Machine Learning (PIML) offers a transformative solution by integrating fundamental physical laws, usually in partial differential equations and boundary conditions, into data-driven ML models. PIML constrains the solution space, enhances interpretability, and reduces the dependency on large, annotated datasets. This review provides an overview of the principles, methodologies, and applications of PIML in medical imaging, with a focus on imaging modalities such as MRI, CT, and ultrasound. We discuss the taxonomy of PIML approaches based on observational, inductive, and learning biases, showing their roles in enhancing model accuracy and generalization. Additionally, we explore the impact of PIML on image reconstruction, segmentation, enhancement, and anomaly detection, demonstrating its effectiveness in addressing noise, resolution, and diagnostic accuracy challenges. Despite its advantages, PIML faces challenges in the accurate representation of complex physiological processes, computational efficiency, and the integration of physics-based priors across diverse applications. This review points out future research directions including the development of hybrid models that combine PIML with deep learning techniques and large foundation models, improved benchmark datasets, and scalable algorithms for real-time applications. The findings of this review highlight PIML as a pivotal approach for advancing medical imaging, bridging the gap between theoretical models and practical implementation in clinical settings.",
+  "crossref": {
+   "cr_title": "Physics-informed machine learning for advancing computational medical imaging: integrating data-driven approaches with fundamental physical principles",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A7",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "privacy mechanisms/metrics in federated learning (research-type)",
+  "bd_context": "distributed learning systems",
+  "doi": "10.1007/s10462-025-11170-5",
+  "title": "Exploring privacy mechanisms and metrics in federated learning",
+  "date": "2025-05-02",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 48,
+  "authors": [
+   "D. Shweta Shenoy",
+   "Radhakrishna Bhat",
+   "Krishna Prakash"
+  ],
+  "biblio": {
+   "volume": "58",
+   "issue": "8",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract The federated learning (FL) principle ensures multiple clients jointly develop a machine learning model without exchanging their local data. Various government enacted prohibition policies on data exchange between organizations have led to the need for privacy-preserved federated learning. Many industries have cultivated this idea of model development through federated learning to enhance performance and accuracy. This paper offers a detailed overview of the background of FL, highlighting existing aggregation algorithms, frameworks, implementation aspects, and dataset repositories, establishing itself as an essential reference for researchers in the field. The paper thoroughly reviews existing centralized and decentralized FL approaches proposed in the literature and gives an overview about the methodology, privacy techniques implemented and limitations to guide other researchers to advance their research in the field of federated learning. The paper discusses the critical role of privacy-enhancing technologies like differential privacy (DP), homomorphic encryption (HE), and secure multiparty computation (SMPC) in federated learning highlighting their effectiveness in safeguarding sensitive data while optimizing the balance between privacy, communication efficiency, and computational cost. The paper explores the applications of federated learning in privacy-sensitive areas like natural language processing (NLP), healthcare, and Internet of Things (IoT) with edge computing. We believe our work provides a novel addition by identifying privacy evaluation metrics and spotlighting the measures in terms of data privacy and correctness, communication cost, computational cost and scalability. Furthermore, it identifies emerging challenges and suggests promising research directions in the federated learning domain.",
+  "crossref": {
+   "cr_title": "Exploring privacy mechanisms and metrics in federated learning",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A8",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "pretrained large models vs small-scale models for TS forecasting",
+  "bd_context": "scaling of transformer models",
+  "doi": "10.1007/s10462-025-11481-7",
+  "title": "Scaling transformers for time series forecasting: do pretrained large models outperform small-scale alternatives?",
+  "date": "2026-01-13",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 4,
+  "authors": [
+   "Sanjay Chakraborty",
+   "Ibrahim Delibasoglu",
+   "Fredrik Heintz"
+  ],
+  "biblio": {
+   "volume": "59",
+   "issue": "2",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Large pre-trained models have demonstrated remarkable capabilities across domains, but their comparative effectiveness in time series forecasting, especially against smaller, efficient models, remains underexplored. This work empirically examines whether pre-trained large-scale time series models (LSTSMs) trained on diverse datasets can outperform traditional non-pretrained small-scale transformers in forecasting tasks. We specifically compare large models trained from scratch against those benefiting from pretraining to measure the direct impact of transfer learning on forecasting performance. We analyze state-of-the-art (SOTA) pre-trained universal time series models (e.g., Moirai, GPT4TS, Timer, CALF, LLM4TS) alongside conventional small-scale transformers, evaluating accuracy and computational efficiency across multiple benchmarks. We further conduct an extensive ablation study across varying fine-tuning data sizes (10%, 25%, and 75%) to assess few-shot, moderate, and near full-data adaptation capabilities. Additionally, explainability of large time series models is examined using comprehensiveness via feature ablation, occlusion, integrated gradients and gradient shap methods. Besides that, interpretability of pretraining and finetuning strategies is also examined using spectral metrics via WeightWatcher to quantify layer-wise generalization and representation quality, while theoretical and quantitative computational complexity analyses, including parameter counts, training time, model sizes, and inference latency, highlight the trade-offs between predictive performance and resource efficiency. Our findings reveal the strengths and limitations of pre-trained large-scale models, providing insights into their suitability for time series tasks compared to task-specific small-scale architectures. The results highlight scenarios where pretraining offers advantages and where simpler models remain competitive.",
+  "crossref": {
+   "cr_title": "Scaling transformers for time series forecasting: do pretrained large models outperform small-scale alternatives?",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A9",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "explainable AI framework for heart disease detection",
+  "bd_context": "clinical data pipelines",
+  "doi": "10.1007/s10462-025-11385-6",
+  "title": "XAI-HD: an explainable artificial intelligence framework for heart disease detection",
+  "date": "2025-10-17",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 31,
+  "authors": [
+   "Md. Alamin Talukder",
+   "Amira Samy Talaat",
+   "Mohsin Kazi",
+   "Ansam Khraisat"
+  ],
+  "biblio": {
+   "volume": "58",
+   "issue": "12",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Cardiovascular disease (CVD) is the leading global cause of death, highlighting the urgent need for early, accurate, and interpretable diagnostic tools. However, many AI-based heart disease prediction models lack transparency, hindering their acceptance in clinical settings. This study proposes XAI-HD, a hybrid framework integrating machine learning (ML), deep learning (DL), and explainable AI (XAI) techniques for heart disease detection. The framework systematically addresses key challenges, including class imbalance, missing data, and feature inconsistency, through advanced preprocessing and class-balancing methods such as OSS, NCR, SMOTEN, ADASYN, SMOTETomek, and SMOTEENN. Comparative performance evaluations across multiple datasets (CHD, FHD, SHD) demonstrate that XAI-HD reduces classification error rates by 20–25% compared to traditional ML-based models, achieving superior accuracy, precision, recall, and F1-score. Additionally, SHAP and LIME-based feature importance analysis enhances model interpretability, fostering trust among medical professionals. The proposed framework holds significant real-world applicability, including seamless integration into hospital decision support systems, electronic health records (EHR), and real-time cardiac risk assessment platforms. Unlike conventional AI-driven cardiovascular risk prediction models, XAI-HD offers a more balanced, interpretable, and computationally efficient solution, ensuring both predictive accuracy and practical feasibility in clinical environments. Statistical validation using Wilcoxon signed-rank tests confirms the performance gains, and complexity analysis shows the framework is scalable for large-scale deployment.",
+  "crossref": {
+   "cr_title": "XAI-HD: an explainable artificial intelligence framework for heart disease detection",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A10",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "deep learning/RL for caching and offloading decisions",
+  "bd_context": "cloud-edge-end and UAV networks",
+  "doi": "10.1007/s10462-025-11391-8",
+  "title": "Cloud-edge-end collaborative caching and UAV-assisted offloading decision based on the fusion of deep reinforcement learning algorithms",
+  "date": "2025-11-05",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 3,
+  "authors": [
+   "Sifeng Zhu",
+   "Zhaowei Song",
+   "Changlong Huang",
+   "Rui Qiao",
+   "Hai Zhu"
+  ],
+  "biblio": {
+   "volume": "58",
+   "issue": "12",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "The cloud-edge-end collaboration system provides a new impetus for the development of intelligent transportation. In order to optimize the quality of service for intelligent transportation system users and improve system resource utilization, A three-tier caching strategy for cloud-edge-end collaboration based on efficiency collaboration task popularity (CSEPCA) was proposed, which exploits server resource characteristics and performs fine-grained cache replacements based on real-time task popularity to address the challenges associated with balancing server cache space and cost. To achieve an optimal balance between server cache space and cost, the problem of determining the availability of server cache space is formulated as a constrained markov decision process (CMDP), and an enhanced deep reinforcement learning algorithm based on soft updating (AT-SAC) was designed to achieve multi-objective optimization of system latency, energy consumption, and resource depletion rate, with the aim of improving service response speed and enhancing user service quality. To address challenges in effectively serving vehicles in areas with weak communication signals from cloud-edge servers, UAV swarms were introduced to assist with vehicle task offloading computations. A comprehensive optimization algorithm (Co-DRL-P) was proposed, which integrates enhanced deep reinforcement Learning (ERDDPG) and improved particle swarm optimization (A-PSO) algorithms to optimize UAV trajectories and communication angles, aiming to deliver superior service quality to users. Finally, we evaluate the performance of the proposed scheme through comprehensive simulation experiments. Specifically, when the number of users is 30, the system latency of the proposed scheme is 17.9%, 11.5%, 2.6%, and 60.2% lower than baseline schemes such as DQN, DDPG, TD3, and collaborative randomized schemes, and the system energy consumption is reduced by 20.6%, 15.9%, 9.4%, and 129.9%. Notably, the overall system cost for drone-assisted user offloading is reduced by approximately 49.6% in areas with weak cloud server signals.",
+  "crossref": {
+   "cr_title": "Cloud-edge-end collaborative caching and UAV-assisted offloading decision based on the fusion of deep reinforcement learning algorithms",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
    "cr_type": "journal-article"
   },
   "verified": true

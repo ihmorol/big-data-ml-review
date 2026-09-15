@@ -1,6 +1,8 @@
-# Papers pool — LOCKED rev 2 (2026-09-15): 20 selected, verified; 24 alternates held
+# Papers pool — LOCKED rev 3 (2026-09-15): 20 selected, verified; 29 alternates held
 
 Built by programmatic retrieval (OpenAlex full 2025+ output per journal, 1,519 works screened) + two cross-check agents, then Crossref-verified per paper. Full metadata/abstracts: `../results/pool_selected.json`; Table 1 data: `../results/table1.csv`; per-paper reading notes: `../sources/`; synthesis: `../notes/landscape-report.md`; **requirement-by-requirement backing for every selection: `../notes/selection-backing.md`**.
+
+**Article-type policy (rev 3):** per the supervisor, "research papers" = original research articles. All 15 TBD/BDR/JoBD selections are original research; the 5 AIR selections are review articles kept as a documented exception (AIR is review-designated). Insurance swaps if the exception is rejected: AIR-A6…A10.
 
 **Access key:** OA = freely readable · PAID = institutional access needed (no free copy or preprint found; see swap rule below).
 
@@ -9,12 +11,12 @@ Built by programmatic retrieval (OpenAlex full 2025+ output per journal, 1,519 w
 | # | Paper (first author et al., year) | Theme | Access | Verified |
 |---|---|---|---|---|
 | TBD-1 | PEXP: A Scalable Parallel Tree-Based Framework for Interpreting Models on Big Data (2026) | Scalable & interpretable ML | PAID | ✓ |
-| TBD-2 | Blockchain-Empowered Federated Learning: Benefits, Challenges, and Solutions (2025) | Federated & privacy | PAID | ✓ |
+| TBD-2 | TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis (2026) | LLMs & foundation models | PAID | ✓ |
 | TBD-3 | GraphLLM: Boosting Graph Reasoning Ability of Large Language Model (2025/26) | LLMs & foundation models | PAID | ✓ |
 | TBD-4 | Knowledge Aggregation Transformer Network for Multivariate Time Series Classification (2025) | Time series & streaming | **OA** | ✓ |
 | TBD-5 | Enhanced Approaches for Anomaly Detection in Streaming Data (2026) | Security & anomaly detection | PAID | ✓ |
 
-**Alternates (vetted, verified):** TBD-A1 Vehicle Perception Technologies review (c18) · TBD-A2 Digital Twin Data Management review (c23) · TBD-A3 Ensemble Approaches for Dynamic Data Stream Classification · TBD-A4 Fast Linearithmic Graph Clustering for Big Data · TBD-A5 SARF: Sparsity-Aware Reconstruction (**OA — designated swap for any TBD paywalled item**) · TBD-A6 TS-MLLM: Multi-Modal LLM for Industrial Time-Series Big Data (explicit "Big Data" + LLM title — compliance swap candidate)
+**Alternates (vetted, verified):** TBD-A1 Vehicle Perception Technologies review (c18) · TBD-A2 Digital Twin Data Management review (c23) · TBD-A3 Ensemble Approaches for Dynamic Data Stream Classification · TBD-A4 Fast Linearithmic Graph Clustering for Big Data · TBD-A5 SARF: Sparsity-Aware Reconstruction (**OA — designated swap for any TBD paywalled item**) · TBD-A6 HMGRL: Hierarchical Multi-Relational Graph Representation Learning for Large-Scale Drug-Drug Interaction Prediction (c15, original research)
 
 ## Journal 2 — Big Data Research (SCIE, IF 4.6)
 
@@ -33,13 +35,13 @@ Built by programmatic retrieval (OpenAlex full 2025+ output per journal, 1,519 w
 
 | # | Paper | Theme | Access | Verified |
 |---|---|---|---|---|
-| JoBD-1 | Big Data Analytics in IoT, social media, NLP, and information security (2025) | Multi-domain survey + benchmark | OA | ✓ |
+| JoBD-1 | A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture (2025) | Applications & agriculture | OA | ✓ |
 | JoBD-2 | Privacy-enhanced collaborative Big Data analysis in healthcare (2025) | Healthcare + privacy | OA | ✓ |
 | JoBD-3 | Advancing multimodal emotion recognition in big data through prompt engineering and deep adaptive learning (2025) | Applications & multimedia | OA | ✓ |
 | JoBD-4 | Cloud-based real-time multivariate multi-step prediction of SBP and HR (2025) | Healthcare + fog/cloud streaming | OA | ✓ |
 | JoBD-5 | Graph neural network with spatial structure for network anomaly detection (2025) | GNN anomaly detection | OA | ✓ |
 
-**Alternates:** JoBD-A1 Secure hybrid DL brain-tumor framework (c41) · JoBD-A2 AI privacy preservation in IoV review · JoBD-A3 ML-based intrusion detection systematic review (c13) · JoBD-A4 BlueEdge edge-computing data cleaning · JoBD-A5 "Data science, big data and ML coming of age" (position piece — good Intro framing citation) · JoBD-A6 Comprehensive review of AI in renewable energy systems (c86 — moved from selection, rev 1) · JoBD-A7 DL framework for large-scale plant disease detection using big data analytics (c14)
+**Alternates:** JoBD-A1 Secure hybrid DL brain-tumor framework (c41) · JoBD-A2 AI privacy preservation in IoV review · JoBD-A3 ML-based intrusion detection systematic review (c13) · JoBD-A4 BlueEdge edge-computing data cleaning · JoBD-A5 "Data science, big data and ML coming of age" (position piece — good Intro framing citation) · JoBD-A6 Comprehensive review of AI in renewable energy systems (c86 — moved from selection, rev 1) · JoBD-A7 Towards precision in IoT-based healthcare: hybrid optimized framework for big data classification (c10, original research)
 
 ## Journal 4 — Artificial Intelligence Review (SCIE, IF 18.8; all OA; also our format target)
 
@@ -51,11 +53,12 @@ Built by programmatic retrieval (OpenAlex full 2025+ output per journal, 1,519 w
 | AIR-4 | Review of generative AI for synthetic data generation: a healthcare perspective (2025) | Data quality & governance | OA | ✓ |
 | AIR-5 | Survey of deep multivariate time-series models with an empirical reproducibility audit (2026) | Evaluation & reproducibility | OA | ✓ |
 
-**Alternates:** AIR-A1 Agentic AI systems: architectures, cloud scalability (c23) · AIR-A2 Safeguarding LLMs survey (c72) · AIR-A3 GNN anomaly detection systematic review · AIR-A4 Blockchain+AI IoT security review · AIR-A5 AI for weather and climate survey
+**Alternates:** AIR-A1 Agentic AI systems: architectures, cloud scalability (c23) · AIR-A2 Safeguarding LLMs survey (c72) · AIR-A3 GNN anomaly detection systematic review · AIR-A4 Blockchain+AI IoT security review · AIR-A5 AI for weather and climate survey · **research-only insurance set (promote if the AIR review exception is rejected):** AIR-A6 physics-informed ML for medical imaging (c46) · AIR-A7 privacy mechanisms and metrics in federated learning (c48) · AIR-A8 scaling transformers for time-series forecasting (c4) · AIR-A9 XAI-HD heart-disease explainability (c31) · AIR-A10 cloud-edge-end collaborative caching (c3)
 
 ## Notes for the team
 
-- **Rev 2 reselection (2026-09-15):** BDR-4 and JoBD-3 were swapped for stronger requirement evidence (see `../notes/selection-backing.md`, "Reselection changelog"); the other 18 were re-audited and kept.
+- **Rev 3 reselection (2026-09-15, supervisor clarification — original-research-only):** TBD-2 → TS-MLLM (LLM for industrial time-series big data, original research); JoBD-1 → large-scale plant-disease detection with big data analytics (original research). All 15 TBD/BDR/JoBD selections are original research articles; the 5 AIR review articles are a documented exception. If the supervisor rejects the exception, promote AIR-A6…A10 (pre-verified research articles). Full rationale: `../notes/selection-backing.md`.
+- **Rev 2 reselection (2026-09-15):** BDR-4 and JoBD-3 were swapped for stronger requirement evidence; the other selections were re-audited and kept.
 - **Do not substitute silently.** If a paper must be swapped, use its vetted alternate from this file and note the swap in `writing-progress.md`.
 - **Three BDR papers (BDR-3/4/5) have no indexed abstracts** — their first reading task is extracting problem/method/evaluation from the full text (BDR-4 is open access; BDR-3/5 need institutional access).
 - Every selected paper has a pre-filled note in `sources/` (bibliography, access status, abstract, theme). Complete the Synthesis hooks section when you read it.

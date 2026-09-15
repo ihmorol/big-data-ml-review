@@ -10,7 +10,7 @@ Re-analysis of `Big Data Assignment.pdf` performed 2026-09-15 (raw + layout extr
 | R2 | Proposed title: "Big Data with Machine Learning: A Review" | satisfied | Title used verbatim in outline/report; final paper keeps it |
 | R3 | Keywords: Machine Learning, Big Data | satisfied | Fixed keyword list carried in outline; must appear on the final title page |
 | R4 | Review period: 2025–2027 | satisfied | All 20 papers published 2025–2026; zero 2027-dated items exist in any of the four journals (verified against full journal pulls, 2026-09-15) |
-| R5 | At least 20 research papers | satisfied | Exactly 20 selected |
+| R5 | At least 20 research papers | satisfied | Exactly 20 selected; 15/15 selections from TBD, BDR, and JoBD are original research articles; AIR's 5 review articles are a documented exception (interpretation 2) |
 | R6 | Selected from the four designated journals only | satisfied | Pool built by pulling each journal's *complete* 2025+ output by source ID, not by open web search — venue drift is structurally impossible |
 | R7 | Approximately 3–5 papers per source | satisfied | Exactly 5 per journal |
 | R8 | Criterion: relevance to Big Data **and** Machine Learning | satisfied | Per-paper evidence in Sect. 4; both dimensions evidenced for every paper (title/abstract for 17; title-level for 3, flagged with extraction tasks) |
@@ -29,7 +29,7 @@ Re-analysis of `Big Data Assignment.pdf` performed 2026-09-15 (raw + layout extr
 ### Interpretation notes (decisions taken where the PDF is not fully explicit)
 
 1. **R5 + R7 arithmetic.** "At least 20" from four journals at "3–5 each" is satisfiable only at 5+5+5+5=20. Getting more than 20 would require papers from outside the four journals, which R6 forbids. Hence exactly 5 per journal is forced, and this pool is maximal.
-2. **"Research papers" (R5).** Read as peer-reviewed articles published by the designated journals. Seven of the 20 are survey/review-type articles: the five AIR articles (AIR is a review-designated journal — nearly all its articles are reviews, so treating "review article" as disqualifying would make AIR unusable as a source), plus TBD-2 (a survey carrying an original benefits/challenges/solutions framework) and JoBD-1 (a survey carrying a large-scale experimental benchmark). Thirteen of 20 are original research articles. If the supervisor intends "original research only," the designated swaps in `papers-pool.md` and the alternate pool cover a rebalance — but note this would conflict with the AIR quota.
+2. **"Research papers" (R5) — supervisor clarification.** The supervisor clarified (relayed by the team, 2026-09-15) that "research papers" means **original research articles**, not reviews or surveys. Enforcement: all fifteen selections from IEEE TBD, Big Data Research, and Journal of Big Data are original research articles — the rev-2 survey selections (TBD-2 blockchain-FL survey, JoBD-1 multi-domain benchmark survey) were replaced in rev 3. The five Artificial Intelligence Review selections remain review articles as an **approved, documented exception**: AIR is a review-designated journal (294 of its 549 articles in the 2025+ window are review-type), the assignment designates AIR both as a source and as the format template, and the team decided to keep them. Insurance: five original-research AIR articles are pre-verified in the alternate pool (AIR-A6…A10) as ready drop-in replacements if the exception is rejected.
 3. **R9 and 2027.** As of the submission date no 2027-dated article exists in any of the four journals (all four publishers' complete 2025+ output was pulled and dated: zero 2027 items). The period is therefore satisfied as far as physically possible; add one sentence to the paper's methodology stating this (already drafted in the landscape report).
 4. **R10 at article level.** WoS indexing is verified at journal level (Master Journal List is not machine-accessible; secondary sources + publisher pages used). Individual articles in SCIE journals inherit indexing; IEEE early-access items (TBD-1, TBD-3, TBD-5) are indexed upon issue assignment (Crossref confirms issue-year 2026).
 5. **R11 evidence tiers.** "High-impact" is primarily a journal property (R11 says "journals"); paper-level citation counts (OpenAlex, 2026-09-15) are recorded as supporting signal only, never as the selection driver.
@@ -40,18 +40,18 @@ Re-analysis of `Big Data Assignment.pdf` performed 2026-09-15 (raw + layout extr
 
 | Journal | Selected | Years | Types | OA | SCIE | IF |
 |---|---|---|---|---|---|---|
-| IEEE Transactions on Big Data | 5 (TBD-1…5) | 2025 ×3, 2026 ×2 | 4 research + 1 survey | 1/5 | yes | 8.1 |
+| IEEE Transactions on Big Data | 5 (TBD-1…5) | 2025 ×2, 2026 ×3 | 5 original research | 1/5 | yes | 8.1 |
 | Big Data Research | 5 (BDR-1…5) | 2025 ×2, 2026 ×3 | 5 research | 3/5 | yes | 4.6 |
-| Journal of Big Data | 5 (JoBD-1…5) | 2025 ×5 | 3 research + 1 research/survey hybrid + 1 research | 5/5 | yes | 10.8 |
-| Artificial Intelligence Review | 5 (AIR-1…5) | 2025 ×3, 2026 ×2 | 5 review articles (journal design) | 5/5 | yes | 18.8 |
+| Journal of Big Data | 5 (JoBD-1…5) | 2025 ×5 | 5 original research | 5/5 | yes | 10.8 |
+| Artificial Intelligence Review | 5 (AIR-1…5) | 2025 ×3, 2026 ×2 | 5 review articles (approved exception — interpretation 2) | 5/5 | yes | 18.8 |
 
 ### 2.2 Corpus composition
 
-- 13 original research articles, 7 survey/review-type (see interpretation 2).
-- Publication window: 2025-01 → 2026-09; 13 papers from 2025, 7 from 2026.
+- 15 original research articles; 5 review articles (all AIR, approved exception — interpretation 2).
+- Publication window: 2025-01 → 2026-09; 12 papers from 2025, 8 from 2026.
 - Access: 14 open access, 6 paywalled (TBD-1, TBD-2, TBD-3, TBD-5, BDR-3, BDR-5) with designated OA swaps.
-- Theme spread (landscape-report branches): scalable methods 5 · platforms 4 · applications 4 · foundation models/agentic 3 · privacy/governance/evaluation 4.
-- Domain spread: healthcare (2), security/anomaly (4), telecom (1), finance (1), affective computing (1), multi-domain (1), infrastructure/methods (10).
+- Theme spread (landscape-report branches): scalable methods 5 · applications 5 · foundation models/LLM 4 · platforms 3 · privacy/governance/evaluation 3.
+- Domain spread: healthcare (2), security/anomaly detection (4), finance (1), affective computing (1), agriculture (1), industrial systems (1), plus methods/infrastructure (10).
 
 ## 3. Requirement → paper-component traceability
 
@@ -71,17 +71,17 @@ What each required section must carry and where it is maintained in this workspa
 
 Format per entry: citation (type | access | verification) → R8 relevance (Big Data / Machine Learning evidence) → R9 date → R10/R11 venue facts → role in the review → action/risk.
 
-### IEEE Transactions on Big Data — 5/5 compliant (4 research + 1 survey; 1 OA)
+### IEEE Transactions on Big Data — 5/5 compliant (5 original research; 1 OA)
 
 **[1] TBD-1** — Jiang W, et al (2026) PEXP: A Scalable Parallel Tree-Based Framework for Interpreting Models on Big Data. IEEE Trans Big Data 12. DOI 10.1109/tbdata.2026.3668673. (research | paid | Crossref ✓)
 - **R8 — BD:** "big data" is in the title; abstract frames the problem as interpretation "applied to models trained on large-scale datasets". **ML:** interpretable machine learning for (deep) learning models; parallel tree-based explainer.
 - **R9:** 2026 (early access 2025). **R10:** IEEE TBD, SCIE. **R11:** journal IF 8.1; 3 citations to date.
 - **Role:** branch 4 anchor for scalable *interpretability* — the corpus's only paper treating explanation cost as the bottleneck. **Action:** paywalled — access request; content runs abstract-level until then.
 
-**[2] TBD-2** — Cai Z, et al (2025) Blockchain-Empowered Federated Learning: Benefits, Challenges, and Solutions. IEEE Trans Big Data 11. DOI 10.1109/tbdata.2025.3541560. (survey | paid | Crossref ✓)
-- **R8 — BD:** distributed learning systems analyzed at network/computing/storage cost scale. **ML:** federated learning is the subject; blockchain integration for security/incentives.
-- **R9:** 2025. **R10:** SCIE. **R11:** 25 citations in ~19 months — the strongest impact signal in the TBD selection.
-- **Role:** branch 8 privacy anchor and the corpus's most infrastructure-aware privacy survey. **Note:** survey-type (interpretation 2); carries an original benefits/challenges/solutions framework, not a bare literature list. **Action:** paywalled — access request.
+**[2] TBD-2** — Wang H, et al (2026) TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis. IEEE Trans Big Data. DOI 10.1109/tbdata.2026.3695338. (original research | paid | Crossref ✓)
+- **R8 — BD:** "Industrial Time-Series Big Data" in the title; the abstract frames equipment prognostics and health management as the task. **ML:** a unified multimodal LLM jointly modeling temporal signals, frequency-domain visual representations, and textual knowledge — per the abstract, the first to model all three jointly.
+- **R9:** 2026. **R10:** SCIE. **R11:** journal IF 8.1 (recent; citations pending).
+- **Role:** branch 7's industrial-systems method paper — the corpus's only LLM-augmented industrial big-data framework. Replaced the rev-2 blockchain-FL survey for the original-research-only clarification. **Action:** paywalled — access request; content runs abstract-level until then.
 
 **[3] TBD-3** — Chai Z, et al (2025) GraphLLM: Boosting Graph Reasoning Ability of Large Language Model. IEEE Trans Big Data 12. DOI 10.1109/tbdata.2025.3627488. (research | paid | Crossref ✓)
 - **R8 — BD:** abstract states graph data is "ubiquitous in Big Data applications such as social networks, knowledge graphs, and molecular databases". **ML:** LLM reasoning; Graph2Text bottleneck identified and restructured.
@@ -125,12 +125,12 @@ Format per entry: citation (type | access | verification) → R8 relevance (Big 
 - **R9:** 2026. **R10:** SCIE. **R11:** recent; journal IF carries R11.
 - **Role:** branch 4's classical-scaling counterpoint to the deep-learning default. **Action:** paywalled — access request; extraction task.
 
-### Journal of Big Data — 5/5 compliant (4 research + 1 benchmark survey; 5 OA)
+### Journal of Big Data — 5/5 compliant (5 original research; 5 OA)
 
-**[11] JoBD-1** — Taha K (2025) Big Data Analytics in IoT, social media, NLP, and information security: trends, challenges, and applications. J Big Data 12. DOI 10.1186/s40537-025-01192-9. (survey + benchmark | **OA** | Crossref ✓)
-- **R8 — BD:** title carries "Big Data Analytics"; four data domains are the survey's axes. **ML:** large-scale experimental benchmarking of CNN, XGBoost, SSL, GNN, ELM, KNN, decision trees across five metrics — original experimental contribution within a survey.
-- **R9:** 2025. **R10:** SCIE. **R11:** 18 citations.
-- **Role:** the corpus's only head-to-head algorithm benchmark — load-bearing for the review's comparison table. **Note:** hybrid type (interpretation 2).
+**[11] JoBD-1** — Elfouly MK, et al (2025) A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture. J Big Data 12. DOI 10.1186/s40537-025-01265-9. (original research | **OA** | Crossref ✓)
+- **R8 — BD:** "large-scale ... using big data analytics" in the title; the abstract frames prior methods as deficient because they "rely on small datasets" — scale is the stated gap. **ML:** a deep learning framework for severity-aware disease detection spanning crops.
+- **R9:** 2025. **R10:** SCIE. **R11:** 14 citations.
+- **Role:** branch 6's agriculture domain anchor; replaced the rev-2 multi-domain benchmark survey for the original-research-only clarification (its benchmark role passes to the paper's own comparison table).
 
 **[12] JoBD-2** — Haripriya R, et al (2025) A privacy-enhanced framework for collaborative Big Data analysis in healthcare using adaptive federated learning aggregation. J Big Data 12. DOI 10.1186/s40537-025-01169-8. (research | **OA** | Crossref ✓)
 - **R8 — BD:** "Big Data analysis in healthcare" in the title; breach statistic (30%+ organizations) motivates scale-appropriate privacy. **ML:** FL + transfer learning (ResNet, VGG16), adaptive aggregation, three medical imaging datasets.
@@ -152,9 +152,9 @@ Format per entry: citation (type | access | verification) → R8 relevance (Big 
 - **R9:** 2025. **R10:** SCIE. **R11:** 19 citations.
 - **Role:** branch 4 graph-efficiency contribution; vertical with [5] and [17] on anomaly detection.
 
-### Artificial Intelligence Review — 5/5 compliant (5 review articles by journal design; 5 OA)
+### Artificial Intelligence Review — 5/5 compliant (5 review articles — approved exception, interpretation 2; 5 OA)
 
-Note: AIR is the assignment's designated source *and* its format template; article-type policy is interpretation 2. Zero AIR 2025+ articles carry "big data" in the title — AIR is an AI journal, so relevance is established through each paper's scale/data-heterogeneity engagement, quoted below.
+Note: AIR is the assignment's designated source *and* its format template; these five review articles are retained as the team-approved exception recorded in interpretation 2, with a pre-verified original-research AIR replacement set in the alternates pool. Zero AIR 2025+ articles carry "big data" in the title — AIR is an AI journal, so relevance is established through each paper's scale/data-heterogeneity engagement, quoted below.
 
 **[16] AIR-1** — Abou Ali M, et al (2025) Agentic AI: a comprehensive survey of architectures, applications, and future directions. Artif Intell Rev 59. DOI 10.1007/s10462-025-11422-4. (review | **OA** | Crossref ✓)
 - **R8 — BD:** large-scale generative systems and their architectures/orchestration. **ML:** the defining 2025 agentic-AI synthesis; PRISMA-based review of 90 studies; dual-paradigm framework.
@@ -181,7 +181,7 @@ Note: AIR is the assignment's designated source *and* its format template; artic
 - **R9:** 2026. **R10:** SCIE. **R11:** recent (0 citations); journal IF 18.8 carries R11 — accepted deliberately for role, not impact.
 - **Role:** the corpus's only reproducibility audit — the review's evidence for its evaluation-practice claim.
 
-## 5. Reselection changelog (rev 1 → rev 2, 2026-09-15)
+## 5. Reselection changelog (rev 1 → rev 3, 2026-09-15)
 
 **Swapped out → in:**
 
@@ -196,11 +196,18 @@ Note: AIR is the assignment's designated source *and* its format template; artic
 
 **Metadata enrichment:** JoBD-4's full title confirms Apache Spark in the pipeline (platforms branch strengthened; extraction note regenerated).
 
+**rev 2 → rev 3 (2026-09-15, supervisor clarification: original-research-only):**
+
+- **Enforcement:** all fifteen TBD/BDR/JoBD selections are now original research articles. **AIR exception:** the five AIR review articles are kept as an approved, documented exception (AIR is review-designated; the assignment names it as a source and as the format template; team decision 2026-09-15). **Insurance:** five original-research AIR articles are pre-verified as drop-in replacements in the alternate pool — AIR-A6 physics-informed ML medical imaging (c46) · AIR-A7 privacy mechanisms and metrics in federated learning (c48) · AIR-A8 scaling transformers for time-series forecasting (c4) · AIR-A9 XAI-HD heart-disease explainability (c31) · AIR-A10 cloud-edge-end collaborative caching (c3).
+- **TBD-2:** *Blockchain-Empowered Federated Learning survey* (25 cites) → *TS-MLLM: Multi-Modal LLM for Industrial Time-Series Big Data Analysis* (2026, original research). Why: original-research compliance plus explicit "Big Data" and LLM in the title. Cost: the blockchain-FL survey anchor is dropped (it fails the clarified constraint); the privacy cluster keeps [7], [12], [19].
+- **JoBD-1:** *Big Data Analytics in IoT/social/NLP/security benchmark survey* (18 cites) → *Large-scale plant disease detection using big data analytics* (2025, original research, 14 cites). Why: original-research compliance with explicit dual-evidence title; adds precision agriculture. Cost: the corpus loses its multi-domain benchmark (landscape report Sect. 9 updated); IoT-healthcare research becomes the new JoBD-A7 alternate.
+- **Alternates refresh:** TBD-A6 now HMGRL — large-scale drug-drug interaction graph learning (15 cites, original research); AIR-A6…A10 added (above); JoBD-A7 = IoT-healthcare hybrid framework (c10).
+
 ## 6. Compliance risks and mitigations
 
 | Risk | Severity | Mitigation in place |
 |---|---|---|
-| Supervisor reads "research papers" as original-research-only | medium | 13/20 originals; the 7 review-type are AIR-designated (5) + 2 carrying original frameworks/benchmarks; alternates cover a rebalance except the AIR quota, which is unavoidable given AIR's nature — raise in one line with the supervisor if uncertain |
+| Supervisor rejects the AIR review-article exception | medium | Documented exception (interpretation 2); five pre-verified original-research AIR articles (AIR-A6…A10) are ready drop-in swaps; all other fifteen selections are already original research |
 | 2027 papers do not exist yet | low (factual) | One methodology sentence stating the 2027-availability check; keep the sentence in the final paper |
 | 6 papers paywalled (TBD-1/2/3/5, BDR-3/5) | medium | Access requests are a team action; every paywalled paper has a designated OA swap; no workarounds found (green-OA and preprint checks performed 2026-09-15) |
 | BDR-3/4/5 abstract-less in OpenAlex | low | First-reading extraction task; BDR-4 is OA and immediate; BDR-3/5 after access arrives; BDR-3 has swap BDR-A1 if its ML basis proves thin |
@@ -211,5 +218,5 @@ Note: AIR is the assignment's designated source *and* its format template; artic
 
 - [ ] Request institutional access for the 6 paywalled papers (or trigger designated swaps)
 - [ ] Read all 20 and complete the Synthesis hooks in `../sources/`
-- [ ] Confirm interpretation 2 ("research papers") and the 2027 note with the supervisor if any doubt — one sentence question, costs nothing
+- [ ] If the supervisor rejects the AIR exception: promote AIR-A6…A10 (pre-verified original-research articles) — decisions already documented in Sect. 5; keep the 2027-availability note in the paper's methodology either way
 - [ ] Keep every citation numbered per final-first-appearance in the paper and re-verify against `../results/table1.csv` before submission
