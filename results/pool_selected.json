@@ -1,0 +1,1598 @@
+[
+ {
+  "id": "TBD-1",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "selected",
+  "theme": "Scalable & interpretable ML",
+  "ml_methods": "tree-based parallel model interpretation",
+  "bd_context": "big data; parallel framework",
+  "doi": "10.1109/tbdata.2026.3668673",
+  "title": "PEXP: A Scalable Parallel Tree-Based Framework for Interpreting Models on Big Data",
+  "date": "2026-02-27",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 3,
+  "authors": [
+   "Wendong Jiang",
+   "Chih-Yung Chang",
+   "Tzu-Chia Huang",
+   "Yu-Ting Chin",
+   "Diptendu Sinha Roy"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "4",
+   "first_page": "1177",
+   "last_page": "1194"
+  },
+  "abstract": "The proliferation of big data has fueled the success of deep learning; however, its inherent ”black box” nature poses significant challenges for its adoption in safety-critical domains. Existing interpretable machine learning methods offer partial solutions but often struggle with model fidelity, inconsistent explanations, a lack of holistic model understanding, and critically, computational inefficiency, especially when applied to models trained on large-scale datasets. To overcome these hurdles, this paper introduces Parallel Explainer (PEXP), an innovative parallel tree-based interpretation framework designed for scalability and comprehensive understanding. PEXP initiates by generating a localized sample set around a target instance through data distribution-aware perturbations. It then computes similarity scores and employs a kernel function to weight these samples effectively. Leveraging concepts from Bagging and Boosting, PEXP efficiently constructs Parallel Ensemble Trees as its core interpretable model. This model provides feature importance-based explanations and aggregates insights across all samples to achieve a global understanding of the model's behavior on the entire dataset. Experimental results demonstrate PEXP's significant advantages over mainstream interpretable methods in both runtime efficiency and the quality of explanations, particularly crucial for big data analytics. Furthermore, a case study illustrates PEXP's application in enhancing the interpretability of video anomaly detection systems within smart cities, a domain characterized by large volumes of data and offers insights for improving Transformer-based architectures.",
+  "crossref": {
+   "cr_title": "PEXP: A Scalable Parallel Tree-Based Framework for Interpreting Models on Big Data",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-2",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "selected",
+  "theme": "Federated & privacy-preserving learning",
+  "ml_methods": "federated learning + blockchain incentives/security",
+  "bd_context": "distributed training across parties",
+  "doi": "10.1109/tbdata.2025.3541560",
+  "title": "Blockchain-Empowered Federated Learning: Benefits, Challenges, and Solutions",
+  "date": "2025-02-13",
+  "year": "2025",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 25,
+  "authors": [
+   "Zeju Cai",
+   "Jianguo Chen",
+   "Yuting Fan",
+   "Zibin Zheng",
+   "Keqin Li"
+  ],
+  "biblio": {
+   "volume": "11",
+   "issue": "5",
+   "first_page": "2244",
+   "last_page": "2263"
+  },
+  "abstract": "Federated learning (FL) is a distributed machine learning approach that protects user data privacy by training models locally on clients and aggregating them on a parameter server. While effective at preserving privacy, FL systems face limitations such as single points of failure, lack of incentives, and inadequate security. To address these challenges, blockchain technology is integrated into FL systems to provide stronger security, fairness, and scalability. However, blockchain-empowered FL (BC-FL) systems introduce additional demands on network, computing, and storage resources. This survey provides a comprehensive review of recent research on BC-FL systems, analyzing the benefits and challenges associated with blockchain integration. We explore why blockchain is applicable to FL, how it can be implemented, and the challenges and existing solutions for its integration. Additionally, we offer insights on future research directions for the BC-FL system.",
+  "crossref": {
+   "cr_title": "Blockchain-Empowered Federated Learning: Benefits, Challenges, and Solutions",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-3",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "selected",
+  "theme": "LLMs & foundation models",
+  "ml_methods": "LLM for graph reasoning",
+  "bd_context": "graph-structured large data",
+  "doi": "10.1109/tbdata.2025.3627488",
+  "title": "GraphLLM: Boosting Graph Reasoning Ability of Large Language Model",
+  "date": "2025-10-30",
+  "year": "2025",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 17,
+  "authors": [
+   "Ziwei Chai",
+   "Tianjie Zhang",
+   "Liang Wu",
+   "Kaiqiao Han",
+   "Xiaohai Hu",
+   "Xuanwen Huang"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "2",
+   "first_page": "475",
+   "last_page": "483"
+  },
+  "abstract": "The advancement of Large Language Models (LLMs) has remarkably pushed the boundaries towards artificial general intelligence (AGI), with their exceptional ability on understanding diverse types of information, including but not limited to images and audio. Despite this progress, a critical gap remains in empowering LLMs to proficiently understand and reason on graph data, which is ubiquitous in Big Data applications such as social networks, knowledge graphs, and molecular databases. Recent studies underscore LLMs' underwhelming performance on fundamental graph reasoning tasks. In this paper, we endeavor to unearth the obstacles that impede LLMs in graph reasoning, pinpointing the common practice of converting graphs into natural language descriptions (Graph2Text) as a fundamental bot tleneck. To overcome this impediment, we introduce GraphLLM, a pioneering end-to-end approach that synergistically integrates graph learning models with LLMs through a novel Dynamic Task Configuration System. This system employs a Hierarchical Graph Processing Pipeline that combines Local Structure Analyzers for node-level features with Global Pattern Synthesizers for graph level understanding, enabling scalable processing of large-scale graph data. Our empirical evaluations across four fundamental graph reasoning tasks validate the effectiveness of GraphLLM. The results exhibit a substantial average accuracy enhancement of 54.44%, alongside a noteworthy context reduction of 96.45% across various graph reasoning tasks, demonstrating significant potential for Big Data graph analytics.",
+  "crossref": {
+   "cr_title": "GraphLLM: Boosting Graph Reasoning Ability of Large Language Model",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-4",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "selected",
+  "theme": "Time series & streaming",
+  "ml_methods": "transformer for multivariate time series classification",
+  "bd_context": "high-volume sensor/time-series data",
+  "doi": "10.1109/tbdata.2025.3594294",
+  "title": "Knowledge Aggregation Transformer Network for Multivariate Time Series Classification",
+  "date": "2025-07-31",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "green",
+  "cited_by": 27,
+  "authors": [
+   "Zhiwen Xiao",
+   "Huanlai Xing",
+   "Rong Qu",
+   "Hui Li",
+   "Huagang Tong",
+   "Shouxi Luo"
+  ],
+  "biblio": {
+   "volume": "11",
+   "issue": "6",
+   "first_page": "3413",
+   "last_page": "3429"
+  },
+  "abstract": "Over the years, various sophisticated deep learning algorithms have surfaced for multivariate time series classification (MTSC), notably the dual-network-based model. This model comprises two parallel networks tailored to time series data: one for local feature extraction and the other for global relation extraction. However, effectively integrating these dual networks poses a significant challenge. To address this, we propose a knowledge aggregation transformer network (KATN) for MTSC. KATN, composed of four aggregation transformer blocks, extracts abundant regularizations and connections hidden within the data. Each block incorporates a modified residual network (MResNet) for local feature extraction and a multi-head attention network for global relation extraction. Initially, the block merges MResNet's output feature with that of the multi-head attention network through an additive operation. Subsequently, it aligns features with a fully connected (i.e., dense) layer and activates neural units using the Gaussian error linear unit function. This strategic feature aggregation allows for capturing long-range dependencies among multiple variables in multivariate time series data. Experimental results demonstrate that KATN significantly outperforms 6 state-of-the-art transformer variants, achieving a ‘win’/‘tie’/‘lose’ record of 9/6/15 and securing the lowest AVG_rank score. Furthermore, when evaluated against 18 existing MTSC algorithms across 13 UEA datasets, KATN consistently delivers superior performance, attaining the lowest AVG_rank score among all compared methods.",
+  "crossref": {
+   "cr_title": "Knowledge Aggregation Transformer Network for Multivariate Time Series Classification",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-5",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "selected",
+  "theme": "Security & anomaly detection",
+  "ml_methods": "statistical + ML anomaly detection",
+  "bd_context": "data streams (velocity)",
+  "doi": "10.1109/tbdata.2026.3679567",
+  "title": "Enhanced Approaches for Anomaly Detection in Streaming Data: Coupling Gaussian Distributions With Space Trees and Adaptive AutoEncoders",
+  "date": "2026-03-31",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Ercan Gunbilek",
+   "Züleyha Akusta Dağdevıren",
+   "Hasan Bulut"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "4",
+   "first_page": "1318",
+   "last_page": "1331"
+  },
+  "abstract": "Processing, analyzing and continuously monitoring big data streams in real time is crucial for the security and efficiency of organizations and individuals. While machine learning and deep learning have greatly improved anomaly detection, they also have drawbacks, such as reliance on offline data and poor performance, especially with scarce or fluctuating data. To address this problem, we propose two enhanced methods for anomaly detection in streaming data: Gaussian Space Trees (GSTrees) and the Gaussian Weighted Adwin AutoEncoder (GWAAE). The effectiveness of these methods was evaluated on real datasets (ECG5000, Credit Card Fraud Detection, SMTP) processed as streaming data. For the ECG5000 dataset, GSTrees performed excellently on all metrics, consistently achieving over 94%, while GWAAE excelled with an ROC-AUC of over 89% and over 84% on all other metrics. For the SMTP dataset, the ROC-AUC of both proposed methods is above 80%. GSTrees and GWAAE successfully identified anomalies with a recall of over 82% and a ROC-AUC of over 94% and maintained this success with remarkably low false negative and false positive rates in the Credit Card Fraud Detection dataset. These results emphasize the robustness and applicability of GSTrees and GWAAE for real-time anomaly detection in dynamic environments.",
+  "crossref": {
+   "cr_title": "Enhanced Approaches for Anomaly Detection in Streaming Data: Coupling Gaussian Distributions With Space Trees and Adaptive AutoEncoders",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-1",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "selected",
+  "theme": "Security & anomaly detection",
+  "ml_methods": "graph reduction + learning, explainable malware detection",
+  "bd_context": "large malware corpora",
+  "doi": "10.1016/j.bdr.2025.100555",
+  "title": "Explainable malware detection through integrated graph reduction and learning techniques",
+  "date": "2025-08-01",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 12,
+  "authors": [
+   "Hesamodin Mohammadian",
+   "Griffin Higgins",
+   "Samuel Ansong",
+   "Roozbeh Razavi‐Far",
+   "Ali A. Ghorbani"
+  ],
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100555",
+   "last_page": "100555"
+  },
+  "abstract": "Recently, Control Flow Graphs and Function Call Graphs have gain attention in malware detection task due to their ability in representation the complex structural and functional behavior of programs. To better utilize these representations in malware detection and improve the detection performance, they have been paired with Graph Neural Networks (GNNs). However, the sheer size and complexity of these graph representation poses a significant challenge for researchers. At the same time, a simple binary classification provided by the GNN models is insufficient for malware analysts. To address these challenges, this paper integrates novel graph reduction techniques and GNN explainability in to a malware detection framework to enhance both efficiency and interpretability. Through our extensive evolution, we demonstrate that the proposed graph reduction technique significantly reduces the size and complexity of the input graphs, while maintaining the detection performance. Furthermore, the extracted important subgraphs using the GNNExplainer, provide better insights about the model's decision and help security experts with their further analysis.",
+  "crossref": {
+   "cr_title": "Explainable malware detection through integrated graph reduction and learning techniques",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-2",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "selected",
+  "theme": "Federated & privacy-preserving learning",
+  "ml_methods": "federated learning training-cost analysis",
+  "bd_context": "distributed/edge training",
+  "doi": "10.1016/j.bdr.2025.100510",
+  "title": "Efficient training: Federated learning cost analysis",
+  "date": "2025-02-20",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 9,
+  "authors": [
+   "Rafael Teixeira",
+   "Leonardo Almeida",
+   "Mário Antunes",
+   "Diogo Gomes",
+   "Rui L. Aguiar"
+  ],
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100510",
+   "last_page": "100510"
+  },
+  "abstract": "With the rapid development of 6G, Artificial Intelligence (AI) is expected to play a pivotal role in network management, resource optimization, and intrusion detection. However, deploying AI models in 6G networks faces several challenges, such as the lack of dedicated hardware for AI tasks and the need to protect user privacy. To address these challenges, Federated Learning (FL) emerges as a promising solution for distributed AI training without the need to move data from users' devices. This paper investigates the performance and costs of different FL approaches regarding training time, communication overhead, and energy consumption. The results show that FL can significantly accelerate the training process while reducing the data transferred across the network. However, the effectiveness of FL depends on the specific FL approach and the network conditions.",
+  "crossref": {
+   "cr_title": "Efficient training: Federated learning cost analysis",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-3",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "selected",
+  "theme": "Platforms & infrastructure",
+  "ml_methods": "fraud detection ML on Spark",
+  "bd_context": "massive datasets; Spark cluster",
+  "doi": "10.1016/j.bdr.2026.100590",
+  "title": "Opinion fraud detection on massive datasets by spark",
+  "date": "2026-01-21",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Shahab Ghodsi",
+   "Ali Moeini"
+  ],
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100590",
+   "last_page": "100590"
+  },
+  "abstract": "",
+  "crossref": {
+   "cr_title": "Opinion fraud detection on massive datasets by spark",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-4",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "selected",
+  "theme": "Applications & domains",
+  "ml_methods": "heterogeneous graph-based risk assessment",
+  "bd_context": "company big data (explicit in title)",
+  "doi": "10.1016/j.bdr.2026.100620",
+  "title": "Heterogeneous Graph-based Risk Assessment for Internet Financial Companies with Company Big Data",
+  "date": "2026-06-02",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "green",
+  "cited_by": 0,
+  "authors": [
+   "Qigang Liu",
+   "Yuxin Qiu",
+   "Yuhang Jia",
+   "Yinfan Wang",
+   "Maoguo Wu"
+  ],
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100620",
+   "last_page": "100620"
+  },
+  "abstract": "",
+  "crossref": {
+   "cr_title": "Heterogeneous Graph-based Risk Assessment for Internet Financial Companies with Company Big Data",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-5",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "selected",
+  "theme": "Scalable & interpretable ML",
+  "ml_methods": "fast spectral embedding + random Fourier features regression",
+  "bd_context": "large-scale data",
+  "doi": "10.1016/j.bdr.2026.100589",
+  "title": "Large-scale least squares regression based on fast spectral embedding and random Fourier feature mapping",
+  "date": "2026-01-20",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Xingyu Li",
+   "Jinglei Liu"
+  ],
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100589",
+   "last_page": "100589"
+  },
+  "abstract": "",
+  "crossref": {
+   "cr_title": "Large-scale least squares regression based on fast spectral embedding and random Fourier feature mapping",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-1",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "selected",
+  "theme": "Platforms & infrastructure",
+  "ml_methods": "multi-domain BD analytics survey (IoT, social, NLP, security)",
+  "bd_context": "IoT/social-media/NLP/security data",
+  "doi": "10.1186/s40537-025-01192-9",
+  "title": "Big Data Analytics in IoT, social media, NLP, and information security: trends, challenges, and applications",
+  "date": "2025-06-17",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 18,
+  "authors": [
+   "Kamal Taha"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "This paper presents a comprehensive, domain-specific survey and experimental evaluation of machine learning techniques for Big Data Analytics across four critical domains: IoT, Social Media, Natural Language Processing (NLP), and Information Security. A novel taxonomic framework is introduced to classify and analyze the suitability of algorithms based on empirical, experimental, and computational perspectives. The study integrates large-scale experimental benchmarking of key techniques—including CNN, XGBoost, Self-Supervised Learning (SSL), Graph Neural Networks (GNN), ELM, KNN, and Decision Trees—using real-world and synthetic datasets, and evaluates them across five performance metrics: accuracy, F1-score, precision, recall, and computational time. Key findings reveal that: (1) GNN and Self-Supervised Learning (SSL) are top performers in terms of predictive performance and efficiency in domains such as IoT and Social Media, (2) XGBoost and CNN offer superior accuracy and robustness across structured and unstructured data tasks, though CNN incurs higher computational costs, (3) ELM and Decision Trees are better suited for lightweight or interpretable applications, and (4) KNN generally underperforms in scalability and predictive strength for large-scale tasks. The taxonomy and experiments collectively demonstrate the need for context-aware algorithm selection, particularly for real-time and scalable Big Data applications. By aligning algorithmic properties with domain-specific challenges, this study offers actionable insights for researchers and practitioners seeking effective analytic strategies in the evolving landscape of Big Data.",
+  "crossref": {
+   "cr_title": "Big Data Analytics in IoT, social media, NLP, and information security: trends, challenges, and applications",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-2",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "selected",
+  "theme": "Healthcare applications",
+  "ml_methods": "adaptive privacy-preserving collaborative analytics",
+  "bd_context": "healthcare big data",
+  "doi": "10.1186/s40537-025-01169-8",
+  "title": "A privacy-enhanced framework for collaborative Big Data analysis in healthcare using adaptive federated learning aggregation",
+  "date": "2025-05-06",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 19,
+  "authors": [
+   "Rahul Haripriya",
+   "Nilay Khare",
+   "Manish Pandey",
+   "Sreemoyee Biswas"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "The exponential growth of Big Data in healthcare, particularly in AI-driven medical diagnostics, has raised critical concerns about data privacy in medical image classification. With over 30% of healthcare organizations worldwide experiencing data breaches in the past year, the demand for secure, privacy-preserving solutions is more urgent than ever. This study explores a federated learning approach combined with transfer learning to enhance privacy in medical image classification using ResNet and VGG16 architectures. Pre-trained on ImageNet and fine tuned on three specialized medical datasets TB chest X-rays, brain tumor MRI scans, and diabetic retinopathy images these models were deployed in a simulated multi-center healthcare environment. A major contribution of this work is the development of an adaptive aggregation methodology, which dynamically selects between Federated Averaging (FedAvg) and Federated Stochastic Gradient Descent (FedSGD) based on real-time data divergence observed across participating clients. Unlike conventional static aggregation methods, which uniformly apply the same update rule regardless of data heterogeneity, the proposed adaptive approach monitors gradients and data distributions at each communication round and selects the most suitable aggregation method dynamically. This adaptive strategy not only improves convergence but also optimizes resource utilization, making it suitable for multi-center healthcare networks where data heterogeneity is prevalent. The novelty of the proposed adaptive aggregation lies in its ability to maintain robust performance while minimizing computational costs, making it feasible for large-scale healthcare AI networks, such as hospital federated learning systems. Comparative analysis with baseline FL models, including FedAvg and FedSGD, shows that the adaptive aggregation method achieves comparable accuracy (up to 96.3%) while significantly reducing execution time by approximately 20% and maintaining a competitive F1-score. Additionally, the integration of privacy-preserving techniques ensures that sensitive patient data remains secure throughout the learning process. By integrating transfer learning with federated learning, this study presents a scalable and privacy-preserving framework for Big Data analytics in healthcare. The findings underscore the potential of adaptive aggregation to enhance federated learning efficiency across heterogeneous datasets, enabling medical institutions to develop high-accuracy diagnostic models without direct access to patient data.",
+  "crossref": {
+   "cr_title": "A privacy-enhanced framework for collaborative Big Data analysis in healthcare using adaptive federated learning aggregation",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-3",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "selected",
+  "theme": "Applications & domains",
+  "ml_methods": "GAN + dynamic prompt engineering, multimodal deep learning",
+  "bd_context": "multimodal big data (explicit in title)",
+  "doi": "10.1186/s40537-025-01264-w",
+  "title": "Advancing multimodal emotion recognition in big data through prompt engineering and deep adaptive learning",
+  "date": "2025-08-26",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 22,
+  "authors": [
+   "Abeer A. Wafa",
+   "Mai M. Eldefrawi",
+   "Marwa Salah Farhan"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Emotion recognition in dynamic and real-world environments presents significant challenges due to the complexity and variability of multimodal data. This paper introduces an innovative Multimodal Emotion Recognition (MER) framework that seamlessly integrates text, audio, video, and motion data using advanced machine learning techniques. To address challenges such as class imbalance, the framework employs Generative Adversarial Networks (GANs) for synthetic sample generation and Dynamic Prompt Engineering (DPE) for enhanced feature extraction across modalities. Text features are processed with Mistral-7B, audio with HuBERT, video with TimeSformer and LLaVA, and motion with MediaPipe Pose. The system efficiently fuses these inputs using Hierarchical Attention-based Graph Neural Networks (HAN-GNN) and Cross-Modality Transformer Fusion (XMTF), further improved by contrastive learning with Prototypical Networks to enhance class separation. The framework demonstrates exceptional performance, achieving training accuracies of 99.92% on IEMOCAP and 99.95% on MELD, with testing accuracies of 99.82% and 99.81%, respectively. High precision, recall, and specificity further highlight the robustness of the model. While trained on batch-processed datasets, the framework has been optimized for real-time applications, demonstrating computational efficiency with training completed in just 5 min and inference times under 0.4 ms per sample. This makes the system well-suited for real-time emotion recognition tasks despite being trained on batch data. It also generalizes effectively to noisy and multilingual settings, achieving strong results on SAVEE and CMU-MOSEAS, thereby confirming its resilience in diverse real-world scenarios. This research advances the field of MER, offering a scalable and efficient solution for affective computing. The findings emphasize the importance of refining these systems for real-world applications, particularly in complex, multimodal big data environments.",
+  "crossref": {
+   "cr_title": "Advancing multimodal emotion recognition in big data through prompt engineering and deep adaptive learning",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-4",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "selected",
+  "theme": "Healthcare + fog/cloud streaming",
+  "ml_methods": "temporal convolutional network (TCN) multi-step forecasting",
+  "bd_context": "fog/cloud streaming pipeline with Apache Spark (explicit in title)",
+  "doi": "10.1186/s40537-025-01207-5",
+  "title": "Cloud based real-time multivariate multi-step prediction of systolic blood pressure and heart rate using temporal convolutional network and Apache Spark",
+  "date": "2025-07-16",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 8,
+  "authors": [
+   "Hager Saleh",
+   "Nora El-Rashidy",
+   "Sherif Mostafa",
+   "Abdulaziz AlMohimeed",
+   "Shaker El–Sappagh",
+   "Zainab H. Ali"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Systolic blood pressure (SBP) and heart rate (HR) are critical for proactive clinical decision-making, particularly in intensive care environments. Early identification of abnormalities in these vital signs helps patients receive appropriate treatment and reduce associated health degradation. This study presents FCMS-iDMM, a fog/cloud-based real-time forecasting system that simultaneously predicts future SBP and HR values using deep learning models integrated with big data streaming platforms. The research involves two main phases: offline model and online forecasting pipeline optimization. During the offline model development, we explore the single-task and multi-task modeling. Different optimization steps have been explored. The single task includes forecasting HR and SBP in multi-step heads using Temporal Convolutional Networks (TCN), Long Short-Term Memory (LSTM), and Gated Recurrent Unit (GRU). Multi-task comprises forecasting HR and SBP in diverse multi-step heads as puerperal employing TCN, sequence-to-sequence (seq2seq), and Autoencoder models using LSTM and GRU. Extensive results are accomplished by the Medical Information Mart for Intensive Care III (MIMIC III) to assess the performance of the proposed multi-task DL model. Multi-task learning (MTL) models based on Temporal Convolutional Networks (TCNs) achieved superior performance. In forecasting 8 min, TCN recorded the best performance compared to other models with 1.5428 RMSE, 1.0871 MAE, and 1.269 MAPE for HR and 4.1446 RMSE, 2.4323 MAE and 2.5237 MAPE for SBP in multi-task. Simulated sensors, Apache Kafka, and Apache Spark are used to develop the real-time HR and SBP online forecasting pipeline. Experimental validation using the MIMIC-III database confirmed that multi-task models outperform single-task approaches across multiple forecasting horizons. The proposed system offers a scalable and efficient solution for real-time monitoring of vital signs, paving the way for predictive, patient-centered healthcare systems.",
+  "crossref": {
+   "cr_title": "Cloud based real-time multivariate multi-step prediction of systolic blood pressure and heart rate using temporal convolutional network and Apache Spark",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-5",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "selected",
+  "theme": "Security & anomaly detection",
+  "ml_methods": "GNN anomaly detection",
+  "bd_context": "network traffic data",
+  "doi": "10.1186/s40537-025-01149-y",
+  "title": "Graph neural network approach with spatial structure to anomaly detection of network data",
+  "date": "2025-04-26",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 19,
+  "authors": [
+   "Han Zhang",
+   "Yun Zhou",
+   "Huahu Xu",
+   "Jiangang Shi",
+   "Xinhua Lin",
+   "Yiqin Gao"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Network anomaly detection using graph-structured data is a critical task in data mining and cybersecurity, involving the identification of unusual patterns within a network by analyzing its structure as a graph. However, network data often exhibit high dimensionality and sparsity, complicating the detection of meaningful rarity anomalous patterns. Accurate modeling the distance between the nodes in spatial structure is particularly challenging. Additionally, the scarcity of labelled anomaly data for training supervised models can hinder the accuracy and effectiveness of anomaly detection methods. To address these challenges, we propose a novel method that enhances distance feature extraction by embedding graph data into hyperbolic space, which naturally captures hierarchical and relational structures in graphs. This method has been validated both mathematically and experimentally. Specifically, a gain factor derived from commonality metrics is introduced, adhering to conformal properties and preserving relative distances in space. The gain factor enhances the precision of edge weight features used for graph construction, ensuring that relative distances between points are accurately preserved in the embedding space. Data augmentation techniques are employed to address the issue of the scarcity of labelled data. Results demonstrate that optimizing edge weights yields greater improvements in anomaly detection performance compared to optimizing node attributes, achieving twice the contribution. Optimizing edge weights is more effective in capturing interaction anomalies between nodes, whereas focusing solely on node attributes may overlook subtle irregularities at the relational level. Furthermore, findings suggest that the proposed approach is suitable for complex anomaly detection environments due to its robustness and scalability.",
+  "crossref": {
+   "cr_title": "Graph neural network approach with spatial structure to anomaly detection of network data",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-1",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "selected",
+  "theme": "Agentic AI & RAG",
+  "ml_methods": "agentic AI architectures/applications (survey)",
+  "bd_context": "large-scale generative systems",
+  "doi": "10.1007/s10462-025-11422-4",
+  "title": "Agentic AI: a comprehensive survey of architectures, applications, and future directions",
+  "date": "2025-11-14",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 134,
+  "authors": [
+   "Mohamad Abou Ali",
+   "Fadi Dornaika",
+   "Jinan Charafeddine"
+  ],
+  "biblio": {
+   "volume": "59",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Agentic AI represents a transformative shift in artificial intelligence, but its rapid advancement has led to a fragmented understanding, often conflating modern neural systems with outdated symbolic models—a practice known as conceptual retrofitting . This survey cuts through this confusion by introducing a novel dual-paradigm framework that categorizes agentic systems into two distinct lineages: the symbolic/classical (relying on algorithmic planning and persistent state) and the neural/generative (leveraging stochastic generation and prompt-driven orchestration). Through a systematic PRISMA-based review of 90 studies (2018–2025), we provide a comprehensive analysis structured around this framework across three dimensions: (1) the theoretical foundations and architectural principles defining each paradigm; (2) domain-specific implementations in healthcare, finance, and robotics, demonstrating how application constraints dictate paradigm selection; and (3) paradigm-specific ethical and governance challenges, revealing divergent risks and mitigation strategies. Our analysis reveals that the choice of paradigm is strategic: symbolic systems dominate safety-critical domains (e.g., healthcare), while neural systems prevail in adaptive, data-rich environments (e.g., finance). Furthermore, we identify critical research gaps, including a significant deficit in governance models for symbolic systems and a pressing need for hybrid neuro-symbolic architectures. The findings culminate in a strategic roadmap arguing that the future of Agentic AI lies not in the dominance of one paradigm, but in their intentional integration to create systems that are both adaptable and reliable . This work provides the essential conceptual toolkit to guide future research, development, and policy toward robust and trustworthy hybrid intelligent systems.",
+  "crossref": {
+   "cr_title": "Agentic AI: a comprehensive survey of architectures, applications, and future directions",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-2",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "selected",
+  "theme": "Security & anomaly detection",
+  "ml_methods": "AI anomaly detection for telecom (survey)",
+  "bd_context": "telecom network big data",
+  "doi": "10.1007/s10462-025-11108-x",
+  "title": "Artificial intelligence advances in anomaly detection for telecom networks",
+  "date": "2025-01-25",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 86,
+  "authors": [
+   "Enerst Edozie",
+   "Aliyu Nuhu Shuaibu",
+   "Bashir Olaniyi Sadiq",
+   "Ukagwu Kelechi John"
+  ],
+  "biblio": {
+   "volume": "58",
+   "issue": "4",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Telecommunication networks are becoming increasingly dynamic and complex due to the massive amounts of data they process. As a result, detecting abnormal events within these networks is essential for maintaining security and ensuring seamless operation. Traditional methods of anomaly detection, which rely on rule-based systems, are no longer effective in today’s fast-evolving telecom landscape. Thus, making AI useful in addressing these shortcomings. This review critically examines the role of Artificial Intelligence (AI), particularly deep learning, in modern anomaly detection systems for telecom networks. It explores the evolution from early strategies to current AI-driven approaches, discussing the challenges, the implementation of machine learning algorithms, and practical case studies. Additionally, emerging AI technologies such as Generative Adversarial Networks (GANs) and Reinforcement Learning (RL) are highlighted for their potential to enhance anomaly detection. This review provides AI’s transformative impact on telecom anomaly detection, addressing challenges while leveraging 5G/6G, edge computing, and the Internet of Things (IoT). It recommends hybrid models, advanced data preprocessing, and self-adaptive systems to enhance robustness and reliability, enabling telecom operators to proactively manage anomalies and optimize performance in a data driven environment.",
+  "crossref": {
+   "cr_title": "Artificial intelligence advances in anomaly detection for telecom networks",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-3",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "selected",
+  "theme": "LLMs & foundation models",
+  "ml_methods": "classical ML to foundation models, multimodal (review)",
+  "bd_context": "multimodal big data",
+  "doi": "10.1007/s10462-026-11522-9",
+  "title": "From classical machine learning to emerging foundation models: review on multimodal data integration for cancer research",
+  "date": "2026-02-21",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 16,
+  "authors": [
+   "Amgad Muneer",
+   "Muhammad Waqas",
+   "Maliazurina B. Saad",
+   "Eman Showkatian",
+   "Rukhmini Bandyopadhyay",
+   "Hui Xu"
+  ],
+  "biblio": {
+   "volume": "59",
+   "issue": "4",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Cancer research is increasingly driven by the integration of diverse data modalities, spanning from genomics and proteomics to imaging and clinical factors. However, extracting actionable insights from these vast and heterogeneous datasets remains a key challenge. The rise of foundation models (FMs) large deep-learning models pretrained on extensive amounts of data serving as a backbone for a wide range of downstream tasks—offers new avenues for discovering biomarkers, improving diagnosis, and personalizing treatment. This paper presents a comprehensive review of widely adopted integration strategies of multimodal data to assist advance the computational approaches for data-driven discoveries in oncology. We examine emerging trends in machine learning (ML) and deep learning (DL), including methodological frameworks, validation protocols, and open-source resources targeting cancer subtype classification, biomarker discovery, treatment guidance, and outcome prediction. This study also comprehensively covers the shift from traditional ML to FMs for multimodal integration. We present a holistic view of recent FMs advancements and challenges faced during the integration of multi-omics with advanced imaging data. We identify state-of-the-art FMs, publicly available multi-modal repositories, and advanced tools and methods for data integration. We argue that current state-of-the-art integration methods provide the essential groundwork for developing the next generation of large-scale, pre-trained models poised to further revolutionize oncology. To the best of our knowledge, this is the first review to systematically map the transition from conventional ML to advanced FM for multimodal data integration in oncology, while also framing these developments as foundational for the forthcoming era of large-scale AI models in cancer research. The GitHub repo of this project available at https://github.com/WuLabMDA/Medical-Foundation-Models .",
+  "crossref": {
+   "cr_title": "From classical machine learning to emerging foundation models: review on multimodal data integration for cancer research",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-4",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "selected",
+  "theme": "Data quality & governance",
+  "ml_methods": "generative AI synthetic data (review)",
+  "bd_context": "healthcare data scarcity/privacy",
+  "doi": "10.1007/s10462-025-11440-2",
+  "title": "Review of generative AI for synthetic data generation: a healthcare perspective",
+  "date": "2025-12-10",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 7,
+  "authors": [
+   "Hafiz Muhammad Waseem",
+   "Saif ul Islam",
+   "Nicholas Matragkas",
+   "Gregory Epiphaniou",
+   "Theodoros N. Arvanitis",
+   "Carsten Maple"
+  ],
+  "biblio": {
+   "volume": "59",
+   "issue": "2",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Generative AI has emerged as a transformative technology in healthcare, enabling the generation of high-fidelity synthetic data for applications such as medical imaging, electronic health records, biomedical signal processing, and drug discovery. The increasing reliance on machine learning in healthcare necessitates large-scale, high-quality datasets, yet real-world data acquisition is often constrained by privacy regulations, heterogeneity, and limited accessibility. Generative AI models provide a viable solution by generating realistic and diverse synthetic datasets while preserving patient confidentiality. Unlike prior reviews that primarily focus on specific model classes or applications, this study fills a significant research gap by offering a unified, comparative evaluation of diverse generative models, including Generative Adversarial Networks, Variational Autoencoders, Transformers, and Diffusion Models, as well as their adaptations for privacy-preserving Federated Learning environments. Each model class is examined in terms of its variants, underlying methodologies, performance in healthcare applications, strengths, limitations, and computational feasibility. The study also investigates practical considerations for deploying generative AI in clinical settings, including challenges related to training stability, bias mitigation, model interpretability, and regulatory compliance. The insights from this review provide guidance for researchers and healthcare practitioners in selecting and optimizing generative AI models for medical applications, laying the foundation for future advancements in AI-driven healthcare solutions.",
+  "crossref": {
+   "cr_title": "Review of generative AI for synthetic data generation: a healthcare perspective",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-5",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "selected",
+  "theme": "Data quality & governance",
+  "ml_methods": "deep multivariate TS models + reproducibility audit",
+  "bd_context": "multivariate time series at scale",
+  "doi": "10.1007/s10462-026-11674-8",
+  "title": "A survey of deep multivariate time-series models with an empirical reproducibility audit",
+  "date": "2026-08-09",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Vaishnavi Vats",
+   "Huisu Kim",
+   "Eduardo Linares",
+   "Young‐Kyoon Suh"
+  ],
+  "biblio": {
+   "volume": null,
+   "issue": null,
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Multivariate time series (MTS) analysis is increasingly important for extracting insights from complex, interdependent temporal data in domains such as healthcare, finance, and industrial monitoring. Recent advances in deep learning have significantly improved MTS modeling; yet, the rapidly expanding literature remains fragmented across tasks, architectures, and evaluation practices. This survey concentrates on deep learning-centric approaches in MTS research across seven key tasks: classification, clustering, forecasting, anomaly detection, imputation, representation learning, and transfer learning. To organize the field, we introduce a multi-dimensional taxonomy that categorizes methods along three complementary axes: (i) modeling and learning paradigms (e.g., Transformers, self-supervised contrastive learning, generative models, and emerging LLM-based approaches), (ii) downstream analytical objectives, and (iii) deployment-oriented capabilities such as scalability, robustness to irregular sampling and distribution shifts, interpretability, and transferability. Beyond conceptual synthesis, we conduct a targeted reproducibility audit by re-evaluating representative models using public codebases under controlled experimental conditions. Our findings show that while broad performance trends are often reproducible, exact numerical results can vary across models, datasets, and protocols, particularly when preprocessing or seed-level details are underspecified. Lastly, we identify key challenges, including high dimensionality, sparsity, non-stationarity, and concept drift, and outline seven research directions toward more scalable, reliable, and interpretable MTS systems.",
+  "crossref": {
+   "cr_title": "A survey of deep multivariate time-series models with an empirical reproducibility audit",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-A1",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "BD-driven vehicle perception review",
+  "bd_context": "autonomous-driving sensor data",
+  "doi": "10.1109/tbdata.2025.3527208",
+  "title": "Big Data-Driven Advancements and Future Directions in Vehicle Perception Technologies: From Autonomous Driving to Modular Buses",
+  "date": "2025-01-08",
+  "year": "2025",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 18,
+  "authors": [
+   "Hongyi Lin",
+   "Yang Liu",
+   "Liang Wang",
+   "Xiaobo Qu"
+  ],
+  "biblio": {
+   "volume": "11",
+   "issue": "3",
+   "first_page": "1568",
+   "last_page": "1587"
+  },
+  "abstract": "The rapid development of big data and artificial intelligence (AI) is revolutionizing the automotive and transportation industries, leading to the creation of the Autonomous Modular Bus (AMB). Designed to address the key challenges of modern public transportation systems, the AMB adopts a modular dynamic assembly approach. However, existing research on the AMB predominantly focuses on operational aspects, whereas in-transit docking remains the primary obstacle to its commercial deployment. This challenge stems from the fact that current perception accuracy in autonomous vehicles is limited to the decimeter level, with insufficient capability to manage adverse weather and complex traffic conditions. To enable AMBs to achieve full-scenario autonomous driving capabilities, this paper reviews current perception technologies from three perspectives: single-vehicle single-sensor perception, multi-sensor fusion perception, and cooperative perception. It examines the characteristics of existing perception solutions and evaluates their applicability to AMB-specific requirements. Furthermore, considering the unique challenges of in-transit docking, this paper identifies and proposes four future research directions for advancing AMB perception systems as well as general autonomous driving technologies.",
+  "crossref": {
+   "cr_title": "Big Data-Driven Advancements and Future Directions in Vehicle Perception Technologies: From Autonomous Driving to Modular Buses",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-A2",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "digital-twin data management review",
+  "bd_context": "digital-twin pipelines",
+  "doi": "10.1109/tbdata.2025.3533891",
+  "title": "Digital Twin Data Management: A Comprehensive Review",
+  "date": "2025-01-27",
+  "year": "2025",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 23,
+  "authors": [
+   "Ezekiel B. Ouedraogo",
+   "Ammar Hawbani",
+   "Xingfu Wang",
+   "Zhi Liu",
+   "Liang Zhao",
+   "Mohammed A. A. Al‐qaness"
+  ],
+  "biblio": {
+   "volume": "11",
+   "issue": "5",
+   "first_page": "2224",
+   "last_page": "2243"
+  },
+  "abstract": "Digital Twins are virtual representations of physical assets and systems that rely on effective Data Management to integrate, process, and analyze diverse data sources. This article comprehensively examines Data Management challenges, architectures, techniques, and applications in the context of Digital Twins. It explores key issues such as data heterogeneity, quality assurance, scalability, security, and interoperability. The paper outlines architectural approaches like centralized, distributed, cloud-based, and blockchain solutions and Data Management techniques for modeling, integration, fusion, quality management, and visualization. Domain-specific considerations across manufacturing, smart cities, healthcare, and other sectors are discussed. Finally, open research challenges related to standards, real-time data processing, intelligent Data Management, and ethical aspects are highlighted. By synthesizing the state-of-the-art, this review serves as a valuable reference for developing robust Data Management strategies that enable Digital Twin deployments.",
+  "crossref": {
+   "cr_title": "Digital Twin Data Management: A Comprehensive Review",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-A3",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "ensemble data-stream classification",
+  "bd_context": "label-scarce streams",
+  "doi": "10.1109/tbdata.2025.3570072",
+  "title": "Ensemble Approaches for Dynamic Data Stream Classification Under Label Scarcity",
+  "date": "2025-05-14",
+  "year": "2025",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 3,
+  "authors": [
+   "Zhiwen Yu",
+   "Siyong Huang",
+   "Kaixiang Yang",
+   "Jianming Lv",
+   "C. L. Philip Chen"
+  ],
+  "biblio": {
+   "volume": "11",
+   "issue": "6",
+   "first_page": "3047",
+   "last_page": "3060"
+  },
+  "abstract": "As data continues to grow exponentially, the importance of online learning across various domains has increased significantly. However, most existing studies assume that the true class label for each incoming data point is readily available, an assumption that is often impractical. To address this issue, this paper introduces a novel algorithm called Density-based Clustering and One-Class Ensemble Active Learning (DCOE-AL). This approach constructs an ensemble model by combining a clustering algorithm with the One-Class Broad Learning System (OCBLS), which represents clusters within the feature space. Furthermore, a new active learning mechanism is developed to enable DCOE-AL to effectively handle challenges associated with concept drift and label scarcity. The proposed method is evaluated on multiple synthetic data streams that exhibit diverse types of concept drift, as well as on several real-world data streams. Comparative evaluations demonstrate that DCOE-AL achieves superior performance while requiring significantly fewer labeled samples.",
+  "crossref": {
+   "cr_title": "Ensemble Approaches for Dynamic Data Stream Classification Under Label Scarcity",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-A4",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "linearithmic graph clustering",
+  "bd_context": "big graphs",
+  "doi": "10.1109/tbdata.2025.3639917",
+  "title": "A Fast Linearithmic Graph Clustering Approach for Big Data Using Gravitational Attraction Principle",
+  "date": "2025-12-04",
+  "year": "2025",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Mohammad Maksood Akhter",
+   "Abdul Atif Khan",
+   "Rashmi Maheshwari",
+   "Sraban Kumar Mohanty"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "2",
+   "first_page": "661",
+   "last_page": "673"
+  },
+  "abstract": "With the exponential growth of Big Data in domains such as healthcare, genomics, and sensor networks, computationally efficient and effective clustering techniques have become essential for uncovering meaningful patterns. Traditional clustering methods face fundamental limitations in Big Data analysis. K-means is among the fastest known approaches, but it fails to capture non-spherical clusters. Hierarchical clustering can detect arbitrary shapes but suffers from sub-cubic complexity, while many state-of-the-art methods still incur quadratic complexity. Moreover, most existing approaches fail to capture the intrinsic structure of data. In this context, graph-based clustering has emerged as a powerful alternative due to its ability to model geometric relationships and reveal underlying structures. However, existing graph-based techniques typically incur quadratic complexity, limiting their scalability. The objective of this work is to develop a scalable graph-based clustering framework that reduces complexity while preserving clustering quality in large, noisy, and high-dimensional datasets. To achieve this, we propose a fast graph clustering framework with overall complexity$\\mathcal {O}(N \\lg N)$, where$N$denotes the number of data points. The method employs a two-stage dispersion-based partitioning to generate cohesive sub-clusters, followed by the construction of a sparse graph on sub-cluster centers to efficiently capture adjacency. Sub-clusters are then merged iteratively using a gravitational-force-inspired attraction model, enabling the discovery of coherent structures with reduced computation. Extensive experiments on 41 multi-scale datasets demonstrate that our method consistently outperforms traditional and state-of-the-art approaches, achieving average 27.33% higher clustering accuracy while reducing runtime by more than 86.64% on average. These results highlight both the innovation and the effectiveness of the proposed approach, making it highly suitable for Big Data analytics.",
+  "crossref": {
+   "cr_title": "A Fast Linearithmic Graph Clustering Approach for Big Data Using Gravitational Attraction Principle",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-A5",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "sparsity-aware reconstruction",
+  "bd_context": "large-scale datasets",
+  "doi": "10.1109/tbdata.2025.3639968",
+  "title": "SARF: Sparsity-Aware Reconstruction Framework for Large-Scale Datasets",
+  "date": "2025-12-04",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Agustin Zuniga",
+   "Huber Flores",
+   "Ngoc Thi Nguyen",
+   "Pan Hui",
+   "Sasu Tarkoma",
+   "Petteri Nurmi"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "2",
+   "first_page": "612",
+   "last_page": "624"
+  },
+  "abstract": "Large-scale datasets, particularly those collected from smart devices and Internet of Things sensors, usually exhibit significant temporal and spatial sparsity, resulting in high amounts of missing data. Unless addressed in the analysis, this sparsity can result in substantial gaps and biases as well as limit the generalizability of conclusions drawn from such data. To address this challenge in data quality, we contribute the Sparsity-Aware Reconstruction Framework (SARF) as a novel and unified data fusion and reconstruction framework that enhances data quality and addresses sparsity. SARF analyzes datasets, partitioning the data into segments with similar characteristics, and reconstructs the data in each segment individually by selecting a reconstruction technique that is tailored to the internal temporal-spatial characteristics of the dataset. Through extensive experiments on two representative datasets - mobile application measurements and IoT sensor data from low-cost air quality sensors - we demonstrate that the targeted adaptation of reconstruction strategies employed by SARF significantly enhances the quality of reconstructed data. Our results show the robustness of SARF's performance across spatiotemporal variations, outperforming current state-of-the-art methods by margins up to 68% on average (74% for compressive sensing, 53% for convolutional sparse coding, 78% for deep learning). These findings underscore SARF's potential to enhance datadriven insights across multiple domains, paving the way for more robust analyses of sparsity-affected datasets.",
+  "crossref": {
+   "cr_title": "SARF: Sparsity-Aware Reconstruction Framework for Large-Scale Datasets",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-A1",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "DNN financial time series",
+  "bd_context": "market data",
+  "doi": "10.1016/j.bdr.2025.100553",
+  "title": "Deep neural network modeling for financial time series analysis",
+  "date": "2025-06-09",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 7,
+  "authors": [
+   "Zheng Fang",
+   "Toby Cai"
+  ],
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100553",
+   "last_page": "100553"
+  },
+  "abstract": "Modeling stock returns has often relied on multivariate time series analysis, and constructing an accurate model remains a challenging goal for both market investors and academic researchers. Stock return prediction typically involves multiple variables and a combination of long-term and short-term time series patterns. In this paper, we propose a new deep learning network, named DLS-TS-Net, to model stock returns and address this challenge. We apply DLS-TS-Net in multivariate time series forecasting. The network integrates a Convolutional Neural Network (CNN), Long Short-Term Memory (LSTM) units, and Gated Recurrent Units (GRUs). DLS-TS-Net overcomes LSTM's insensitivity to linear components in stock market forecasting by incorporating a traditional autoregressive model. Experimental results demonstrate that DLS-TS-Net excels at capturing long-term trends in multivariate factors and short-term fluctuations in the stock market, outperforming traditional time series and machine learning models. Additionally, when combined with the investment strategies proposed in this paper, DLS-TS-Net shows superior performance in managing risk during extreme events",
+  "crossref": {
+   "cr_title": "Deep neural network modeling for financial time series analysis",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-A2",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "transformer recommendation",
+  "bd_context": "O*NET labor data",
+  "doi": "10.1016/j.bdr.2025.100509",
+  "title": "A novel approach for job matching and skill recommendation using transformers and the O*NET database",
+  "date": "2025-02-01",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 13,
+  "authors": [
+   "Rubén Alonso",
+   "Danilo Dessı̀",
+   "Antonello Meloni",
+   "Diego Reforgiato Recupero"
+  ],
+  "biblio": {
+   "volume": "39",
+   "issue": null,
+   "first_page": "100509",
+   "last_page": "100509"
+  },
+  "abstract": "Today we have tons of information posted on the web every day regarding job supply and demand which has heavily affected the job market. The online enrolling process has thus become efficient for applicants as it allows them to present their resumes using the Internet and, as such, simultaneously to numerous organizations. Online systems such as Monster.com, OfferZen, and LinkedIn contain millions of job offers and resumes of potential candidates leaving to companies with the hard task to face an enormous amount of data to manage to select the most suitable applicant. The task of assessing the resumes of candidates and providing automatic recommendations on which one suits a particular position best has, therefore, become essential to speed up the hiring process. Similarly, it is important to help applicants to quickly find a job appropriate to their skills and provide recommendations about what they need to master to become eligible for certain jobs. Our approach lies in this context and proposes a new method to identify skills from candidates' resumes and match resumes with job descriptions. We employed the O*NET database entities related to different skills and abilities required by different jobs; moreover, we leveraged deep learning technologies to compute the semantic similarity between O*NET entities and part of text extracted from candidates' resumes. The ultimate goal is to identify the most suitable job for a certain resume according to the information there contained. We have defined two scenarios: i) given a resume, identify the top O*NET occupations with the highest match with the resume, ii) given a candidate's resume and a set of job descriptions, identify which one of the input jobs is the most suitable for the candidate. The evaluation that has been carried out indicates that the proposed approach outperforms the baselines in the two scenarios. Finally, we provide a use case for candidates where it is possible to recommend courses with the goal to fill certain skills and make them qualified for a certain job.",
+  "crossref": {
+   "cr_title": "A novel approach for job matching and skill recommendation using transformers and the O*NET database",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-A3",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "model-driven optimization for workflows",
+  "bd_context": "cloud big-data workflows",
+  "doi": "10.1016/j.bdr.2026.100629",
+  "title": "Scalable QoS-aware cloud service composition for big data workflows: A model-driven MJAYA optimization approach",
+  "date": "2026-08-01",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Soumya Snigdha Mohapatra",
+   "Rakesh Ranjan Kumar",
+   "Abhinav Tomar"
+  ],
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100629",
+   "last_page": "100629"
+  },
+  "abstract": "",
+  "crossref": {
+   "cr_title": "Scalable QoS-aware cloud service composition for big data workflows: A model-driven MJAYA optimization approach",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-A4",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "distributed privacy model for publishing",
+  "bd_context": "big data publishing",
+  "doi": "10.1016/j.bdr.2025.100519",
+  "title": "ImDMI: Improved Distributed M-Invariance model to achieve privacy continuous big data publishing using Apache Spark",
+  "date": "2025-03-07",
+  "year": "2025",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 4,
+  "authors": [
+   "Salheddine Kabou",
+   "Laid Gasmi",
+   "Abdelbaset Kabou",
+   "Sidi Mohamed Benslimane"
+  ],
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100519",
+   "last_page": "100519"
+  },
+  "abstract": "",
+  "crossref": {
+   "cr_title": "ImDMI: Improved Distributed M-Invariance model to achieve privacy continuous big data publishing using Apache Spark",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-A5",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "quantum GAN synthetic data",
+  "bd_context": "privacy-embedded generation",
+  "doi": "10.1016/j.bdr.2026.100604",
+  "title": "Hybrid quantum GAN- integrated synthetic data generation with privacy-embedded attention framework for financial forecasting and risk analysis",
+  "date": "2026-05-09",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Ashish Kumar Chakraverti",
+   "Pavan Kumar P",
+   "Shwetav Sharad",
+   "Arunendra Singh",
+   "Murari Kumar Singh"
+  ],
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100604",
+   "last_page": "100604"
+  },
+  "abstract": "",
+  "crossref": {
+   "cr_title": "Hybrid quantum GAN- integrated synthetic data generation with privacy-embedded attention framework for financial forecasting and risk analysis",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-A1",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "DL + blockchain fraud detection",
+  "bd_context": "big-data-driven fraud",
+  "doi": "10.1186/s40537-026-01506-5",
+  "title": "A hybrid deep learning–blockchain framework for reliable fraud detection: a big data–driven approach for real-time FinTech systems",
+  "date": "2026-07-24",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 0,
+  "authors": [
+   "Saad M. Darwish",
+   "Noha A. El-Shoafy"
+  ],
+  "biblio": {
+   "volume": "13",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract The rapid growth of FinTech systems requires efficient fraud detection mechanisms capable of processing large-scale financial transactions in real time. Traditional rule-based and machine learning approaches often suffer from limited scalability, adaptability, and high false-positive rates. This paper proposes a big data–driven framework that integrates deep learning with lightweight blockchain technology designed to reduce inference complexity and computational overhead during real-time deployment . The integration is implemented by embedding a compact Gated Recurrent Unit (GRU)-based fraud detection model within the transaction processing pipeline, where each transaction is first analyzed for fraud likelihood and then recorded on a permissioned Hyperledger Fabric blockchain with cryptographic hashing and smart contract validation , ensuring that only verified transactions are immutably stored, reducing redundant re-evaluation, preventing post-detection data tampering, and enabling consistent decision synchronization across distributed nodes—capabilities not achieved by standalone deep learning or blockchain-based approaches. The blockchain layer ensures data integrity and transparency with minimal overhead, while the deep learning model captures complex transactional patterns for adaptive detection. Experimental results demonstrate that the proposed model achieves 94.1% accuracy and 89.6% F1-score, outperforming traditional machine learning methods by 8–10% in accuracy, while reducing the false positive rate to 3.2% compared to 12.5% in rule-based systems. In addition, the framework enables efficient real-time processing with a latency of 4.3 ms per transaction, significantly faster than conventional deep learning models. These results confirm the effectiveness of the proposed approach in delivering accurate, scalable, and low-latency fraud detection for FinTech systems.",
+  "crossref": {
+   "cr_title": "A hybrid deep learning–blockchain framework for reliable fraud detection: a big data–driven approach for real-time FinTech systems",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-A2",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "AI privacy preservation survey",
+  "bd_context": "IoV data",
+  "doi": "10.1186/s40537-025-01360-x",
+  "title": "Artificial Intelligence-driven privacy preservation in the internet of vehicles: a comprehensive systematic literature review",
+  "date": "2026-02-01",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 6,
+  "authors": [
+   "Arash Heidari",
+   "Seyed Hamed Rastegar",
+   "Ahmad Khonsari"
+  ],
+  "biblio": {
+   "volume": "13",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "The rapid growth of the Internet of Vehicles (IoV) and the increasing use of Connected and Autonomous Vehicles (CAVs) are causing many privacy and security problems that traditional protection methods can not handle. IoV networks have a lot of different types of data flows, distributed infrastructure, and real-time communication needs. This makes it very hard and important to protect privacy. The constant sharing of data between automobiles, roadside infrastructure, and cloud platforms makes IoV ecosystems vulnerable to attacks that try to manipulate the data, steal it, or make guesses about it. This paper seeks to deliver a systematic and thorough assessment of Artificial Intelligence (AI)-based privacy-preserving strategies in the IoV, tackling the absence of a cohesive framework in existing literature. We employ a Systematic Literature Review (SLR) to examine and classify essential methodologies, such as Federated Learning (FL), Differential Privacy (DP), Homomorphic Encryption (HE), Blockchain-enhanced AI, Adversarial Machine Learning (AML), and anomaly detection, into a six-domain taxonomy. This taxonomy provides a systematic framework for evaluating the advantages, compromises, and scaling constraints of different methodologies. The findings indicate that although AI-driven methodologies have considerable promise in protecting vehicle data, substantial obstacles remain regarding computational overhead, real-time adaptation, and scalability in high-mobility environments. Our work systematically maps existing approaches, revealing performance constraints and unresolved research gaps while delineating specific future research trajectories, including lightweight model design, hybrid privacy frameworks, and integration with emerging technologies such as edge intelligence and 6G networks. The examination of Quality of Service (QoS) and Quality of Experience (QoE) factors indicates that computational overhead (25%), scalability challenges (20%), latency issues (15%), accuracy trade-offs (15%), optimization requirements (15%), and deep learning model complexity (10%) persist as the primary impediments to the real-time, large-scale implementation of privacy-preserving AI in vehicular networks.",
+  "crossref": {
+   "cr_title": "Artificial Intelligence-driven privacy preservation in the internet of vehicles: a comprehensive systematic literature review",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-A3",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "ML intrusion-detection survey",
+  "bd_context": "network security data",
+  "doi": "10.1186/s40537-025-01323-2",
+  "title": "A systematic literature study of machine learning techniques based intrusion detection: datasets, models, challenges, and future directions",
+  "date": "2025-11-28",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 13,
+  "authors": [
+   "Hafiz Muhammad Raza Ur Rehman",
+   "Saira Liaquat",
+   "M. Junaid Gul",
+   "Muhammad Zeeshan Jhandir",
+   "Daniel Gavilanes",
+   "Manuel Masias Vergara"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "The tremendous growth of cyberspace has magnified the risk of advanced cyber-attacks, making the conventional security system deficient. An intrusion detection system (IDS) is a crucial aspect for securing the networks, and machine learning based approaches have attained significance for detecting growing threats, which is extremely essential to address the major concern of network security. This survey paper systematically reviews the machine learning-based IDS, focusing on detection models, the most used datasets, and evaluation metrics. A systematic review methodology, including defined selection criteria and a detailed analysis framework, enables clarity and reproducibility. Furthermore, the paper presents a comparative analysis of popular IDS datasets such as NSL-KDD, CICIS2017, and UNSW-NB15 and points out their limitations, including imbalance and antiquated attack methods. The key contributions are: (a) an organized taxonomy of ML-based IDS techniques, (b) a detailed comparison of datasets and related challenges, and (c) pointing out the research gaps to guide the future directions. This survey paper aims to help scholars in developing vigorous, intelligent, and convertible intrusion detection solutions.",
+  "crossref": {
+   "cr_title": "A systematic literature study of machine learning techniques based intrusion detection: datasets, models, challenges, and future directions",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-A4",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "big-data cleaning via mobile edge computing",
+  "bd_context": "edge computing",
+  "doi": "10.1186/s40537-025-01262-y",
+  "title": "BlueEdge: application design for big data cleaning processing using mobile edge computing environments",
+  "date": "2025-08-21",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 3,
+  "authors": [
+   "Nagwa Elmobark",
+   "Haitham A. El-Ghareeb",
+   "Sara Elhishi"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract With the rapid growth of the Internet of Things (IoT) and the emergence of big data, handling massive amounts of data has become a major challenge. Traditional approaches involve sending raw data to cloud data centers for cleaning, processing, and interpretation using data warehouse tools. However, this study introduces BlueEdge, a fog edge mobile application that aims to shift the cleaning and preprocessing tasks from the cloud to the edge. We compare BlueEdge with four popular data cleaning tools (WinPure, DoubleTake, WizSame, and DQGlobal) that operate within data warehouse architectures, such as Hadoop servers. The comparison considers criteria such as time consumption, resource utilization (memory and CPU), and tool performance. BlueEdge utilizes Natural Language Processing (NLP) techniques, including those from the Natural Language Toolkit (NLTK) and Python packages, to connect with a real-time database. As shown in our results, the accuracy values that BlueEdge showed ranged between 72 and 95% across 6 categories of name-based duplicate detection tasks, proving its competitive performance in mobile edge environments. The validation of the framework was done using a larger dataset of 146 error cases with statistically significant values having confidence interval of between 3.4% to 5.8. Statistical comparison indicates consistently significant changes ( p < 0.05) compared to baseline settings of four commercial tools with large effect sizes ( Cohen d: 0.89- 1.34). BlueEdge takes care of data duplication elimination services such as using different spelling and pronunciation (78.4%, CI: 73.1–83.7%), misspellings (72.0%, CI: 66.2–77.8%), name abbreviations (90.5%, CI: 86.1–94.9%), honorific prefixes (95.2%, CI: 91.8–98.6%), common nicknames (76.2%, C The reliable performance of edge-based data cleaning is verified through cross-validation analysis (81.7% ± 2.3%), the results of which prove the consistency of its activity. Additionally, BlueEdge utilizes a minimal bandwidth of only 5000 bytes per edge on mobile phones, unlike data warehouses that require 10,000–60,000 bytes on Hadoop machines. Additionally, BlueEdge is designed to reduce the time taken for data cleaning to 1 s at the data edge, unlike the standard 4–30 s it normally takes for data warehouses. The blue edge is easy to use without authorization of the mobile devices, where the application is conducted free of charge. The framework was validated through controlled experimental testing and real-world deployment at an IT services company, achieving an overall ITSQM quality score of 8.9/10 and demonstrating practical effectiveness in organizational settings. This foundation has been further enhanced with neural network-based classification approaches, which are currently under peer review.",
+  "crossref": {
+   "cr_title": "BlueEdge: application design for big data cleaning processing using mobile edge computing environments",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-A5",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "field-maturation position paper",
+  "bd_context": "cross-domain",
+  "doi": "10.1186/s40537-025-01172-z",
+  "title": "Data science, big data, and machine learning are coming of age",
+  "date": "2025-07-09",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 1,
+  "authors": [
+   "Borko Furht",
+   "Taghi M. Khoshgoftaar"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Celebrating a Decade of the Journal of Big DataIn 2014, we launched Springer's Journal of Big Data, one of the first scholarly journals dedicated to the rapidly emerging fields of data science and machine learning.Now, over a decade later, we are proud to see our journal consistently ranked among the top publications in the field, a testament to the quality and impact of the research we publish.Here are the most recent Big Data Journals Ranking for the leading journals and conferences in Big Data Publication h5-index H5 median1.",
+  "crossref": {
+   "cr_title": "Data science, big data, and machine learning are coming of age",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-A6",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "AI/ML for renewable energy systems (review)",
+  "bd_context": "energy-system big data",
+  "doi": "10.1186/s40537-025-01178-7",
+  "title": "Comprehensive review of artificial intelligence applications in renewable energy systems: current implementations and emerging trends",
+  "date": "2025-07-11",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 86,
+  "authors": [
+   "Chukwuebuka Joseph Ejiyi",
+   "Dongsheng Cai",
+   "D. A. H. Thomas",
+   "Sandra Obiora",
+   "Emmanuel Osei-Mensah",
+   "Caroline Acen"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "As the world faces pressing climate and energy challenges, Artificial Intelligence is proven as a transformative force in advancing renewable energy systems. This study reviews the current and future applications of Artificial Intelligence in renewable energy, highlighting its transformative role in enhancing the efficiency, reliability, and scalability of renewable energy systems. The study draws from over 400 recent publications, selected based on their relevance to Artificial Intelligence and renewable energy systems. We discuss the use of Artificial Intelligence techniques including machine learning, deep learning, and reinforcement learning models for optimizing energy production, forecasting demand, predictive maintenance, and managing decentralized energy systems. Emerging fields such as quantum machine learning and Artificial Intelligence-augmented reality are also considered because of their potential to transform energy infrastructures. The survey reviews significant innovations in wind and solar energy, energy storage, and smart grid technologies, focusing on how Artificial Intelligence addresses challenges like intermittency and variability. Furthermore, we discuss the importance of big data, the Internet of Things, and real-time analytics in advancing Artificial Intelligence models, along with the evolving landscape of Artificial Intelligence-driven policy and market modeling for renewable energy adoption. Real-world case studies, like Google’s collaboration with DeepMind for optimizing wind energy output and Australia’s National Electricity Market integrating Artificial Intelligence for grid stability, underscore the practical impact of Artificial Intelligence in renewable energy. This paper highlights challenges that are hindering Artificial Intelligence adoption in renewable energy systems and offers recommendations for improving the available technology to maximize Artificial Intelligence’s potential in promoting sustainable energy and addressing climate change.",
+  "crossref": {
+   "cr_title": "Comprehensive review of artificial intelligence applications in renewable energy systems: current implementations and emerging trends",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "JoBD-A7",
+  "journal_file": "JoBD",
+  "journal": "Journal Of Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "DL framework for large-scale plant disease detection",
+  "bd_context": "big data analytics (explicit in title)",
+  "doi": "10.1186/s40537-025-01265-9",
+  "title": "A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture",
+  "date": "2025-08-21",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "gold",
+  "cited_by": 14,
+  "authors": [
+   "Mahmoud Khaled Elfouly",
+   "Amr Abdelaziz",
+   "Wael H. Gomaa",
+   "Mohammed Abdalla"
+  ],
+  "biblio": {
+   "volume": "12",
+   "issue": "1",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Wheat and corn are essential crops for global food security, but wheat yellow rust and the corn northern leaf spot are significant threats. Proper assessment of the severity of the disease is the key to effective control and minimizing crop loss. Traditional methods don’t work effectively, and current deep learning models have problems like focusing too little on severity assessment, only being able to be used for a single crop or disease, and relying on small datasets, all of which make them less reliable in the real world. This paper addresses these issues. It introduces WY-CN-NASNetLarge, a deep-learning model based on the NASNetLarge architecture. The model is trained using transfer learning, fine-tuning, and several datasets, such as Yellow-Rust-19, Corn Disease and Severity (CD&S), and PlantVillage. These help the model work well in a variety of disease conditions. Data augmentation, the AdamW optimizer, dropout training, and mixed precision training enhance performance and prevent overfitting. The model has 97.33% accuracy for classifying disease severity. It is higher than ResNet152v2, InceptionResNetV2, and DenseNet201. This approach is effective and quick for identifying multiple diseases and rating their severity. It can also help manage diseases in agriculture and prevent crop loss.",
+  "crossref": {
+   "cr_title": "A deep learning-based framework for large-scale plant disease detection using big data analytics in precision agriculture",
+   "cr_journal": "Journal of Big Data",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "TBD-A6",
+  "journal_file": "IEEE_TBD",
+  "journal": "IEEE Transactions on Big Data",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "multimodal LLM for industrial time-series big data",
+  "bd_context": "industrial big data (explicit in title)",
+  "doi": "10.1109/tbdata.2026.3695338",
+  "title": "TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis",
+  "date": "2026-01-01",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Haiteng Wang",
+   "Yugong Li",
+   "Y C Zhu",
+   "Jingheng Yan",
+   "Lei Ren",
+   "Laurence T. Yang"
+  ],
+  "biblio": {
+   "volume": null,
+   "issue": null,
+   "first_page": "1",
+   "last_page": "14"
+  },
+  "abstract": "Accurate analysis of industrial time-series big data is critical for the Prognostics and Health Management (PHM) of industrial equipment. While recent advancements in Large Language Models (LLMs) have shown promise in time-series analysis, existing methods typically focus on single-modality adaptations, failing to exploit the complementary nature of temporal signals, frequency-domain visual representations, and textual knowledge information. In this paper, we propose TS-MLLM, a unified multi-modal large language model framework that is the first to jointly model industrial temporal signals, frequency-domain images, and textual domain knowledge. Specifically, we first develop an Industrial time-series Patch Modeling branch to capture long-range temporal dynamics. To integrate cross-modal priors, we introduce a Spectrum-aware Vision-Language Model Adaptation (SVLMA) mechanism that enables the model to internalize frequency-domain patterns and semantic context. Furthermore, a Temporal-centric Multi-modal Attention Fusion (TMAF) mechanism is designed to actively retrieve relevant visual and textual cues using temporal features as queries, ensuring deep cross-modal alignment. Extensive experiments on multiple industrial benchmarks demonstrate that TS-MLLM significantly outperforms state-of-the-art methods, particularly in few-shot and complex scenarios. The results validate our framework's superior robustness, efficiency, and generalization capabilities for industrial time-series prediction.",
+  "crossref": {
+   "cr_title": "TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis",
+   "cr_journal": "IEEE Transactions on Big Data",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "BDR-A6",
+  "journal_file": "BDR",
+  "journal": "Big Data Research",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "differential privacy optimization",
+  "bd_context": "big data publishing",
+  "doi": "10.1016/j.bdr.2026.100634",
+  "title": "Optimization of differential privacy mechanism for big data privacy protection",
+  "date": "2026-08-01",
+  "year": "2026",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Jinhua Ye",
+   "Yuhan Sun",
+   "Suipeng Hou",
+   "Jie Zhao"
+  ],
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100634",
+   "last_page": "100634"
+  },
+  "abstract": "",
+  "crossref": {
+   "cr_title": "Optimization of differential privacy mechanism for big data privacy protection",
+   "cr_journal": "Big Data Research",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A1",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "agentic AI + cloud scalability",
+  "bd_context": "cloud-scale generative systems",
+  "doi": "10.1007/s10462-025-11458-6",
+  "title": "Agentic AI systems in the age of generative models: architectures, cloud scalability, and real-world applications",
+  "date": "2026-01-12",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 23,
+  "authors": [
+   "Lingareddy Alva",
+   "Bishwajeet Kumar Pandey"
+  ],
+  "biblio": {
+   "volume": "59",
+   "issue": "3",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "This research proposes a holistic agentic Artificial Intelligence framework that seeks to solve the palpable requirement of autonomy, versatility, and world-scale generative Artificial Intelligence systems. When framing the concept of an agentic Artificial Intelligence as a paradigm shift where Large Language Models are relatively reactive, tool-augmented to a proactive, modular agent that pursues goals in the long term, the research discusses how large language models are becoming an architectural mandate. The proposed research uses a skillful literature synthesis and develops a concept and technical framework that integrates perception, memory, planning, execution, and communication modules. In contrast to current frameworks like AutoGPT and ReAct, where the deep memory, explainability, and certain control of scalability are often lacking, the proposed framework offers a solution with persistent memory layers, semantic routing, and modular orchestration pipelines when it comes to cloud-native deployments. Experimental verification offers a greater degree of autonomy, coordination, and resilience in a diverse range of activities such as enterprise automation and robotics. It is also an edge deployment with the help of lightweight microservices framework. In practice, this method supports scaled, comprehensible agents adapted to long-loop thinking and human-in-the-loop management and adaptive value chain serving. The novelty of the work is attributed to its reusable architecture, as it is not only capable of modifying agentic behavior alone, but it can also connect the theoretical principles and industry feasibility. Future efforts will be with the integration of ethical governance, uniform benchmarking, and multimodal memory remodeling in next generation of real-world autonomous systems.",
+  "crossref": {
+   "cr_title": "Agentic AI systems in the age of generative models: architectures, cloud scalability, and real-world applications",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A2",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "LLM safety survey",
+  "bd_context": "large-scale LLM deployment",
+  "doi": "10.1007/s10462-025-11389-2",
+  "title": "Safeguarding large language models: a survey",
+  "date": "2025-10-17",
+  "year": "2025",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 72,
+  "authors": [
+   "Yi Dong",
+   "Ronghui Mu",
+   "Yanghao Zhang",
+   "Siqi Sun",
+   "Tianle Zhang",
+   "Changshun Wu"
+  ],
+  "biblio": {
+   "volume": "58",
+   "issue": "12",
+   "first_page": "382",
+   "last_page": "382"
+  },
+  "abstract": "In the burgeoning field of Large Language Models (LLMs), developing a robust safety mechanism, colloquially known as \"safeguards\" or \"guardrails\", has become imperative to ensure the ethical use of LLMs within prescribed boundaries. This article provides a systematic literature review on the current status of this critical mechanism. It discusses its major challenges and how it can be enhanced into a comprehensive mechanism dealing with ethical issues in various contexts. First, the paper elucidates the current landscape of safeguarding mechanisms that major LLM service providers and the open-source community employ. This is followed by the techniques to evaluate, analyze, and enhance some (un)desirable properties that a guardrail might want to enforce, such as hallucinations, fairness, privacy, and so on. Based on them, we review techniques to circumvent these controls (i.e., attacks), to defend the attacks, and to reinforce the guardrails. While the techniques mentioned above represent the current status and the active research trends, we also discuss several challenges that cannot be easily dealt with by the methods and present our vision on how to implement a comprehensive guardrail through the full consideration of multi-disciplinary approach, neural-symbolic method, and systems development lifecycle.",
+  "crossref": {
+   "cr_title": "Safeguarding large language models: a survey",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2025,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A3",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "GNN anomaly detection survey",
+  "bd_context": "dynamic temporal graphs",
+  "doi": "10.1007/s10462-026-11532-7",
+  "title": "Graph neural networks for anomaly detection: a systematic review of dynamic temporal approaches",
+  "date": "2026-03-11",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 9,
+  "authors": [
+   "Fernando Ares-Robledo",
+   "Helena Rifà-Pous",
+   "Robert Clarisó"
+  ],
+  "biblio": {
+   "volume": "59",
+   "issue": "5",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract Graph Neural Network (GNN) have recently gained significant attention for their ability to model evolving relationships in graph-structured data, offering new opportunities for anomaly detection in cybersecurity. This Systematic Literature Review (SLR) examines the current state of research on these models applied to cybersecurity-related anomaly detection tasks. We systematically analyze 79 studies to identify key trends, challenges, and opportunities in this emerging field. Our review highlights that while GNN offer unique advantages such as capturing spatiotemporal dependencies and modeling complex cyber-threat patterns, several barriers remain, including scalability issues, limited real-world datasets, and the lack of interpretability in most models. Common architectures such as Graph Convolutional Networks (GCN), Graph Attention Networks (GAT), and hybrid Transformer-based models are identified, along with their applications in intrusion detection, botnet detection, and anomaly detection in industrial control systems. Several studies propose that GNN can overcome current limitations by integrating contrastive learning and adaptive models for real-time threat detection. This review emphasizes the need for scalable, explainable, and deployment-ready solutions to fully realize the potential of dynamic graph models in cybersecurity. Future research should focus on developing scalable and adaptive architectures, integrating improved interpretability mechanisms, and enhancing model robustness through cross-domain validation and real-time applications.",
+  "crossref": {
+   "cr_title": "Graph neural networks for anomaly detection: a systematic review of dynamic temporal approaches",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A4",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "blockchain + AI for IoT security",
+  "bd_context": "IoT big data",
+  "doi": "10.1007/s10462-025-11434-0",
+  "title": "Synergizing blockchain and AI to fortify IoT security: a comprehensive review",
+  "date": "2026-01-07",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 10,
+  "authors": [
+   "Deepak Kaushik",
+   "Preeti Gulia",
+   "Nasib Singh Gill",
+   "Mohammad Yahya",
+   "Piyush Kumar Shukla",
+   "J. Shreyas"
+  ],
+  "biblio": {
+   "volume": "59",
+   "issue": "2",
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Abstract The relentless growth of connected devices is transforming industrial, urban and domestic environments, yet it also expands the attack surface for distributed denial of service (DDoS), unauthorized access and data manipulation. Centralized security architectures struggle to cope with the scale and heterogeneity of the Internet of Things, creating single points of failure and privacy risks. This review takes a close look at how blockchain and artificial intelligence (AI) can work together to solve these problems. Blockchain plays an important role in decentralizing trust, maintaining data integrity, and enabling transparent audit trails. AI subfields such as machine learning (ML), deep learning (DL), reinforcement learning (RL), and multi-agent systems (MAS) enhance these benefits. They enable real-time anomaly detection, predictive analytics, and adaptive policy control. A seven axis Blockchain–AI Security Integration Schema (BASIS) is proposed to classify solutions by security objectives, intelligence modalities, trust primitives, deployment choices, scalability techniques, privacy controls and interoperability mechanisms. In this study also review Layer-2 consensus protocols, federated learning and lightweight deep learning models that address energy and computational constraints. Case studies from supply chains, healthcare and smart grids illustrate the benefits and limitations of current deployments. The evidence suggests that while AI improves the accuracy and responsiveness of threat detection, blockchain offers tamper-proof data provenance. However, there are still issues in achieving scalability, reducing computational overhead, and striking a balance between auditability and privacy. Hybrid on-chain/off-chain architectures, quantum-safe cryptography, and standardized frameworks to guarantee adoption and interoperability are some future research avenues.",
+  "crossref": {
+   "cr_title": "Synergizing blockchain and AI to fortify IoT security: a comprehensive review",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ },
+ {
+  "id": "AIR-A5",
+  "journal_file": "AIR",
+  "journal": "Artificial Intelligence Review",
+  "role": "alternate",
+  "theme": "alternate",
+  "ml_methods": "AI methods/benchmarks for climate",
+  "bd_context": "climate-scale data",
+  "doi": "10.1007/s10462-026-11690-8",
+  "title": "Artificial intelligence for weather and climate: a survey of methods, benchmarks, and scientific machine learning challenges",
+  "date": "2026-09-11",
+  "year": "2026",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Andreas Holzinger",
+   "Sandro Fiore",
+   "Tullio Degiacomi",
+   "Fabrizio Antonio",
+   "Heimo Müller"
+  ],
+  "biblio": {
+   "volume": null,
+   "issue": null,
+   "first_page": null,
+   "last_page": null
+  },
+  "abstract": "Weather and climate science is a uniquely demanding testbed for artificial intelligence, combining petabyte-scale spatiotemporal complex data on a rotating sphere, governing partial differential equations coupled to global observational and reanalysis archives, climate non-stationarity that distinguishes it from stationary fluid-dynamics or seismology benchmarks, and operational forecast verification against rare extremes. This survey makes four contributions. First , it organises AI architectures, i.e. convolutional networks, graph neural networks, transformers, neural operators, and generative models, by their physical inductive biases, with geometric deep learning and operator learning as unifying themes. Second , it gives systematic treatment to representation learning and foundation models, uncertainty quantification, and causal discovery as a complement to prediction. Third , it names and analyses evaluation pathologies in scientific machine learning, including the RMSE smoothness bias under which mean-squared-error training systematically rewards blurred forecasts and penalises sharp but slightly displaced predictions, ERA5 training–evaluation circularity, and benchmark overfitting. Fourth , it frames the open problems, i.e. distribution shift under non-stationary climate, physical consistency of learned operators, sample efficiency in data-sparse regimes, and intrinsic interpretability, as scientific machine learning problems generalisable beyond meteorology.",
+  "crossref": {
+   "cr_title": "Artificial intelligence for weather and climate: a survey of methods, benchmarks, and scientific machine learning challenges",
+   "cr_journal": "Artificial Intelligence Review",
+   "cr_year": 2026,
+   "cr_type": "journal-article"
+  },
+  "verified": true
+ }
+]

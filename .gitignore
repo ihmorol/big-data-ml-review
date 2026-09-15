@@ -1,0 +1,14 @@
+# Not published to GitHub — old, unrelated project kept for local reference only
+archive/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

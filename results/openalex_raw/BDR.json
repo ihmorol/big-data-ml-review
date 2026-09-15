@@ -1,0 +1,2743 @@
+[
+ {
+  "doi": "10.1016/j.bdr.2025.100509",
+  "title": "A novel approach for job matching and skill recommendation using transformers and the O*NET database",
+  "date": "2025-02-01",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 13,
+  "authors": [
+   "Rubén Alonso",
+   "Danilo Dessı̀",
+   "Antonello Meloni",
+   "Diego Reforgiato Recupero"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "39",
+   "issue": null,
+   "first_page": "100509",
+   "last_page": "100509"
+  },
+  "topics": [
+   "Distributed and Parallel Computing Systems",
+   "Recommender Systems and Techniques",
+   "Cloud Computing and Resource Management"
+  ],
+  "abstract": "Today we have tons of information posted on the web every day regarding job supply and demand which has heavily affected the job market. The online enrolling process has thus become efficient for applicants as it allows them to present their resumes using the Internet and, as such, simultaneously to numerous organizations. Online systems such as Monster.com, OfferZen, and LinkedIn contain millions of job offers and resumes of potential candidates leaving to companies with the hard task to face an enormous amount of data to manage to select the most suitable applicant. The task of assessing the resumes of candidates and providing automatic recommendations on which one suits a particular position best has, therefore, become essential to speed up the hiring process. Similarly, it is important to help applicants to quickly find a job appropriate to their skills and provide recommendations about what they need to master to become eligible for certain jobs. Our approach lies in this context and proposes a new method to identify skills from candidates' resumes and match resumes with job descriptions. We employed the O*NET database entities related to different skills and abilities required by different jobs; moreover, we leveraged deep learning technologies to compute the semantic similarity between O*NET entities and part of text extracted from candidates' resumes. The ultimate goal is to identify the most suitable job for a certain resume according to the information there contained. We have defined two scenarios: i) given a resume, identify the top O*NET occupations with the highest match with the resume, ii) given a candidate's resume and a set of job descriptions, identify which one of the input jobs is the most suitable for the candidate. The evaluation that has been carried out indicates that the proposed approach outperforms the baselines in the two scenarios. Finally, we provide a use case for candidates where it is possible to recommend courses with the goal to fill certain skills and make them qualified for a certain job."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100555",
+  "title": "Explainable malware detection through integrated graph reduction and learning techniques",
+  "date": "2025-08-01",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 12,
+  "authors": [
+   "Hesamodin Mohammadian",
+   "Griffin Higgins",
+   "Samuel Ansong",
+   "Roozbeh Razavi‐Far",
+   "Ali A. Ghorbani"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100555",
+   "last_page": "100555"
+  },
+  "topics": [
+   "Advanced Malware Detection Techniques",
+   "Network Security and Intrusion Detection",
+   "Anomaly Detection Techniques and Applications"
+  ],
+  "abstract": "Recently, Control Flow Graphs and Function Call Graphs have gain attention in malware detection task due to their ability in representation the complex structural and functional behavior of programs. To better utilize these representations in malware detection and improve the detection performance, they have been paired with Graph Neural Networks (GNNs). However, the sheer size and complexity of these graph representation poses a significant challenge for researchers. At the same time, a simple binary classification provided by the GNN models is insufficient for malware analysts. To address these challenges, this paper integrates novel graph reduction techniques and GNN explainability in to a malware detection framework to enhance both efficiency and interpretability. Through our extensive evolution, we demonstrate that the proposed graph reduction technique significantly reduces the size and complexity of the input graphs, while maintaining the detection performance. Furthermore, the extracted important subgraphs using the GNNExplainer, provide better insights about the model's decision and help security experts with their further analysis."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100506",
+  "title": "Multi-granularity enhanced graph convolutional network for aspect sentiment triplet extraction",
+  "date": "2025-01-18",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 9,
+  "authors": [
+   "Mingwei Tang",
+   "Kun Yang",
+   "Linping Tao",
+   "Mingfeng Zhao",
+   "Wei Zhou"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "39",
+   "issue": null,
+   "first_page": "100506",
+   "last_page": "100506"
+  },
+  "topics": [
+   "Sentiment Analysis and Opinion Mining",
+   "Advanced Text Analysis Techniques",
+   "Web Data Mining and Analysis"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100508",
+  "title": "Improved Tesseract optical character recognition performance on Thai document datasets",
+  "date": "2025-02-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 9,
+  "authors": [
+   "Noppol Anakpluek",
+   "Watcharakorn Pasanta",
+   "Latthawan Chantharasukha",
+   "Pattanawong Chokratansombat",
+   "Pajaya Kanjanakaew",
+   "Thitirat Siriborvornratanakul"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "39",
+   "issue": null,
+   "first_page": "100508",
+   "last_page": "100508"
+  },
+  "topics": [
+   "Handwritten Text Recognition Techniques",
+   "Vehicle License Plate Recognition",
+   "Computer Science and Engineering"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100510",
+  "title": "Efficient training: Federated learning cost analysis",
+  "date": "2025-02-20",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 9,
+  "authors": [
+   "Rafael Teixeira",
+   "Leonardo Almeida",
+   "Mário Antunes",
+   "Diogo Gomes",
+   "Rui L. Aguiar"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100510",
+   "last_page": "100510"
+  },
+  "topics": [
+   "Privacy-Preserving Technologies in Data",
+   "Stochastic Gradient Optimization Techniques",
+   "Internet Traffic Analysis and Secure E-voting"
+  ],
+  "abstract": "With the rapid development of 6G, Artificial Intelligence (AI) is expected to play a pivotal role in network management, resource optimization, and intrusion detection. However, deploying AI models in 6G networks faces several challenges, such as the lack of dedicated hardware for AI tasks and the need to protect user privacy. To address these challenges, Federated Learning (FL) emerges as a promising solution for distributed AI training without the need to move data from users' devices. This paper investigates the performance and costs of different FL approaches regarding training time, communication overhead, and energy consumption. The results show that FL can significantly accelerate the training process while reducing the data transferred across the network. However, the effectiveness of FL depends on the specific FL approach and the network conditions."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100553",
+  "title": "Deep neural network modeling for financial time series analysis",
+  "date": "2025-06-09",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 7,
+  "authors": [
+   "Zheng Fang",
+   "Toby Cai"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100553",
+   "last_page": "100553"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Traffic Prediction and Management Techniques",
+   "Time Series Analysis and Forecasting"
+  ],
+  "abstract": "Modeling stock returns has often relied on multivariate time series analysis, and constructing an accurate model remains a challenging goal for both market investors and academic researchers. Stock return prediction typically involves multiple variables and a combination of long-term and short-term time series patterns. In this paper, we propose a new deep learning network, named DLS-TS-Net, to model stock returns and address this challenge. We apply DLS-TS-Net in multivariate time series forecasting. The network integrates a Convolutional Neural Network (CNN), Long Short-Term Memory (LSTM) units, and Gated Recurrent Units (GRUs). DLS-TS-Net overcomes LSTM's insensitivity to linear components in stock market forecasting by incorporating a traditional autoregressive model. Experimental results demonstrate that DLS-TS-Net excels at capturing long-term trends in multivariate factors and short-term fluctuations in the stock market, outperforming traditional time series and machine learning models. Additionally, when combined with the investment strategies proposed in this paper, DLS-TS-Net shows superior performance in managing risk during extreme events"
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100520",
+  "title": "Complex data in tourism analysis: A stochastic approach to price competition",
+  "date": "2025-03-13",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 6,
+  "authors": [
+   "Giovanni Angelini",
+   "Michele Costa",
+   "Andrea Guizzardi"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100520",
+   "last_page": "100520"
+  },
+  "topics": [
+   "Consumer Market Behavior and Pricing",
+   "Economics of Agriculture and Food Markets",
+   "Diverse Aspects of Tourism Research"
+  ],
+  "abstract": "This study examines pricing strategies and decision-making processes in the hospitality industry by analyzing \"ask\" prices on online travel agencies (i.e., the rates at which hoteliers are willing to sell their rooms). We face the challenge of modeling a continuous flow of big data organized as \"time series of time series,\" where daily seasonality and advance bookings intersect. Our research combines insights from tourism, quantitative methods, and big data to improve pricing strategies, contributing to both theory and practice in revenue management. Focusing on Venice, we analyze price competition as a multivariate stochastic process using a Structural Vector Autoregressive (SVAR) approach, aligning with modern dynamic pricing algorithms. The findings show that time-based pricing strategies, which adjust based on the day of arrival and booking, are more important than room features in setting hotel prices. We also find that price changes have a non-linear and decreasing effect as the booking date approaches. These insights suggest that hotels could create more advanced pricing strategies, and policymakers should consider these factors when addressing the challenges related to overtourism. We study the complex competitive relationships among heterogeneous service providers with an approach applicable to any market where consumption is delayed relative to purchase time. However, we highlight that the quality and accessibility of information in the tourism sector are key aspects to be considered when using big data in this industry."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100523",
+  "title": "NoSQL data warehouse optimizing models: A comparative study of column-oriented approaches",
+  "date": "2025-03-20",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 6,
+  "authors": [
+   "Mohamed Mouhiha",
+   "Abdelfettah Mabrouk"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100523",
+   "last_page": "100523"
+  },
+  "topics": [
+   "Cloud Computing and Resource Management",
+   "Advanced Database Systems and Queries",
+   "Data Management and Algorithms"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100525",
+  "title": "Settlement patterns, official statistics and geo-economic dynamics: Evidence from a LADISC approach to Italy",
+  "date": "2025-04-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 6,
+  "authors": [
+   "Gianluigi Salvucci",
+   "Luca Salvati",
+   "Leonardo Salvatore Alaimo",
+   "Ioannis Vardopoulos"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100525",
+   "last_page": "100525"
+  },
+  "topics": [
+   "Urbanization and City Planning",
+   "Regional Economics and Spatial Analysis",
+   "Housing Market and Economics"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100537",
+  "title": "Bankruptcy risk prediction: A new approach based on compositional analysis of financial statements",
+  "date": "2025-05-23",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 6,
+  "authors": [
+   "Alessandro Magrini"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100537",
+   "last_page": "100537"
+  },
+  "topics": [
+   "Financial Distress and Bankruptcy Prediction",
+   "Rough Sets and Fuzzy Logic",
+   "Grey System Theory Applications"
+  ],
+  "abstract": "The development of models for bankruptcy risk prediction has gained much attention in recent years due to the great availability of financial statement data. Most existing predictive models rely on financial ratios, which are performance-based measures expressing the relative magnitude of two accounting items. Despite the popularity of financial ratios, their use is notoriously accompanied by serious practical drawbacks, like the occurrence of outliers and redundancy, making data preprocessing necessary to avoid computational problems and obtain a good predictive accuracy. Isometric log ratios can potentially overcome these problems because they are designed to represent compositional data efficiently and have a logarithmic form that limits the occurrence of outliers. However, although they are not novel in the analysis of financial statements, no study has ever employed them to predict bankruptcy . In this article, we show the effectiveness of isometric log ratios to detect bankruptcy events in a sample of 138,720 Italian firms (127,420 active and 11,300 bankrupted) belonging to different industries and with different size and age. For this purpose, we use logistic regression with adaptive LASSO regularization and random forests to construct several predictive models featuring either financial ratios or isometric log ratios, and combining different horizons and lag structures. The results show that a set of 8 isometric log ratios provides, without preprocessing, almost the same predictive accuracy as a selection of 16 financial ratios that requires dropping 3.6% of the data. Also, the adaptive LASSO regularization reveals that redundancy for isometric log ratios is always below 20%, and in some cases near 0%, while it ranges from 12.5% to 46.9% for financial ratios. The predictive accuracy of models based on logistic regression is in line with and even higher than the one reported by recent studies, and random forests achieve a gain in the area under the Receiver Operating Characteristic (ROC) curve ranging between two and three percentage points."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100551",
+  "title": "BETM: A new pre-trained BERT-guided embedding-based topic model",
+  "date": "2025-06-06",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 6,
+  "authors": [
+   "Yang Liu",
+   "Xiaotang Zhou",
+   "Zhenwei Zhang",
+   "Xiran Yang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100551",
+   "last_page": "100551"
+  },
+  "topics": [
+   "Topic Modeling",
+   "Computational and Text Analysis Methods",
+   "Advanced Text Analysis Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100518",
+  "title": "Predicting option prices: From the Black-Scholes model to machine learning methods",
+  "date": "2025-02-26",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 5,
+  "authors": [
+   "Angela Maria D’Uggento",
+   "Marta Biancardi",
+   "Domenico Ciriello"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100518",
+   "last_page": "100518"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Energy Load and Power Forecasting",
+   "Market Dynamics and Volatility"
+  ],
+  "abstract": "• The Black-Scholes model has long been a fundamental framework for option pricing, but it has some limitations that can restrict its application to real data. • Big data and advanced computing power of machine learning offer a new approach to option pricing, dealing effectively with complex financial data. • Machine learning techniques can outperform or complement traditional models such as Black-Scholes in improving accuracy for financial markets. In the ever-changing landscape of financial markets, accurate option pricing remains critical for investors, traders and financial institutions. Traditionally, the Black-Scholes (B&S) model has been the cornerstone for option pricing, providing a solid framework based on mathematical and physical principles. Nevertheless, the B&S model has some limitations, such as the restriction to European options, the absence of dividends, constant volatility, etc. Studies and academic literature on the application of machine learning models in the financial sector are rapidly increasing. The main objective of this paper is to provide a comprehensive comparative analysis between the traditional B&S model and the most commonly used machine learning algorithms such as Artificial Neural Networks (ANNs). The rationale is twofold. First, to examine the assumptions of the B&S model, such as constant volatility and a perfectly efficient market, in light of the complexity of the real world, even though it is recognized that the model has been known as a pillar for decades. Secondly, to emphasize that the proliferation of big data and advances in computing power have fuelled the rise of machine learning techniques in finance. These algorithms have remarkable capabilities in discovering non-linear patterns and extracting information from large data sets, providing a compelling alternative to traditional quantitative methods. Machine learning offers a new way to capture and model such complex financial dynamics, which can lead to more accurate pricing models. By comparing the B&S model and some machine learning approaches, this paper aims to shed light on their respective strengths, weaknesses and applicability in the context of options pricing using real data. Through rigorous empirical analyses and performance metrics, our results demonstrate the importance of using machine learning techniques that can outperform or complement the established B&S model in predicting option prices by achieving higher prediction accuracy."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100576",
+  "title": "Unleashing the power of digital twin and big data as a new frontier for smart mobility: An ecosystem perspective",
+  "date": "2025-11-24",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 4,
+  "authors": [
+   "Francesca Loia",
+   "Claudia Perillo",
+   "Ginevra Gravili"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100576",
+   "last_page": "100576"
+  },
+  "topics": [
+   "Digital Transformation in Industry",
+   "Smart Cities and Technologies",
+   "IoT and Edge/Fog Computing"
+  ],
+  "abstract": "• This study explores the role of digital twin technology and big data in the context of smart mobility. • An integrative framework based on an ecosystemic perspective is proposed, comprising two iterative loops to analyze digital twin and big data applications in smart mobility. • The first iterative loop connects technology service providers with mobility stakeholders, demonstrating how AI-driven, user-centric mobility solutions are co-created through perceptive and responsive mechanisms. • The second iterative loop links mobility stakeholders with end-users, enhancing operational efficiency through user-generated knowledge, ultimately improving mobility experiences and urban transportation systems. • The study highlights the interplay between big data and ecosystem dynamics in the application of digital twin technology for smart mobility. Nowadays, a new concept of the smart city, driven by technological advancements, has emerged with a significant impact on various domains, including mobility. Among these technologies, the digital twin has recently gained attention; however, its impact on smart mobility, particularly in correlation with big data, remains underexplored. Based on these considerations, this paper aims to investigate the role of digital twin technology in conjunction with big data in the context of smart mobility. A case study approach has been adopted to analyze the Italian context. Results highlight the ecosystem elements and identify the primary drivers for sustainable growth in integrating digital twin and big data technologies within smart mobility. Two iterative loops have been identified connecting technology service providers with mobility stakeholders, illustrating how artificial intelligence-driven, user-centric mobility solutions are co-created through perceptive and responsive mechanisms, and linking mobility stakeholders with end-users, enhancing operational efficiency through user generated knowledge, ultimately leading to improved mobility experiences and urban transportation systems. This study contributes to the literature by providing a structured analysis of digital twin applications in smart mobility, emphasizing the interplay between big data and ecosystem dynamics. The findings offer theoretical and practical implications, highlighting opportunities for policymakers, technology providers, and mobility operators to foster sustainable and data-driven urban mobility solutions. Finally, directions for future research are discussed, outlining potential advancements in digital twin integration for smart mobility ecosystems."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100554",
+  "title": "Compression of big data collected in wind farm based on tensor train decomposition",
+  "date": "2025-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 3,
+  "authors": [
+   "Keren Li",
+   "Wenqiang Zhang",
+   "Dandan Xiao",
+   "Peng Hou",
+   "Shuai Yan",
+   "Yang Wang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100554",
+   "last_page": "100554"
+  },
+  "topics": [
+   "Tensor decomposition and applications",
+   "Computational Physics and Python Applications"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100574",
+  "title": "MIND: A metadata-driven INgestion design pattern for efficient data ingestion",
+  "date": "2025-11-27",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 3,
+  "authors": [
+   "Chiara Rucco",
+   "Antonella Longo",
+   "Motaz Saad"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100574",
+   "last_page": "100574"
+  },
+  "topics": [
+   "Research Data Management Practices",
+   "Data Quality and Management",
+   "Scientific Computing and Data Management"
+  ],
+  "abstract": "Data ingestion plays a crucial role in enterprise data management, particularly when dealing with large-scale datasets. This paper introduces the Metadata-driven INgestion Design pattern (MIND), a flexible, metadata-driven design pattern for cloud-based big data management. MIND enhances adaptability by enabling dynamic adjustments to ingestion types, schema updates, table additions, and the integration of new data sources. Validated on the Azure cloud platform, MIND demonstrates scalability, feasibility, and efficiency in reducing ingestion time and operational complexity. By relying on metadata for pipeline orchestration, MIND offers a robust solution to the challenges of high-volume data processing, providing a more agile and maintainable approach to data workflows. This work contributes to the evolution of metadata-driven architectures and offers a foundation for future advancements in data management technologies."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100541",
+  "title": "The narrative on tourism sustainability in Italian news: A text mining approach",
+  "date": "2025-05-16",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 5,
+  "authors": [
+   "Carla Galluccio",
+   "Paola Beccherle",
+   "Alessandra Petrucci"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100541",
+   "last_page": "100541"
+  },
+  "topics": [
+   "Digital Marketing and Social Media",
+   "Diverse Aspects of Tourism Research",
+   "Media Studies and Communication"
+  ],
+  "abstract": "Tourism sustainability is a complex and multidimensional construct, for which there is no shared definition in the literature. Consequently, there is no standard method for its measurement, and the adoption of sustainable practices often falls short of reached goals. Therefore, contributing to the definition of the concept of sustainable tourism is essential, both for policymakers and academics. In this vein, news media data can represent a key element through which to understand the debate about tourism sustainability. This research aims to exploit the potential of news texts to explore how sustainable tourism is conceived within specific cultural contexts. Focusing on the case study of Italy, we analysed how the concept of tourism sustainability is represented in Italian newspapers, extracting the topics discussed in relation to this theme. From a methodological point of view, we employed a network-based approach for topic extraction. Our study contributes to the literature on tourism sustainability by proposing an innovative method for extracting information from unstructured data sources, such as textual data, providing policymakers with insights about the narrative around this topic."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100519",
+  "title": "ImDMI: Improved Distributed M-Invariance model to achieve privacy continuous big data publishing using Apache Spark",
+  "date": "2025-03-07",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 4,
+  "authors": [
+   "Salheddine Kabou",
+   "Laid Gasmi",
+   "Abdelbaset Kabou",
+   "Sidi Mohamed Benslimane"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100519",
+   "last_page": "100519"
+  },
+  "topics": [
+   "Privacy-Preserving Technologies in Data",
+   "Cryptography and Data Security",
+   "Vehicular Ad Hoc Networks (VANETs)"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100536",
+  "title": "Saving food surplus and developing new business models: Exploring the potential of ‘Too Good To Go’ at territorial level using web-scraped data",
+  "date": "2025-05-01",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 4,
+  "authors": [
+   "Mengting Yu",
+   "Luca Secondi",
+   "Tiziana Laureti",
+   "Luigi Palumbo"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100536",
+   "last_page": "100536"
+  },
+  "topics": [
+   "Food Waste Reduction and Sustainability",
+   "Sharing Economy and Platforms",
+   "Organic Food and Agriculture"
+  ],
+  "abstract": "Food surplus, fit for consumption, is often excluded from the consumption loop for commercial reasons, leading to wasted food, nutrients, resources, and costs. Digital innovations with diverse business models aim to combat this through food redistribution. However, it is critical to assess their effectiveness from stakeholder and consumer perspectives, meanwhile, new research focuses on the value of these business models. This study employs web scraping technology to collect multi-dimensional data from two Italian cities on Too Good To Go . The analysis results confirm its positive contribution to food surplus redistribution with economic benefits, despite a weaker presence of certain food establishment types and a lack of social motivation among consumers. Furthermore, strong business-customer relationships can be established when businesses commit to reducing food waste and effectively communicate with their customers using the platform."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100539",
+  "title": "Exploring the impact of high schools, socioeconomic factors, and degree programs on higher education success in Italy",
+  "date": "2025-05-15",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 3,
+  "authors": [
+   "Cristian Usala",
+   "Isabella Sulis",
+   "Mariano Porcu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100539",
+   "last_page": "100539"
+  },
+  "topics": [
+   "Higher Education Research Studies",
+   "Labor market dynamics and wage inequality",
+   "Higher Education Governance and Development"
+  ],
+  "abstract": "This study investigates the determinants of tertiary education success in Italy, focusing on students' outcomes between the first and second years. We use population data of students enrolled between 2015 and 2019, integrating information on high school environments and degree program characteristics. This rich dataset has been exploited with a two-step approach: the first step defines indicators for high school quality and degree program difficulty; the second estimates a multinomial logit to assess the determinants of students' probability of being classified as regulars, churners, at risk of dropout, and dropouts. Data regarding the 2019 cohort have been further investigated by exploiting the additional information on students' socioeconomic backgrounds and schools' self-assessed effectiveness evaluations. Results indicate that students' high school backgrounds, socioeconomic conditions, and post-graduation prospects in terms of net wages and occupation rates of graduates in the chosen degree program significantly influence academic success and students' academic persistence. Overall, the results offer a comprehensive view of the determinants of university success, with specific patterns observed across the different student categories."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100538",
+  "title": "Business digitalization in Italy: A comprehensive analysis using supplementary fuzzy set approach",
+  "date": "2025-05-15",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 3,
+  "authors": [
+   "Ilaria Benedetti",
+   "Federico Crescenzi",
+   "Tiziana Laureti",
+   "Niccolò Salvini"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100538",
+   "last_page": "100538"
+  },
+  "topics": [
+   "Big Data and Business Intelligence",
+   "Innovation Diffusion and Forecasting",
+   "Economic and Technological Innovation"
+  ],
+  "abstract": "In an era where digital technologies such as AI, cloud computing and IoT are reshaping global business dynamics, the digital transformation of enterprises has become a pivotal factor for maintaining competitive advantage. This paper provides an in-depth analysis of the digitalization process among Italian firms, leveraging data from the ISTAT ICT survey. Using a fuzzy set approach, we develop a refined index to measure technological deprivation across multiple dimensions, providing a detailed understanding of how digitalization is adopted at the firm level. The results indicate a moderate level of technological development among firms. The dimension related to online sales emerges as the most underdeveloped, highlighting it as a critical area for improvement for Italian companies and underscoring the need for targeted policy interventions to bridge these digital gaps. Moreover, the analysis reveals significant disparities across sectors, geographic areas, and firm sizes, with smaller enterprises and those in certain regions exhibiting lower levels of digital adoption. Our study underscores the utility of the fuzzy set methodology for analysing high-dimensional big data and provides actionable insights for enhancing digital adoption among firms in Italy."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100529",
+  "title": "Leveraging artificial intelligence for pandemic management: Case of COVID-19 in the United States",
+  "date": "2025-04-08",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 2,
+  "authors": [
+   "Ehsan Ahmadi",
+   "Reza Maihami"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100529",
+   "last_page": "100529"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Forecasting Techniques and Applications",
+   "COVID-19 diagnosis using AI"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100534",
+  "title": "Big data analytics for smart home energy management system based on IOMT using AHP and WASPAS",
+  "date": "2025-05-10",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 2,
+  "authors": [
+   "Jingze Zhou",
+   "Salem Alkhalaf",
+   "S. Abdel-Khalek",
+   "Shah Nazir"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100534",
+   "last_page": "100534"
+  },
+  "topics": [
+   "Innovation in Digital Healthcare Systems",
+   "Technology and Data Analysis",
+   "Energy and Environmental Systems"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100570",
+  "title": "Tangible progress: Employing visual metaphors and physical interfaces in AI-based English language learning",
+  "date": "2025-10-30",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 2,
+  "authors": [
+   "Mei Wang",
+   "Hai‐Ning Liang",
+   "Yu Liu",
+   "Chengtao Ji",
+   "Lingyun Yu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "42",
+   "issue": null,
+   "first_page": "100570",
+   "last_page": "100570"
+  },
+  "topics": [
+   "Language, Metaphor, and Cognition",
+   "Educational Games and Gamification",
+   "Visual and Cognitive Learning Processes"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100521",
+  "title": "Deep attention dynamic representation learning networks for recommender system review modeling",
+  "date": "2025-03-15",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 2,
+  "authors": [
+   "Shivangi Gheewala",
+   "Shuxiang Xu",
+   "Soonja Yeom"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100521",
+   "last_page": "100521"
+  },
+  "topics": [
+   "Recommender Systems and Techniques",
+   "Topic Modeling",
+   "Sentiment Analysis and Opinion Mining"
+  ],
+  "abstract": "Despite considerable research of utilizing deep learning technology and textual reviews in recommender systems, improving system performance is a contentious matter. This is primarily due to issues faced in learning user-item representations. One issue is the limited ability of networks to model dynamic user-item representations from reviews. Particularly, in sequence-to-sequence learning models, there appears a substantial likelihood of losing semantic knowledge of previous review sequences, as overridden by the next. Another issue lies in effectively integrating global-level and topical-level representations to extract informative content and enhance user-item representations. Existing methods struggle to maintain contextual consistency during this integration process, resulting in suboptimal representation learning, especially attempting to capture finer details. To address these issues, we propose a novel recommendation model called Deep Attention Dynamic Representation Learning (DADRL). Specifically, we employ Latent Dirichlet Allocation and dynamic modulator-based Long Short-Term Memory to extract topical and dynamic global representations. Then, we introduce an attentional fusion methodology to integrate these representations in a contextually consistent manner and construct informative attentional user-item representations. We use these representations into the factorization machines layer to predict the final scores. Experimental results on Amazon categories, Yelp, and LibraryThing show that our model exhibits superior performance compared to several state-of-the-arts. We further examine the DADRL architecture under various conditions to provide insights on the model's employed components."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100557",
+  "title": "Research on modeling of the imbalanced fraudulent transaction detection problem based on embedding-aware conditional GAN",
+  "date": "2025-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 2,
+  "authors": [
+   "Luping Zhi",
+   "Wanping Wang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100557",
+   "last_page": "100557"
+  },
+  "topics": [
+   "Imbalanced Data Classification Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100507",
+  "title": "Has machine paraphrasing skills approached humans? Detecting automatically and manually generated paraphrased cases",
+  "date": "2025-01-22",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 1,
+  "authors": [
+   "Iqra Muneer",
+   "Aysha Shehzadi",
+   "Muhammad Adnan Ashraf",
+   "Rao Muhammad Adeel Nawab"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "39",
+   "issue": null,
+   "first_page": "100507",
+   "last_page": "100507"
+  },
+  "topics": [
+   "Text Readability and Simplification",
+   "Natural Language Processing Techniques",
+   "Topic Modeling"
+  ],
+  "abstract": "In recent years, automatic text rewriting (or paraphrasing) tools are readily and publicly available. These tools have enabled text paraphrasing as an exceptionally straightforward approach that encourages trouble-free plagiarism and text reuse. In literature, the majority of efforts have focused on detecting real cases (manual/human paraphrasing) of paraphrasing (mainly in the domain of journalism). However, the problem of paraphrase detection has not been thoroughly explored for artificial cases (machine paraphrased), mainly, due to lack of standard resources for its evaluation. To fulfill this gap, this study proposes three benchmark corpora for artificial cases of paraphrases at sentence level, and one real corpus contains examples from daily life activities. Three popular and widely used automatic text rewriting online tools have been used, i.e., paraphrasing-tools, articlerewritetool and rewritertools, to develop artificial case corpora. Further, we used two real cases corpora, including Microsoft Paraphrase Corpus (MSRP) (from the domain of journalism) and a proposed real corpus which is a combination of carefully extracted Quora question pairs and MSRP (Q-MSRP). Both real case and artificial case paraphrases were evaluated using classical machine learning , transfer learning , Large language models and a proposed model, to investigate which of the two types of paraphrasing is more difficult to detect. The results show that our proposed model outperforms all the other approaches for both artificial and real case paraphrase detection. A thorough analysis of the results suggests that, by far, manual paraphrasing is still harder to detect but certain machine paraphrased texts are equally difficult to detect. All proposed corpora are freely available to promote the research on artificial case paraphrase detection."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100542",
+  "title": "E-word of mouth in sales volume forecasting: Toyota Camry case study",
+  "date": "2025-05-15",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 1,
+  "authors": [
+   "D Iezzi",
+   "Roberto Monte"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100542",
+   "last_page": "100542"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Forecasting Techniques and Applications",
+   "Sentiment Analysis and Opinion Mining"
+  ],
+  "abstract": "In recent years, electronic word of mouth has become a significant factor in purchasing decisions, with consumers' sentiments playing a crucial role in shaping the sales of products and services. This paper introduces a novel approach to sales forecasting that addresses consumers' sentiments toward goods or services by combining the sales volume time series with a quantitative proxy of the unobservable true sentiment. Numerous studies have explored various methods to capture sentiment and accurately predict sales. We have integrated an estimated sentiment signal, variously built via lexicon-based, machine-learning, and deep-learning approaches, into a multivariate autoregressive state space (MARSS) model. We have tested our model on a dataset of 163,000 tweets about the Toyota Camry, covering the period from June 2009 to December 2022 and sales volumes in the US market over the same timeframe."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100550",
+  "title": "Development of an integrated data system for regional tourism analysis in Italy: A microdata perspective",
+  "date": "2025-06-07",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "green",
+  "cited_by": 1,
+  "authors": [
+   "Samuele Cesarini",
+   "Fabrizio Antolini",
+   "Ivan Terraglia"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100550",
+   "last_page": "100550"
+  },
+  "topics": [
+   "Human Mobility and Location-Based Analysis",
+   "Geographic Information Systems Studies",
+   "Consumer Market Behavior and Pricing"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100552",
+  "title": "Time-synchronized sentiment labeling via autonomous online comments data mining: A multimodal information fusion on large-scale multimedia data",
+  "date": "2025-06-08",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Jiachen Ma",
+   "Nazmus Sakib",
+   "Fahim Islam Anik",
+   "Sheikh Iqbal Ahamed"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100552",
+   "last_page": "100552"
+  },
+  "topics": [
+   "Sentiment Analysis and Opinion Mining",
+   "Advanced Text Analysis Techniques",
+   "Data Visualization and Analytics"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100573",
+  "title": "PATH: A discrete-sequence dataset for evaluating online unsupervised anomaly detection approaches for multivariate time series",
+  "date": "2025-11-01",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 1,
+  "authors": [
+   "Lucas Correia",
+   "Jan-Christoph Goos",
+   "Thomas Bäck",
+   "Anna V. Kononova"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "42",
+   "issue": null,
+   "first_page": "100573",
+   "last_page": "100573"
+  },
+  "topics": [
+   "Anomaly Detection Techniques and Applications",
+   "Time Series Analysis and Forecasting",
+   "Network Security and Intrusion Detection"
+  ],
+  "abstract": "Benchmarking anomaly detection approaches for multivariate time series is a challenging task due to a lack of high-quality datasets. Current publicly available datasets are too small, not diverse and feature trivial anomalies, which hinders measurable progress in this research area. We propose a solution: a diverse, extensive, and non-trivial dataset generated via state-of-the-art simulation tools that reflects realistic behaviour of an automotive powertrain, including its multivariate, dynamic and variable-state properties. Additionally, our dataset represents a discrete-sequence problem, which remains unaddressed by previously-proposed solutions in literature. To cater for both unsupervised and semi-supervised anomaly detection settings, as well as time series generation and forecasting, we make different versions of the dataset available, where training and test subsets are offered in contaminated and clean versions, depending on the task. We also provide baseline results from a selection of approaches based on deterministic and variational autoencoders, as well as a non-parametric approach. As expected, the baseline experimentation shows that the approaches trained on the semi-supervised version of the dataset outperform their unsupervised counterparts, highlighting a need for approaches more robust to contaminated training data. Furthermore, results show that the threshold used can have a large influence on detection performance, hence more work needs to be invested in methods to find a suitable threshold without the need for labelled data."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100572",
+  "title": "Research on adaptive long-term time series carbon dioxide emission prediction model based on improved multilayer perceptron",
+  "date": "2025-11-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Jiachen Xie",
+   "Jiwei Qin",
+   "Xizhong Qin",
+   "Daishun Cui",
+   "Qiang Li",
+   "Dezhi Sun"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "42",
+   "issue": null,
+   "first_page": "100572",
+   "last_page": "100572"
+  },
+  "topics": [
+   "Air Quality Monitoring and Forecasting",
+   "Energy Load and Power Forecasting",
+   "Environmental Impact and Sustainability"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100577",
+  "title": "Novel V2X-based traffic congestion prediction system",
+  "date": "2025-11-25",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Norman Bereczki",
+   "Vilmos Simon"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100577",
+   "last_page": "100577"
+  },
+  "topics": [
+   "Traffic Prediction and Management Techniques",
+   "Traffic control and management",
+   "Human Mobility and Location-Based Analysis"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100588",
+  "title": "Efficient time series forecasting with gated attention and patched data: A transformer-based approach",
+  "date": "2026-01-03",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Boyu Guan",
+   "Xiaodong Gu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100588",
+   "last_page": "100588"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Traffic Prediction and Management Techniques",
+   "Machine Learning in Healthcare"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100615",
+  "title": "Enhancing shared bicycle management with artificial intelligence: Identifying parking aggregation areas and analyzing demand patterns",
+  "date": "2026-05-27",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Hanqiang Qian",
+   "Jiachen Wang",
+   "Shuyan Zheng",
+   "Yue Shi",
+   "Yanyan Chen"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100615",
+   "last_page": "100615"
+  },
+  "topics": [
+   "Smart Parking Systems Research",
+   "Transportation and Mobility Innovations",
+   "Traffic control and management"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100522",
+  "title": "Multi-dimensional feature learning for visible-infrared person re-identification",
+  "date": "2025-03-17",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 2,
+  "authors": [
+   "Zhenzhen Yang",
+   "Xinyi Wu",
+   "Yongpeng Yang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100522",
+   "last_page": "100522"
+  },
+  "topics": [
+   "Video Surveillance and Tracking Methods",
+   "Impact of Light on Environment and Health",
+   "Infrared Target Detection Methodologies"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100530",
+  "title": "A decision tree algorithm based on adaptive entropy of feature value importance",
+  "date": "2025-04-14",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 2,
+  "authors": [
+   "Shaobo Deng",
+   "Wei-Li Yuan",
+   "Sujie Guan",
+   "Lin Xing",
+   "Zemin Liao",
+   "Min Li"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100530",
+   "last_page": "100530"
+  },
+  "topics": [
+   "Neural Networks and Applications",
+   "Data Mining Algorithms and Applications",
+   "Rough Sets and Fuzzy Logic"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100600",
+  "title": "PatchDFF: A security patch identification method based on dual feature fusion",
+  "date": "2026-02-26",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Jiadong Ren",
+   "Chunjiao Bao",
+   "Shuailin Yang",
+   "Jiazheng Li",
+   "Chenghao Zhi"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100600",
+   "last_page": "100600"
+  },
+  "topics": [
+   "Biometric Identification and Security",
+   "Advanced Malware Detection Techniques",
+   "Digital Media Forensic Detection"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100603",
+  "title": "Technology topic identification and trend prediction of new energy vehicle based on knowledge graph",
+  "date": "2026-04-20",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Kaiwei Jia",
+   "Ying Zhao"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100603",
+   "last_page": "100603"
+  },
+  "topics": [
+   "Advanced Graph Neural Networks",
+   "Big Data and Digital Economy",
+   "Time Series Analysis and Forecasting"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100636",
+  "title": "Deep learning-based trading decision models in smart economic management: cross market forecasting and marketing optimization",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Aili Zhao"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100636",
+   "last_page": "100636"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Forecasting Techniques and Applications",
+   "Customer churn and segmentation"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100535",
+  "title": "A multimodal deep learning framework for constructing a market sentiment index from stock news",
+  "date": "2025-05-17",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Yunting Liu",
+   "Yirong Huang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100535",
+   "last_page": "100535"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Music and Audio Processing",
+   "Time Series Analysis and Forecasting"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100568",
+  "title": "STED: An encoder-decoder architecture for long-term spatio-temporal weather forecasting",
+  "date": "2025-10-18",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 1,
+  "authors": [
+   "Haoran Gong",
+   "Lei Lei",
+   "Shan Ma",
+   "Chun-Yu Qiu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "42",
+   "issue": null,
+   "first_page": "100568",
+   "last_page": "100568"
+  },
+  "topics": [
+   "Meteorological Phenomena and Simulations",
+   "Advanced Computational Techniques and Applications",
+   "Hydrological Forecasting Using AI"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100591",
+  "title": "Explainable classification of astronomical uncertain time series",
+  "date": "2026-01-22",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 1,
+  "authors": [
+   "Michael Franklin Mbouopda",
+   "Émille E. O. Ishida",
+   "Engelbert Mephu Nguifo",
+   "É. Gangler"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100591",
+   "last_page": "100591"
+  },
+  "topics": [
+   "Time Series Analysis and Forecasting",
+   "Stock Market Forecasting Methods"
+  ],
+  "abstract": "Exploring the expansion history of the universe, understanding its evolutionary stages, and predicting its future evolution are important goals in astrophysics. Today, machine learning tools are used to help achieving these goals by analyzing transient sources, which are modeled as uncertain time series. Although black-box methods achieve appreciable performance, existing interpretable time series methods failed to obtain acceptable performance for this type of data. Furthermore, data uncertainty is rarely taken into account in these methods. In this work, we propose an uncertainty-aware subsequence based model which achieves a classification comparable to that of state-of-the-art methods. Unlike conformal learning which estimates model uncertainty on predictions, our method takes data uncertainty as additional input. Moreover, our approach is explainable-by-design, giving domain experts the ability to inspect the model and explain its predictions. The explainability of the proposed method has also the potential to inspire new developments in theoretical astrophysics modeling by suggesting important subsequences which depict details of light curve shapes. The dataset, the source code of our experiment, and the results are made available on a public repository."
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100592",
+  "title": "Realistic image-to-image machine unlearning via decoupling and knowledge retention",
+  "date": "2026-02-10",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 1,
+  "authors": [
+   "Ayush K. Varshney",
+   "Vicenç Torra"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100592",
+   "last_page": "100592"
+  },
+  "topics": [
+   "Advanced Image Processing Techniques",
+   "Generative Adversarial Networks and Image Synthesis",
+   "Adversarial Robustness in Machine Learning"
+  ],
+  "abstract": "Machine Unlearning allows participants to remove their data from a trained machine learning model in order to preserve their privacy, and security. However, the machine unlearning literature for generative models is rather limited. The literature for image-to-image generative model (I2I model) considers minimizing the loss between Gaussian noise and the output of I2I model for forget samples as machine unlearning. However, we argue that the machine learning model performs fairly well on unseen data i.e., a retrained model will be able to learn generalized representations in the data and hence will not generate an output which is Gaussian noise instead. In this paper, we consider that the model after unlearning should treat forget samples as out-of-distribution (OOD) data, i.e., the unlearned model should no longer recognize or encode the specific patterns found in the forget samples. To achieve this, we propose a framework which decouples the model parameters with gradient ascent. Our framework ensures that forget samples are OOD for unlearned model with theoretical guarantee. We also provide (ϵ, δ )-unlearning guarantee for model updates with gradient ascent. The unlearned model is further fine-tuned on the remaining samples to maintain its performance. We also propose a data poisoning attack model as an auditing mechanism in order to make sure that the unlearned model has effectively removed the influence of forget samples. Furthermore, we demonstrate that even under sample unlearning, our approach prevents backdoor regeneration, validating its effectiveness. Extensive empirical evaluation on two large-scale datasets, ImageNet-1K and Places365 highlights the superiority of our approach. To show comparable performance with a retrained model, we also show the comparison of a simple AutoEncoder on various baselines on CIFAR-10 dataset."
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100620",
+  "title": "Heterogeneous Graph-based Risk Assessment for Internet Financial Companies with Company Big Data",
+  "date": "2026-06-02",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "green",
+  "cited_by": 0,
+  "authors": [
+   "Qigang Liu",
+   "Yuxin Qiu",
+   "Yuhang Jia",
+   "Yinfan Wang",
+   "Maoguo Wu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100620",
+   "last_page": "100620"
+  },
+  "topics": [
+   "Big Data Technologies and Applications"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100605",
+  "title": "DEDSTA – An algorithm of density estimation for data streams with trend",
+  "date": "2026-05-15",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "green",
+  "cited_by": 0,
+  "authors": [
+   "Piotr Kulczycki",
+   "Tomasz Rybotycki",
+   "Małgorzata Charytanowicz"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100605",
+   "last_page": "100605"
+  },
+  "topics": [
+   "Data Stream Mining Techniques",
+   "Time Series Analysis and Forecasting",
+   "Machine Learning and Data Classification"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/s2214-5796(25)00009-7",
+  "title": "Editorial Board",
+  "date": "2025-02-01",
+  "type": "paratext",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "39",
+   "issue": null,
+   "first_page": "100514",
+   "last_page": "100514"
+  },
+  "topics": [
+   "Diverse Scientific and Economic Studies",
+   "Human auditory perception and evaluation",
+   "Educational Robotics and Engineering"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100517",
+  "title": "Modeling meaningful volatility events to classify monetary policy announcements",
+  "date": "2025-02-26",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "green",
+  "cited_by": 0,
+  "authors": [
+   "Giampiero M. Gallo",
+   "Demetrio Lacava",
+   "Edoardo Otranto"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100517",
+   "last_page": "100517"
+  },
+  "topics": [
+   "Financial Risk and Volatility Modeling",
+   "Market Dynamics and Volatility",
+   "Stock Market Forecasting Methods"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100526",
+  "title": "Women in life sciences firms: Gender diversity and roles indicator from data integration",
+  "date": "2025-03-28",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Laura Benedan",
+   "Cinzia Colapinto",
+   "Paolo Mariani",
+   "Laura Pagani",
+   "Mariangela Zenga"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100526",
+   "last_page": "100526"
+  },
+  "topics": [
+   "Gender Diversity and Inequality",
+   "Entrepreneurship Studies and Influences",
+   "International Business and FDI"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100524",
+  "title": "Efficient, interpretable and automated feature engineering for bank data",
+  "date": "2025-04-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Atilla Karaahmetoğlu",
+   "Mehmet Yıldız",
+   "Erdem Ünal",
+   "Uğur Aydın",
+   "Murat Koraş",
+   "Barış Akgün"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100524",
+   "last_page": "100524"
+  },
+  "topics": [
+   "Time Series Analysis and Forecasting",
+   "Rough Sets and Fuzzy Logic",
+   "Data Mining Algorithms and Applications"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100528",
+  "title": "TE-PADN: A poisoning attack defense model based on temporal margin samples",
+  "date": "2025-04-09",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Haitao He",
+   "Peng Liu",
+   "Lei Zhang",
+   "Ke Xu",
+   "Jiazheng Li",
+   "Jiadong Ren"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100528",
+   "last_page": "100528"
+  },
+  "topics": [
+   "Network Security and Intrusion Detection",
+   "Anomaly Detection Techniques and Applications",
+   "Advanced Malware Detection Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100532",
+  "title": "Hourglass pattern matching for deep aware neural network text recommendation model",
+  "date": "2025-04-17",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Li Gao",
+   "Hongjun Li",
+   "Qingkui Chen",
+   "Dunlu Peng"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100532",
+   "last_page": "100532"
+  },
+  "topics": [
+   "Recommender Systems and Techniques",
+   "Image Retrieval and Classification Techniques",
+   "Text and Document Classification Technologies"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100531",
+  "title": "A novel study of kernel graph regularized semi-non-negative matrix factorization with orthogonal subspace for clustering",
+  "date": "2025-04-22",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Yasong Chen",
+   "Wen Li",
+   "Junjian Zhao"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100531",
+   "last_page": "100531"
+  },
+  "topics": [
+   "Face and Expression Recognition",
+   "Image Retrieval and Classification Techniques",
+   "Neural Networks and Applications"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100533",
+  "title": "Bipartite graph partitioning and spatial bootstrapping methods: A case study of innovative startups",
+  "date": "2025-05-16",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "green",
+  "cited_by": 0,
+  "authors": [
+   "Alessio Bumbea",
+   "Andrea Mazzitelli",
+   "Giuseppe Espa",
+   "Alessandro Rinaldi"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100533",
+   "last_page": "100533"
+  },
+  "topics": [
+   "Business Strategy and Innovation"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100527",
+  "title": "A multiple-group hidden Markov model for multi-source data. Cross-country differences in employment mobility in the presence of measurement error",
+  "date": "2025-05-19",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Roberta Varriale",
+   "Mauricio Garnier‐Villarreal",
+   "Dimitris Pavlopoulos",
+   "Danila Filipponi"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100527",
+   "last_page": "100527"
+  },
+  "topics": [
+   "Human Mobility and Location-Based Analysis",
+   "Bayesian Methods and Mixture Models",
+   "Data-Driven Disease Surveillance"
+  ],
+  "abstract": "In this paper, we develop a multigroup hidden Markov model to tackle the issue of measurement error in multi-source data from different countries. We focus, in particular, on the measurement of employment mobility in the Netherlands and Italy using linked data from the Labour Force Survey and administrative sources. The measurement-error correction we apply reconciles differences between data sources and shows that cross-country differences in employment mobility are smaller than originally thought. Error-corrected estimates indicate that mobility from temporary to permanent employment has become, over time, larger in Italy than in the Netherlands, while mobility from non-employment to temporary employment has steadily been higher in the Netherlands than in Italy."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100540",
+  "title": "The influence of China's exchange rate market on the Belt and Road trade market: Based on temporal two-layer networks",
+  "date": "2025-05-19",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Xiaoyu Zhang",
+   "Pan Ye",
+   "Lilan Tu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100540",
+   "last_page": "100540"
+  },
+  "topics": [
+   "Complex Systems and Time Series Analysis",
+   "Complex Network Analysis Techniques",
+   "Market Dynamics and Volatility"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100543",
+  "title": "Mortality and risk of cardiovascular diseases by age at retirement in three Italian cohorts",
+  "date": "2025-05-23",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Chiara Ardito",
+   "Roberto Leombruni",
+   "Giuseppe Costa",
+   "Angelo d’Errico"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100543",
+   "last_page": "100543"
+  },
+  "topics": [
+   "Retirement, Disability, and Employment",
+   "Employment and Welfare Studies",
+   "Workplace Health and Well-being"
+  ],
+  "abstract": "The relationship between age at retirement and subsequent physical health appears still contradictory in the literature, with more recent studies suggesting possible adverse health effects linked to employment at later ages. Aim of this study was to assess the long-term risk of overall mortality and incidence of cardiovascular diseases (CVDs) associated with age at retirement in three large Italian cohorts using both survey and administrative data. The risk of mortality and CVDs associated with age at retirement, kept continuous, was assessed separately for gender using age-adjusted Cox models, further controlled for chronic morbidity, education, socioeconomic and previous working characteristics. In another analysis, age at retirement was examined treating it as a dichotomous variable, comparing, in a set of analyses with age at retirement from 52 to 65 years, the incidence of the health outcomes among subjects who retired after a certain age, compared to those who retired up to that age. Higher age at retirement was associated with significantly higher mortality among men in the three cohorts, while among women the association was not significant, although in the same direction as for men. The risk of CVDs was also significantly associated with higher age at retirement in all the datasets among men, and in two of them among women. The set of the analyses on age at retirement dichotomized confirmed the results based on continuous age at retirement for both genders. Several robustness analyses, including IV Poisson instrumental variable, confirm the validity of results for men, whereas female results were less stable and robust. Policy makers should be aware of the risk for public heath of policies that increase retirement age."
+ },
+ {
+  "doi": "10.1016/s2214-5796(25)00042-5",
+  "title": "Editorial Board",
+  "date": "2025-05-01",
+  "type": "paratext",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "40",
+   "issue": null,
+   "first_page": "100547",
+   "last_page": "100547"
+  },
+  "topics": [
+   "Diverse Scientific and Economic Studies",
+   "Human auditory perception and evaluation",
+   "Educational Robotics and Engineering"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100558",
+  "title": "NGLinker: Link prediction for node featureless networks",
+  "date": "2025-08-01",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Li Yong",
+   "Wu Jingpeng",
+   "Zhongying Zhang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100558",
+   "last_page": "100558"
+  },
+  "topics": [
+   "Advanced Graph Neural Networks",
+   "Complex Network Analysis Techniques",
+   "Recommender Systems and Techniques"
+  ],
+  "abstract": "Link prediction is a paradigmatic problem with tremendous real-world applications in network science, which aims to infer missing links or future links based on currently observed partial nodes and links. However, conventional link prediction models are based on network structure, with relatively low prediction accuracy and lack universality and scalability. The performance of link prediction based on machine learning and artificial features is greatly influenced by subjective consciousness. Although graph embedding learning (GEL) models can avoid these shortcomings, it still poses some challenges. Because GEL models are generally based on random walks and graph neural networks (GNNs), their prediction accuracy is relatively ineffective, making them unsuitable for revealing hidden information in node featureless networks. To address these challenges, we present NGLinker, a new link prediction model based on Node2vec and GraphSage, which can reconcile the performance and accuracy in a node featureless network. Rather than learning node features with label information, NGLinker depends only on the local network structure. Quantitatively, we observe superior prediction accuracy of NGLinker and lab test imputations compared to the state-of-the-art models, which strongly supports that using NGLinker to predict three public networks and one private network and then conduct prediction results is feasible and effective. The NGLinker can not only achieve prediction accuracy in terms of precision and area under the receiver operating characteristic curve (AUC) but also acquire strong universality and scalability. The NGLinker model enlarges the application of the GNNs to node featureless networks."
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100556",
+  "title": "A decentralized metaheuristic approach to feature selection inspired by social interactions within a societal framework, for handling datasets of diverse sizes",
+  "date": "2025-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Sobia Tariq Javed",
+   "Kashif Zafar",
+   "Irfan Younas"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100556",
+   "last_page": "100556"
+  },
+  "topics": [
+   "Evolutionary Algorithms and Applications",
+   "Face and Expression Recognition",
+   "Metaheuristic Optimization Algorithms Research"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/s2214-5796(25)00057-7",
+  "title": "Editorial Board",
+  "date": "2025-08-01",
+  "type": "paratext",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "41",
+   "issue": null,
+   "first_page": "100562",
+   "last_page": "100562"
+  },
+  "topics": [
+   "Diverse Scientific and Economic Studies",
+   "Human auditory perception and evaluation",
+   "Educational Robotics and Engineering"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100575",
+  "title": "Techniques for interactive visual examination of vessel performance",
+  "date": "2025-12-01",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Natalia Andrienko",
+   "Gennady Andrienko",
+   "Dimitris Zissis",
+   "Alexandros Troupiotis-Kapeliaris",
+   "Giannis Spiliopoulos"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100575",
+   "last_page": "100575"
+  },
+  "topics": [
+   "Maritime Navigation and Safety",
+   "Data Visualization and Analytics",
+   "Anomaly Detection Techniques and Applications"
+  ],
+  "abstract": "The development and evaluation of autonomous maritime vessels rely heavily on data-driven insights from iterative testing and analysis. While initial analyses are often conducted on small experimental datasets to explore key system characteristics, scaling these analyses to large datasets presents significant challenges. In this study, we extend our prior work on visual exploration of small-scale test bed data by proposing approaches to scaling the visual analytics techniques to large datasets. Using AIS data from ferry boats as a proxy for extensive maritime drone operations, we address the challenges of large-scale data exploration over eight days of repetitive ferry movements across a busy strait, simulating conditions suitable for autonomous vessels. Our approach investigates movement patterns, operational stability during repeated trips, and potential collision scenarios. To support such analyses, we propose a general, reusable workflow and a set of practical guidelines for applying visual analytics techniques to large maritime movement datasets. The findings highlight the scalability and adaptability of visual analytics methods, providing valuable tools for analyzing complex maritime datasets and advancing autonomous vessel technologies."
+ },
+ {
+  "doi": "10.1016/s2214-5796(25)00076-0",
+  "title": "Editorial Board",
+  "date": "2025-11-01",
+  "type": "paratext",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "42",
+   "issue": null,
+   "first_page": "100581",
+   "last_page": "100581"
+  },
+  "topics": [
+   "Diverse Scientific and Economic Studies",
+   "Human auditory perception and evaluation",
+   "Educational Robotics and Engineering"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100586",
+  "title": "Asymmetric deviation entropy regularization for semi-supervised fuzzy C-means clustering and its fast Algorithm",
+  "date": "2025-12-16",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Chengmao Wu",
+   "Jun Hou"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100586",
+   "last_page": "100586"
+  },
+  "topics": [
+   "Advanced Clustering Algorithms Research",
+   "Face and Expression Recognition",
+   "Statistical Mechanics and Entropy"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2025.100587",
+  "title": "VertexLocater: PIM-enabled dynamic offloading for graph computing",
+  "date": "2026-01-05",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Yiding Liu",
+   "Deren Xu",
+   "Yanyong Wang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100587",
+   "last_page": "100587"
+  },
+  "topics": [
+   "Cloud Computing and Resource Management",
+   "Graph Theory and Algorithms",
+   "Parallel Computing and Optimization Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100589",
+  "title": "Large-scale least squares regression based on fast spectral embedding and random Fourier feature mapping",
+  "date": "2026-01-20",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Xingyu Li",
+   "Jinglei Liu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100589",
+   "last_page": "100589"
+  },
+  "topics": [
+   "Sparse and Compressive Sensing Techniques",
+   "Face and Expression Recognition",
+   "Stochastic Gradient Optimization Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100590",
+  "title": "Opinion fraud detection on massive datasets by spark",
+  "date": "2026-01-21",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Shahab Ghodsi",
+   "Ali Moeini"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100590",
+   "last_page": "100590"
+  },
+  "topics": [
+   "Spam and Phishing Detection",
+   "Misinformation and Its Impacts",
+   "Imbalanced Data Classification Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/s2214-5796(26)00008-0",
+  "title": "Editorial Board",
+  "date": "2026-02-01",
+  "type": "paratext",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "43",
+   "issue": null,
+   "first_page": "100596",
+   "last_page": "100596"
+  },
+  "topics": [
+   "Diverse Scientific and Economic Studies",
+   "Human auditory perception and evaluation",
+   "Educational Robotics and Engineering"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100599",
+  "title": "Mitigating skill measurement bias in occupational systems: An encoder-Decoder framework cooperated with income prediction",
+  "date": "2026-02-25",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Pan Zhang",
+   "Yanyan Li",
+   "Binghao Wang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100599",
+   "last_page": "100599"
+  },
+  "topics": [
+   "Ergonomics and Human Factors",
+   "Ethics and Social Impacts of AI",
+   "Intelligent Tutoring Systems and Adaptive Learning"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100601",
+  "title": "An integrating multi-scale and multi-deep architectures for facial expression recognition system to predict mental health status",
+  "date": "2026-03-22",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Kunal Ghosh",
+   "Saiyed Umer",
+   "Nuzhat Fatema",
+   "Hasmat Malik"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100601",
+   "last_page": "100601"
+  },
+  "topics": [
+   "Emotion and Mood Recognition",
+   "Mental Health via Writing",
+   "Face and Expression Recognition"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100602",
+  "title": "Meteorological and satellite remote sensing-driven machine learning-based approach for large-scale winter oilseed rape prediction and inversion",
+  "date": "2026-04-03",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Yang Yang",
+   "Ze-tong Li",
+   "Yang Liu",
+   "Jia-yi Wu",
+   "Xin-bei Wei",
+   "Yi-lin Ren"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100602",
+   "last_page": "100602"
+  },
+  "topics": [
+   "Remote Sensing in Agriculture",
+   "Remote-Sensing Image Classification",
+   "Smart Agriculture and AI"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100604",
+  "title": "Hybrid quantum GAN- integrated synthetic data generation with privacy-embedded attention framework for financial forecasting and risk analysis",
+  "date": "2026-05-09",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Ashish Kumar Chakraverti",
+   "Pavan Kumar P",
+   "Shwetav Sharad",
+   "Arunendra Singh",
+   "Murari Kumar Singh"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100604",
+   "last_page": "100604"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Quantum Computing Algorithms and Architecture",
+   "Blockchain Technology Applications and Security"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100606",
+  "title": "Towards cross-lingual entity alignment with refined attribute and description features",
+  "date": "2026-05-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Beibei Zhu",
+   "Haolong Duan",
+   "Xiaolu Xu",
+   "Bo Fu",
+   "Ruijie Tian",
+   "Na Lei"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100606",
+   "last_page": "100606"
+  },
+  "topics": [
+   "Advanced Graph Neural Networks",
+   "Machine Learning in Healthcare",
+   "Topic Modeling"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100607",
+  "title": "Dynamics-informed model for spatiotemporal forecasting of influenza cases",
+  "date": "2026-05-23",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Zhenlong Li",
+   "Xiaorui Wu",
+   "Tao Wu",
+   "Jiabing Wu",
+   "Junjun Mao",
+   "Yi-Xiang Wang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100607",
+   "last_page": "100607"
+  },
+  "topics": [
+   "COVID-19 epidemiological studies",
+   "Model Reduction and Neural Networks",
+   "Data-Driven Disease Surveillance"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/s2214-5796(26)00023-7",
+  "title": "Editorial Board",
+  "date": "2026-05-01",
+  "type": "paratext",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "44",
+   "issue": null,
+   "first_page": "100611",
+   "last_page": "100611"
+  },
+  "topics": [
+   "Diverse Scientific and Economic Studies",
+   "Human auditory perception and evaluation",
+   "Educational Robotics and Engineering"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100614",
+  "title": "Supervised attention multi-scale temporal convolutional network for profit prediction utilizing a financial accounting information system",
+  "date": "2026-06-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "A Sathiyaraj",
+   "C Geetha",
+   "Ramkumar Devendiran",
+   "Sudhakar Reddy N"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100614",
+   "last_page": "100614"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Financial Distress and Bankruptcy Prediction",
+   "Financial Reporting and XBRL"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100619",
+  "title": "A novel gas emission prediction model based on TDG-Net for small sample data: Temporal and dual-granularity feature extraction with spatiotemporal attention",
+  "date": "2026-06-02",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Tianyu Fu",
+   "Mangu Hu",
+   "Chao Han",
+   "Fu Lv",
+   "Xiaobin Yang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100619",
+   "last_page": "100619"
+  },
+  "topics": [
+   "Air Quality Monitoring and Forecasting",
+   "Vehicle emissions and performance",
+   "Advanced Chemical Sensor Technologies"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100616",
+  "title": "Dynamic fusion method of multi-source sensor data based on improved RBF network algorithm",
+  "date": "2026-06-02",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Shubo Xu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100616",
+   "last_page": "100616"
+  },
+  "topics": [
+   "AI and Multimedia in Education",
+   "Physical Activity and Education Research",
+   "Educational and Technological Research"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100617",
+  "title": "Optimizing decision support systems with adaptive column-family schema design in NoSQL data warehouses",
+  "date": "2026-06-05",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Boutayna Hafiane",
+   "Nassima Soussi",
+   "Imad Hafidi"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100617",
+   "last_page": "100617"
+  },
+  "topics": [
+   "Cloud Computing and Resource Management",
+   "Advanced Database Systems and Queries",
+   "Data Quality and Management"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100621",
+  "title": "MomentMamba: Efficient collaborative state space modeling for joint video moment retrieval and highlight detection",
+  "date": "2026-06-10",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Yujia Yu",
+   "Hongjian Shi",
+   "Bingqing Qu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100621",
+   "last_page": "100621"
+  },
+  "topics": [
+   "Multimodal Machine Learning Applications",
+   "Video Analysis and Summarization",
+   "Human Pose and Action Recognition"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100618",
+  "title": "Knowledge-fusion data augmentation for cigarette time series anomalies",
+  "date": "2026-06-13",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Jie Tang",
+   "Zhonghua Yu",
+   "Bo Zhang",
+   "Chen Xia",
+   "Feng Li"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100618",
+   "last_page": "100618"
+  },
+  "topics": [
+   "Time Series Analysis and Forecasting",
+   "Machine Learning in Healthcare",
+   "Anomaly Detection Techniques and Applications"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100622",
+  "title": "Location data privacy protection for the logistics order data publishing in intelligent logistics big data platform",
+  "date": "2026-06-13",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Zhengyi Yao",
+   "Liang Tan",
+   "Luxia Fu",
+   "Zhuang Zhang",
+   "Hongxin Tan",
+   "Jingxue Xie"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100622",
+   "last_page": "100622"
+  },
+  "topics": [
+   "Privacy-Preserving Technologies in Data",
+   "Technology and Security Systems",
+   "E-commerce and Technology Innovations"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100623",
+  "title": "Integration of dimensionality reduction and metaheuristic optimization for spatiotemporal clustering of transit stops using ticketing data",
+  "date": "2026-06-15",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Nishtha Rawat",
+   "Amit Agarwal"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100623",
+   "last_page": "100623"
+  },
+  "topics": [
+   "Transportation Planning and Optimization",
+   "Vehicle Routing Optimization Methods",
+   "Railway Systems and Energy Efficiency"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100625",
+  "title": "Generative Pre-trained Transformer-3 based feature extraction and classification using hybrid GRU-SGO for telecom service recommendation system",
+  "date": "2026-06-30",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Vani Haridassan",
+   "K. Hariharanath",
+   "Kavitha Muthukumaran"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100625",
+   "last_page": "100625"
+  },
+  "topics": [
+   "Wireless Signal Modulation Classification",
+   "Advanced Graph Neural Networks",
+   "Advanced Image Fusion Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100624",
+  "title": "Understanding the real impact of multiple popularity biases in recommender systems",
+  "date": "2026-07-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Shulue Mei",
+   "Jie Yuan",
+   "Shuqing Li",
+   "Yuxuan Zhu",
+   "Mingfeng Jiang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100624",
+   "last_page": "100624"
+  },
+  "topics": [
+   "Recommender Systems and Techniques",
+   "Expert finding and Q&A systems",
+   "Consumer Market Behavior and Pricing"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100627",
+  "title": "An attention-augmented RBF-based inversed transformer architecture for robust stock price forecasting",
+  "date": "2026-07-14",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Linh Nguyen Thi My",
+   "Tham Vo"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100627",
+   "last_page": "100627"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Time Series Analysis and Forecasting",
+   "Data Stream Mining Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100628",
+  "title": "Data-driven clustering advances subtype prediction in colorectal cancer for precision treatment",
+  "date": "2026-07-14",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "M. Annapoorani",
+   "G. Kavithaa"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100628",
+   "last_page": "100628"
+  },
+  "topics": [
+   "Colorectal Cancer Screening and Detection",
+   "Machine Learning in Healthcare",
+   "AI in cancer detection"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100626",
+  "title": "Detecting AI-generated text reuse vs. human text reuse in Urdu: A benchmark dataset and feature fusion approach at the phrasal level",
+  "date": "2026-07-16",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Iqra Muneer",
+   "Muhammad Kashif"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100626",
+   "last_page": "100626"
+  },
+  "topics": [
+   "Misinformation and Its Impacts",
+   "Artificial Intelligence in Healthcare and Education",
+   "Academic integrity and plagiarism"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100629",
+  "title": "Scalable QoS-aware cloud service composition for big data workflows: A model-driven MJAYA optimization approach",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Soumya Snigdha Mohapatra",
+   "Rakesh Ranjan Kumar",
+   "Abhinav Tomar"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100629",
+   "last_page": "100629"
+  },
+  "topics": [
+   "Service-Oriented Architecture and Web Services",
+   "Cloud Computing and Resource Management",
+   "Distributed and Parallel Computing Systems"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100633",
+  "title": "Enhancemeant of spectrum efficiency in 5G communication based on PD-NOMA with optimized DEEP19NET estimator",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "A. Vijay",
+   "Ziaul Haque Choudhury",
+   "Ankit Agarwal",
+   "N. Muthukumaran"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100633",
+   "last_page": "100633"
+  },
+  "topics": [
+   "Advanced Wireless Communication Technologies",
+   "PAPR reduction in OFDM",
+   "Wireless Signal Modulation Classification"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100635",
+  "title": "Classification mining method of E-Commerce traffic big data based on clara algorithm",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Chunwei Qi",
+   "Hui Zhang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100635",
+   "last_page": "100635"
+  },
+  "topics": [
+   "AI and Multimedia in Education",
+   "E-commerce and Technology Innovations",
+   "Advanced Computing and Algorithms"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100634",
+  "title": "Optimization of differential privacy mechanism for big data privacy protection",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Jinhua Ye",
+   "Yuhan Sun",
+   "Suipeng Hou",
+   "Jie Zhao"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100634",
+   "last_page": "100634"
+  },
+  "topics": [
+   "Privacy-Preserving Technologies in Data",
+   "Big Data and Digital Economy",
+   "Big Data Technologies and Applications"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100630",
+  "title": "A graph-based semi-supervised approach for automatic text corpus emergency events labelling in X (Twitter)",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Jorge Parraga‐Alava",
+   "Jorge Rodas-Silva",
+   "Jandry Franco",
+   "María-José Vélez"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100630",
+   "last_page": "100630"
+  },
+  "topics": [
+   "Topic Modeling",
+   "Sentiment Analysis and Opinion Mining",
+   "Public Relations and Crisis Communication"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100631",
+  "title": "Segment prediction with adaptive decomposition and gate-guided attention network for time series forecasting",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Weina Wang",
+   "Zhihang Liu"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100631",
+   "last_page": "100631"
+  },
+  "topics": [
+   "Stock Market Forecasting Methods",
+   "Time Series Analysis and Forecasting",
+   "Forecasting Techniques and Applications"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100632",
+  "title": "Research on traffic flow forecasting based on adversarial learning and joint spatial-temporal embeddings",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Linlong Chen",
+   "Linlong Chen",
+   "Linbiao Chen",
+   "Linbiao Chen",
+   "Hongyan Wang"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100632",
+   "last_page": "100632"
+  },
+  "topics": [
+   "Traffic Prediction and Management Techniques",
+   "Traffic control and management",
+   "Transportation Planning and Optimization"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100638",
+  "title": "Will the user engage with the item? A probabilistic framework for personalized product recommendation in big data environment",
+  "date": "2026-08-21",
+  "type": "article",
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "cited_by": 0,
+  "authors": [
+   "Simona-Vasilica Oprea",
+   "Adela Bâra"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "46",
+   "issue": null,
+   "first_page": "100638",
+   "last_page": "100638"
+  },
+  "topics": [
+   "Recommender Systems and Techniques",
+   "Sentiment Analysis and Opinion Mining",
+   "Advanced Text Analysis Techniques"
+  ],
+  "abstract": "This paper introduces a classification-based recommendation system that outputs purchase probabilities rather than just recommending items based on traditional methods. Unlike traditional methods that focus on rating prediction or implicit feedback, this system provides a probabilistic ranking that is directly used for personalized marketing strategies, such as targeted price discounts. By leveraging large-scale datasets (1.2 billion records) and six machine learning (ML) classifiers, the proposed system is designed to be scalable to e-commerce environments. Additionally, our research compares the performance of the classification-based system against classical collaborative filtering techniques using the Surprise package. Furthermore, the use of different data formats including JSON-based order data highlights the system’s ability to handle heterogeneous and unstructured data sources. The recommender system is updated as the users, items and orders update dynamically. The high volume, velocity and variety of data position our probabilistic approach within the framework of big data. Two strategies are foreseen to handle big data: data sampling or applying XGBoost and LightGBM with parallelism, GPU acceleration and out-of-core training. The proposal of a dynamic pricing adjustment based on predicted purchase probabilities (e.g., discounts for items with probability between 0.35 and 0.49) bridges the gap between predictive modeling and actionable business decisions."
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100637",
+  "title": "Software defect prediction based on fuzzy clustering weighted class association rule mining",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Yuanxun Shao",
+   "Wentao Wu",
+   "Shihai Wang",
+   "Bin Liu",
+   "Jingxiu Yao",
+   "Wandong Xie"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100637",
+   "last_page": "100637"
+  },
+  "topics": [
+   "Software Engineering Research",
+   "Data Mining Algorithms and Applications",
+   "Imbalanced Data Classification Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100640",
+  "title": "MSADHGCANet: A multi-scale hypergraph neural network model for multi-step prediction of multivariable time series",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Chuxin Cao",
+   "Man Wu",
+   "Zhizhe Lin",
+   "Jianhong Huang",
+   "Teng Zhou"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100640",
+   "last_page": "100640"
+  },
+  "topics": [
+   "Advanced Graph Neural Networks",
+   "Traffic Prediction and Management Techniques",
+   "Time Series Analysis and Forecasting"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100639",
+  "title": "MHNR: Multi-view aggregation for heterogeneous network representation learning",
+  "date": "2026-08-01",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Fangfang Li",
+   "Gang Li"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100639",
+   "last_page": "100639"
+  },
+  "topics": [
+   "Domain Adaptation and Few-Shot Learning",
+   "Face and Expression Recognition",
+   "Advanced Graph Neural Networks"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100642",
+  "title": "A feature-based predictive optimization framework for early-stage bankruptcy risk assessment",
+  "date": "2026-08-25",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Chen Ye"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "46",
+   "issue": null,
+   "first_page": "100642",
+   "last_page": "100642"
+  },
+  "topics": [
+   "Financial Distress and Bankruptcy Prediction",
+   "Corporate Insolvency and Governance",
+   "Imbalanced Data Classification Techniques"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/j.bdr.2026.100641",
+  "title": "Scalable Real-Time edge query processing for smart transportation using Workload-Aware column imprints",
+  "date": "2026-08-26",
+  "type": "article",
+  "is_oa": false,
+  "oa_status": "closed",
+  "cited_by": 0,
+  "authors": [
+   "Kalgi Gandhi",
+   "Minal Bhise"
+  ],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "46",
+   "issue": null,
+   "first_page": "100641",
+   "last_page": "100641"
+  },
+  "topics": [
+   "Data Management and Algorithms",
+   "Advanced Database Systems and Queries",
+   "Cloud Computing and Resource Management"
+  ],
+  "abstract": ""
+ },
+ {
+  "doi": "10.1016/s2214-5796(26)00058-4",
+  "title": "Editorial Board",
+  "date": "2026-08-01",
+  "type": "paratext",
+  "is_oa": true,
+  "oa_status": "bronze",
+  "cited_by": 0,
+  "authors": [],
+  "journal": "Big Data Research",
+  "biblio": {
+   "volume": "45",
+   "issue": null,
+   "first_page": "100646",
+   "last_page": "100646"
+  },
+  "topics": [],
+  "abstract": ""
+ }
+]
