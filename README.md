@@ -2,6 +2,20 @@
 
 **The single source of truth for this workspace is [`notes/Big Data Assignment.pdf`](notes/Big%20Data%20Assignment.pdf).** Everything here exists to produce that assignment. A distilled copy of its requirements lives in [`notes/requirements.md`](notes/requirements.md) — read that first.
 
+## Getting started (team members)
+
+```bash
+git clone https://github.com/ihmorol/big-data-ml-review.git
+cd big-data-ml-review
+```
+
+Repo: **https://github.com/ihmorol/big-data-ml-review**
+
+- Pull before you start editing; push when you finish a work session.
+- Keep the trackers updated — they are the coordination point (`trackers/papers-pool.md`, `trackers/team-tasks.md`, `trackers/writing-progress.md`).
+- Reading a paper? Open its note in `sources/` and complete the "Synthesis hooks" section.
+- The local `archive/` folder (an unrelated old project) is intentionally not published to this repo.
+
 ## Assignment at a glance
 
 | Item | Value |
