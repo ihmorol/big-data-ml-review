@@ -1,26 +1,51 @@
-# JoBD-3 — Advancing multimodal emotion recognition in big data through
+# JoBD-3 — Advancing multimodal emotion recognition in big data through prompt engineering and deep adaptive learning
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Wafa AA, Eldefrawi MM, Farhan MS (2025) Advancing multimodal emotion recognition in big data through prompt engineering and deep adaptive learning. *Journal Of Big Data* 12(1). DOI: 10.1186/s40537-025-01264-w
-- **Journal / year:** Journal Of Big Data / 2025 (2025-08-26)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 22 (OpenAlex, 2026-09-15)
-- **Access:** OPEN ACCESS
+- **Citation (Springer Basic):** Wafa AA, Eldefrawi MM, Farhan MS (2025) Advancing multimodal emotion recognition in big data through prompt engineering and deep adaptive learning. *Journal of Big Data* 12:210. DOI: 10.1186/s40537-025-01264-w
+- **Journal / year:** Journal of Big Data / 2025 (published 2025-08-26; received 20 Apr 2025, accepted 10 Aug 2025) · **WoS indexed:** yes (SCIE, journal-level — per `trackers/papers-pool.md`) · **Citations at access date:** 23 (live OpenAlex API 2026-09-22; snapshot 2026-09-15 recorded 22)
+- **Access:** OPEN ACCESS (gold, CC-BY, published version). [evidence: `results/openalex_raw/JoBD.json`; OpenAlex `primary_location.license: cc-by`]
 - **Pool ID:** JoBD-3 | **Status:** selected (rev2), Crossref-verified 2026-09-15
+- **Full author list:** Abeer A. Wafa, Mai M. Eldefrawi, Marwa S. Farhan (Helwan University; Farhan also British University in Egypt). [evidence: OpenAlex metadata; PDF author block p. 1]
+- **OpenAlex work ID:** W4413659949 · **References in paper:** 55. [evidence: OpenAlex metadata]
+- **Full text read:** yes — SpringerOpen OA PDF, 62 pp. (retrieved 2026-09-22 via `journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-025-01264-w`). Page numbers below are the article's own ("Page X of 62") / journal article number 210.
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (full text — every field corroborated by the PDF)
 
-- **Problem / domain:** Applications & domains strand of the BD+ML literature.
-- **Big-data context:** multimodal big data (explicit in title).
-- **ML methods:** GAN + dynamic prompt engineering, multimodal deep learning.
-- **Abstract:** Abstract Emotion recognition in dynamic and real-world environments presents significant challenges due to the complexity and variability of multimodal data. This paper introduces an innovative Multimodal Emotion Recognition (MER) framework that seamlessly integrates text, audio, video, and motion data using advanced machine learning techniques. To address challenges such as class imbalance, the framework employs Generative Adversarial Networks (GANs) for synthetic sample generation and Dynamic Prompt Engineering (DPE) for enhanced feature extraction across modalities. Text features are processed with Mistral-7B, audio with HuBERT, video with TimeSformer and LLaVA, and motion with MediaPipe Pose. The system efficiently fuses these inputs using Hierarchical Attention-based Graph Neural Networks (HAN-GNN) and Cross-Modality Transformer Fusion (XMTF), further improved by contrastive learnin…
+- **Problem / domain:** **Multimodal Emotion Recognition (MER)** — fusing text, audio, video and motion to classify emotion in conversations. Motivation: unimodal systems miss complementary cues; prior MER relies on **early/late fusion** that cannot model temporal dynamics, inter-modal interaction, or speaker variation, and struggles with noise, class imbalance and multilingual variability (pp. 2–3).
+- **Big-data context:** framed explicitly around the **"variety" V of big data** — heterogeneous modalities with different feature distributions, temporal misalignment, missing data and per-modality noise. Scale: **IEMOCAP + MELD ≈ 25,000+ utterances** plus external SAVEE (480) and CMU-MOSEAS (40,000+). Platform: **ONNX Runtime** for hardware-agnostic, low-latency inference (not a distributed engine). No Spark/Hadoop — "big data" = multimodal heterogeneity, not volume/velocity. [evidence: PDF §3 (intro to method), §5.1, §"Phase 10"]
+- **ML methods / architecture:** a **10-phase pipeline**:
+  1. Data loading/preprocessing (modality-specific).
+  2. **Dynamic Prompt Engineering (DPE)** via **Evolutionary Prompt Optimization** with Chain-of-Thought for text.
+  3. Modality encoders: **Mistral-7B** (text), **HuBERT** (audio), **LLaVA + TimeSformer** (video), **MediaPipe Pose + Motion Transformer** (motion).
+  4. **Self-supervised pretraining** with NT-Xent contrastive loss.
+  5. **AdaptiveGNN** — learnable edge weights (GATConv attention) over modality nodes.
+  6. **HAN-GNN** — hierarchical node-level + modality-level attention.
+  7. **Cross-Modality Transformer Fusion (XMTF)** — multi-head cross-attention.
+  8. **Contrastive learning with Prototypical Networks** (class prototypes; nearest-prototype matching).
+  9. **Optuna** TPE hyperparameter search (100 trials/dataset).
+  10. **ONNX** export for real-time deployment.
+  **GAN-based augmentation** (class-conditional, with diversity regularisation) counters emotion-class imbalance. [evidence: PDF §3 (Phases 1–10), Algorithm 1]
+- **Data:** four benchmark datasets (Table 2 p. 30; §4):
+  - **IEMOCAP** — 12 h audiovisual, 10 actors; 6 emotions (Frustrated 1,848 → Excited 1,041); **Leave-One-Session-Out** speaker-independent CV; test split **1,623 utterances**.
+  - **MELD** — from *Friends*; ~13,000 utterances / ~1,400 dialogues; **7 emotions** (Neutral 4,710 → Fear 268); test split **2,610 utterances**.
+  - **SAVEE** (external test) — 480 utterances, 4 British male speakers, 7 emotions.
+  - **CMU-MOSEAS** (external test) — 40,000+ utterances in Spanish/Portuguese/German/French; **100 samples per language** used for test.
+  Metrics: accuracy, macro/weighted precision/recall/F1, specificity, AUC, MCC, training/testing time. Each experiment repeated **3× with different seeds** (mean ± SD reported). [evidence: PDF §4, §5.2]
+- **Key findings (with numbers as printed):**
+  - **IEMOCAP:** train 99.92%, validation 99.89%, **test 99.82%** (macro=weighted precision/recall/F1 all **0.9982** on 1,623 samples); **AUC 0.9989**, **specificity 0.9996**, **MCC 0.9978**; training **5 min**, inference **0.3 ms/sample** (Table 4 p. 43, §5.3.1).
+  - **MELD:** train 99.95%, validation 99.91%, **test 99.81%** (weighted F1 0.9981 on 2,610 samples); macro-AUC 0.9987,-weighted 0.9989, specificity 0.9997, **MCC 0.9976**; training **5 min 17 s**, inference **0.38 ms/sample** (Table 5 p. 45, §5.3.2).
+  - **External / zero-shot:** SAVEE **99.78%** (macro-F1 99.70%, MCC 0.9973, 0.06 ms); CMU-MOSEAS per-language accuracy **99.1–99.4%** (German highest 99.4%, Portuguese lowest 99.1%), weighted F1 99.19–99.38%, MCC 0.990–0.993 (Tables 8–9, pp. 48, 51) — despite **zero non-English training data**.
+  - **Claimed SOTA margin:** the paper states existing best models "report performance ceilings of approximately 73% and 66% on IEMOCAP and MELD" and describes its own result as "a dramatic leap of over 25–30 percentage points" (p. 53; Table 10 p. 54). Ablation (Table 7, p. 49): baseline A1 **83.2% MELD / 84.6% IEMOCAP** → full model A10 **99.79% / 99.8%**; DPE alone +5.4/+4.6 pts, XMTF +PCL +GAN each add further gains; **modality dropout** (A7 −Video, A8 −Audio) still keeps macro-F1 >90%.
+- **Limitations the authors admit** (p. 56): (1) **model complexity vs edge deployment** — transformer/spatiotemporal blocks still strain resource-constrained devices (future: pruning/quantisation/distillation); (2) **cultural and sensor generalisation limited** despite CMU-MOSEAS; (3) **limited model explainability** — no dedicated post-hoc XAI (no SHAP/Grad-CAM) despite attention's partial interpretability.
+- **Limitations we see:** (a) **the reported accuracies are implausibly high for emotion recognition** — published MER on IEMOCAP/MELD tops out in the 60–75% range, and the paper's own Table 10 cites competitors at ~70%; **98–99.8% accuracy strongly suggests label leakage or an evaluation flaw** (e.g., random rather than speaker-independent splits at some stage, or fusing labels), so the numbers should not be quoted as a like-for-like SOTA without verification; (b) **inconsistent dataset naming** — §"Phase 1" lists CMU-MOSEI as the 4th training dataset while §4 and all results use CMU-MOSEAS as an external test set, creating reproducibility ambiguity; (c) **the ViT-style comparison is unfair** — the SOTA table mixes datasets (BAUM, RAVDESS, AFEW, GoEmotions) and task definitions (binary, 4-class, 7-class) so "25–30 point leap" compares incomparable protocols; (d) **external-language test uses only 100 samples per language** — too small for stable per-language claims; (e) hyperparameters are odd (MELD batch size **9**, learning rate 1.16e-5; IEMOCAP batch **445**, 100 epochs — Table 3 p. 38), which raises overfitting/leakage questions rather than supporting generality; (f) **"big data" is used rhetorically** — the largest training set is ~13k utterances, far from big-data volume, echoing JoBD-1/JoBD-2's loose usage.
 
 ## Synthesis hooks
 
-- **Theme placement:** Applications & domains (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.5 applications/domains + §3.3 methods):** branch **B3 — applications and domains** (per `trackers/paper-tracker.md` branch map; B3 = BDR-1, BDR-4, JoBD-1, JoBD-3, AIR-2). Also the corpus's most elaborate **multimodal-fusion method** and a bridge to the LLM/foundation-model branch (Mistral-7B, LLaVA). [evidence: `notes/recon-report.md` §2.1 branch map; PDF]
+- **Agrees with:** **AIR-3** and **TBD-2** — all evidence the foundation-model-as-backbone trend (JoBD-3 uses Mistral-7B/LLaVA/HuBERT/TimeSformer as frozen-ish encoders); **AIR-1** — prompt engineering is the shared mechanism class (AIR-1 frames prompt-driven orchestration as a neural-paradigm design pattern); **JoBD-1** — same "big data = variety/volume of domain data" framing and transfer-learning-plus-augmentation recipe. [evidence: PDFs; OpenAlex abstracts]
+- **Contradicts / contrasts with:** **BDR-5/TBD-1/JoBD-5** — those treat scalability as algorithmic/systems cost; JoBD-3's scalability claim is inference latency (0.3 ms) via ONNX, so it sits on the *efficiency-via-format* rather than *efficiency-via-algorithm* side. It also **contradicts the corpus's emerging consensus that domain-specific CNNs still beat transformers in low-data domains** (JoBD-1 found ViT only 41.3%) — JoBD-3 claims transformer stacks reach 99.8% with far less data, which is exactly the kind of discrepancy the review should flag. [evidence: PDFs of JoBD-1, JoBD-3]
+- **Extends/enables:** **JoBD-2** — both are multi-source healthcare/social pipelines whose "big data" is variety, letting the review contrast *privacy-driven* (JoBD-2) vs *fusion-driven* (JoBD-3) architectures; **AIR-1** — JoBD-3's ten-phase orchestration is a concrete instance of AIR-1's neural-orchestration pattern; **JoBD-4** — both deploy deep models to a latency constraint (ONNX 0.3 ms vs Spark streaming), enabling a §3.4 platform comparison. [evidence: PDFs]
+- **Unique contribution no other pool paper has:** the pool's **only four-modality (text+audio+video+motion) fusion framework** and its only use of **Evolutionary Prompt Optimization**; also the only paper citing explicit **zero-shot cross-lingual** evaluation (CMU-MOSEAS). [evidence: PDF; `notes/landscape-report.md` B3]
+- **Quotable line (page-cited from PDF):** "The proposed architecture achieved near-perfect classification accuracies of 99.82% on IEMOCAP and 99.81% on MELD… This dramatic leap of over 25–30 percentage points in absolute accuracy signifies… a paradigm shift." (p. 53) · *alt:* "Despite the absence of multilingual training, the model achieved accuracy exceeding 99.1% across all languages, with MCC values reaching up to 0.9939." (p. 55) · *alt:* "Limited Model Explainability: Although attention mechanisms offer some interpretability, the framework lacks dedicated post-hoc explainability tools." (p. 56)
+- **Table 1 row data:** Multimodal emotion recognition (applications + methods) | 10-phase MER: Mistral-7B / HuBERT / LLaVA+TimeSformer / MediaPipe Pose; HAN-GNN + XMTF + Prototypical contrastive learning; GAN augmentation; Optuna; ONNX export | Multimodal "variety" — ~25k utterances (IEMOCAP+MELD) + external SAVEE/CMU-MOSEAS; platform = ONNX Runtime (no distributed engine) | IEMOCAP 1,623 test / MELD 2,610 test utterances; SAVEE 480; CMU-MOSEAS 100/lang; 3 seeds | **IEMOCAP 99.82%, MELD 99.81%** test accuracy (AUC ≈0.999, MCC ≈0.998); SAVEE 99.78%; CMU-MOSEAS 99.1–99.4%; train ≈5 min, inference 0.3–0.5 ms | **High (for retrieval) but flagged** — abstract + 62-pp full text; numbers verified in PDF, yet the reported accuracies are anomalously high vs the literature and should be treated with caution pending independent replication.
