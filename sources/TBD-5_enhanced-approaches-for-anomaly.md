@@ -6,7 +6,7 @@
 - **Journal / year:** IEEE Transactions on Big Data / 2026 (2026-03-31)
 - **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
 - **Impact signal:** cited by 0 (OpenAlex, 2026-09-15)
-- **Access:** PAYWALLED - needs institutional access (arXiv copy pending check)
+- **Access:** PAYWALLED - needs institutional access (arXiv check done 2026-09-16: NO open copy anywhere — OpenAlex/S2/Unpaywall all closed, no arXiv preprint, no author/repo PDF, no Scholar PDF link; full text only via IEEE Xplore doc 11458590 with institutional access, or ResearchGate full-text request to authors)
 - **Pool ID:** TBD-5 | **Status:** selected, Crossref-verified 2026-09-15
 
 ## Content (abstract-level — confirm all specifics against full text)

@@ -12,7 +12,7 @@ cd big-data-ml-review
 Repo: **https://github.com/ihmorol/big-data-ml-review**
 
 - Pull before you start editing; push when you finish a work session.
-- Keep the trackers updated — they are the coordination point (`trackers/papers-pool.md`, `trackers/team-tasks.md`, `trackers/writing-progress.md`).
+- Keep the trackers updated — they are the coordination point (`trackers/papers-pool.md`, `trackers/team-tasks.md`, `trackers/writing-progress.md`, `trackers/paper-tracker.md`).
 - Reading a paper? Open its note in `sources/` and complete the "Synthesis hooks" section.
 - The local `archive/` folder (an unrelated old project) is intentionally not published to this repo.
 
@@ -36,7 +36,9 @@ Marks: Abstract 2 · Introduction 3 · **Literature Review 10** · Tables & Figu
 notes/            requirements.md (distilled brief) + the assignment PDF itself
 paper/            outline.md, then the actual sections as they are drafted
 sources/          per-paper extraction notes (one file per selected paper)
-trackers/         papers-pool.md · team-tasks.md · writing-progress.md
+papers/           full-text PDFs: papers/<journal>/<ID>_<Author>_<Year>_<ShortTitle>.pdf
+trackers/         papers-pool.md · team-tasks.md · writing-progress.md · paper-tracker.md (per-paper registry for Notion)
+trackers/notion-import/  the tracker's tables as CSVs (one CSV = one Notion database)
 figures/          final figures (PNG/PDF, 300 dpi)
 code/             optional scripts used to generate tables/figures from extracted data
 results/          intermediate data behind tables/figures (counts, matrices)

@@ -6,7 +6,8 @@
 - **Journal / year:** IEEE Transactions on Big Data / 2025 (2025-07-31)
 - **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
 - **Impact signal:** cited by 27 (OpenAlex, 2026-09-15)
-- **Access:** OPEN ACCESS
+- **Access:** OPEN ACCESS (green — author-hosted accepted manuscript)
+- **Local PDF:** papers/TBD/TBD-4_Xiao_2025_KnowledgeAggregationTransformer.pdf (+ `-supplement.pdf`) — downloaded 2026-09-16 from co-author R. Qu's Nottingham page (people.cs.nott.ac.uk/pszrq/files/TBD25.pdf); verified 17 pp., matches title/authors
 - **Pool ID:** TBD-4 | **Status:** selected, Crossref-verified 2026-09-15
 
 ## Content (abstract-level — confirm all specifics against full text)
