@@ -1,26 +1,33 @@
-# TBD-2 — TS-MLLM: A Multi-Modal Large Language Model-based Framework 
+# TBD-2 — TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Wang H, Li Y, Zhu YC, et al (2026) TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis. *IEEE Transactions on Big Data* None. DOI: 10.1109/tbdata.2026.3695338
-- **Journal / year:** IEEE Transactions on Big Data / 2026 (2026-01-01)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 0 (OpenAlex, 2026-09-15)
-- **Access:** PAYWALLED - needs institutional access
-- **Pool ID:** TBD-2 | **Status:** selected (rev3), Crossref-verified 2026-09-15
+- **Citation (Springer Basic):** Wang H, Li Y, Zhu YC, Yan J, Ren L, Yang LT (2026) TS-MLLM: A Multi-Modal Large Language Model-based Framework for Industrial Time-Series Big Data Analysis. *IEEE Transactions on Big Data* (early access). DOI: 10.1109/tbdata.2026.3695338
+- **Journal / year:** IEEE Transactions on Big Data / 2026 (indexed 2026-01-01) · **WoS indexed:** yes (SCIE, journal-level) · **Citations at access date:** 0 (OpenAlex, 2026-09-15)
+- **Access:** PAYWALLED (closed; IEEE Xplore, institutional access needed). No indexed free copy / preprint. **Full text not read.** [evidence: `results/openalex_raw/IEEE_TBD.json`; `results/screen/IEEE_TBD.csv`]
+- **Volume/pages:** OpenAlex `biblio` is null for volume/issue with `first_page 1`, `last_page 14` — i.e. an **early-access** article; no final volume/issue assigned at access date. [evidence: OpenAlex metadata; `trackers/notion-import/master.csv` records Year 2026]
+- **Pool ID:** TBD-2 | **Status:** selected (rev 3), Crossref-verified 2026-09-15
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — full text NOT read; every field below is bounded by the indexed abstract)
 
-- **Problem / domain:** LLMs & foundation models strand of the BD+ML literature. Original research article.
-- **Big-data context:** industrial time-series big data (explicit in title).
-- **ML methods:** multimodal LLM framework for industrial time-series analysis (PHM).
-- **Abstract:** Accurate analysis of industrial time-series big data is critical for the Prognostics and Health Management (PHM) of industrial equipment. While recent advancements in Large Language Models (LLMs) have shown promise in time-series analysis, existing methods typically focus on single-modality adaptations, failing to exploit the complementary nature of temporal signals, frequency-domain visual representations, and textual knowledge information. In this paper, we propose TS-MLLM, a unified multi-modal large language model framework that is the first to jointly model industrial temporal signals, frequency-domain images, and textual domain knowledge. Specifically, we first develop an Industrial time-series Patch Modeling branch to capture long-range temporal dynamics. To integrate cross-modal priors, we introduce a Spectrum-aware Vision-Language Model Adaptation (SVLMA) mechanism that enables …
+- **Evidence provenance:** primary evidence is the indexed abstract + metadata in `results/openalex_raw/IEEE_TBD.json` (lines 6921–6949), corroborated by `results/screen/IEEE_TBD.csv` and `trackers/notion-import/master.csv`. Full text is closed; unstated fields are labelled **NOT AVAILABLE**.
+- **Problem / domain:** **Prognostics and Health Management (PHM)** of industrial equipment via analysis of industrial time-series big data. The gap: existing LLM-based time-series methods "typically focus on single-modality adaptations, failing to exploit the complementary nature of temporal signals, frequency-domain visual representations, and textual knowledge information." [evidence: OpenAlex abstract]
+- **Big-data context:** framed around industrial time-series **big data** (title) — continuous sensor/production signals for equipment health. Modalities explicitly named: temporal signals, **frequency-domain images**, textual domain knowledge. No streaming platform, data volume, or sampling rate is stated in the abstract. [evidence: OpenAlex abstract; platform/volume NOT AVAILABLE]
+- **ML methods / architecture:** **TS-MLLM**, a *unified multi-modal large language model* framework — claimed by the authors to be "the first to jointly model industrial temporal signals, frequency-domain images, and textual domain knowledge." Three named components: (1) an **Industrial time-series Patch Modeling** branch for long-range temporal dynamics; (2) **Spectrum-aware Vision-Language Model Adaptation (SVLMA)** to internalise frequency-domain patterns and semantic context; (3) **Temporal-centric Multi-modal Attention Fusion (TMAF)**, which "actively retrieve[s] relevant visual and textual cues using temporal features as queries" for cross-modal alignment. [evidence: OpenAlex abstract]
+- **Data:** **NOT AVAILABLE — full text not read.** The abstract says only "multiple industrial benchmarks"; **no dataset is named and no scale is given** (contrast TBD-4/TBD-5, whose abstracts name datasets). Evaluation scenarios: "few-shot and complex scenarios." [evidence: OpenAlex abstract]
+- **Evaluation + headline results:** The abstract claims TS-MLLM "significantly outperforms state-of-the-art methods, particularly in few-shot and complex scenarios", validating "superior robustness, efficiency, and generalization" — **qualitative only; no metrics, no named baselines, no tables.** [evidence: OpenAlex abstract]
+- **Key findings (≤3, as far as the abstract supports):**
+  - Multi-modal fusion (temporal + spectral-image + text) is proposed as the differentiator over single-modality LLM adaptations. [evidence: OpenAlex abstract]
+  - Frequency-domain images and textual domain knowledge are treated as first-class modalities retrieved *by* temporal queries (TMAF). [evidence: OpenAlex abstract]
+  - Claimed strength is in low-data (few-shot) regimes. [evidence: OpenAlex abstract]
+- **Limitations the authors admit:** none stated in the abstract. [NOT AVAILABLE]
+- **Limitations we see (from the abstract surface only):** (a) "significantly outperforms" is unquantified and baselines are unnamed at abstract level — no reproducibility anchor; (b) the "first to jointly model" novelty claim is unverifiable without the full text/related-work; (c) the industrial-benchmark datasets are unnamed, so external validity and dataset scale are unknown; (d) an LLM-based framework raises deployment-cost/latency questions (relevant to our platforms branch) that the abstract does not address.
 
 ## Synthesis hooks
 
-- **Theme placement:** LLMs & foundation models (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.3 methods / §3.5 applications):** branch **B4 — foundation models & LLMs** (per `notes/landscape-report.md` §Taxonomy, B4 = TBD-2, TBD-3, AIR-1, AIR-3). The landscape report also flags TBD-2 as a **straddler**: an LLM *method* paper run on industrial production data, bridging B4 to the platform/infrastructure concerns of B2. [evidence: `notes/landscape-report.md` §Branches + §Straddlers]
+- **Agrees with:** **TBD-3** and **AIR-1** — the LLM/foundation model as the new reasoning substrate, shared-with TBD-3's thesis that coupling domain models with LLMs beats text-only adaptation; **JoBD-3** (multimodal deep learning on big data) and **JoBD-4** (industrial/streaming time-series prediction) on the multi-modal + time-series application axis; **AIR-3** on the classical→deep→foundation-model arc. [evidence: OpenAlex abstracts]
+- **Contradicts:** no falsifiable conflict at abstract level. It contrasts with **TBD-4** (purpose-built transformer, no LLM) — same time-series classification territory, opposite architectural philosophy (lightweight task model vs. large multimodal LLM). [evidence: OpenAlex abstracts]
+- **Extends/enables:** **AIR-5** (deep multivariate time-series survey) — TS-MLLM is a concrete instance of the "multimodal/foundation-model" direction AIR-5 surveys; **JoBD-4** — same PHM/industrial prediction target, different model family (TCN+Spark vs. multimodal LLM). [evidence: OpenAlex abstracts]
+- **Unique contribution no other pool paper has:** the pool's only paper that fuses **three modalities — raw temporal signals, frequency-domain images, and textual domain knowledge — inside a single LLM** for industrial PHM, and the only one claiming SOTA specifically in **few-shot** industrial settings. [evidence: OpenAlex abstract; `notes/landscape-report.md` §B4]
+- **Quotable line (abstract-level — page number NOT AVAILABLE; cite by DOI):** "existing methods typically focus on single-modality adaptations, failing to exploit the complementary nature of temporal signals, frequency-domain visual representations, and textual knowledge information." (abstract; DOI 10.1109/tbdata.2026.3695338) [evidence: OpenAlex abstract]

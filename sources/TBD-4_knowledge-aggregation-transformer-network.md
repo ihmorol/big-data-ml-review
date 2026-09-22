@@ -1,27 +1,33 @@
-# TBD-4 — Knowledge Aggregation Transformer Network for Multivariate T
+# TBD-4 — Knowledge Aggregation Transformer Network for Multivariate Time Series Classification
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Xiao Z, Xing H, Qu R, et al (2025) Knowledge Aggregation Transformer Network for Multivariate Time Series Classification. *IEEE Transactions on Big Data* 11(6):3413-3429. DOI: 10.1109/tbdata.2025.3594294
-- **Journal / year:** IEEE Transactions on Big Data / 2025 (2025-07-31)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 27 (OpenAlex, 2026-09-15)
-- **Access:** OPEN ACCESS (green — author-hosted accepted manuscript)
-- **Local PDF:** papers/TBD/TBD-4_Xiao_2025_KnowledgeAggregationTransformer.pdf (+ `-supplement.pdf`) — downloaded 2026-09-16 from co-author R. Qu's Nottingham page (people.cs.nott.ac.uk/pszrq/files/TBD25.pdf); verified 17 pp., matches title/authors
+- **Citation (Springer Basic):** Xiao Z, Xing H, Qu R, Li H, Tong H, Luo S (2025) Knowledge Aggregation Transformer Network for Multivariate Time Series Classification. *IEEE Transactions on Big Data* 11(6):3413–3429. DOI: 10.1109/tbdata.2025.3594294
+- **Journal / year:** IEEE Transactions on Big Data / 2025 (published 2025-07-31) · **WoS indexed:** yes (SCIE, journal-level) · **Citations at access date:** 27 (OpenAlex snapshot 2026-09-15)
+- **Access:** **OPEN ACCESS (green)** — OpenAlex reports `oa_status: green`, `any_repository_has_fulltext: true`. A local accepted-manuscript file was referenced in this note's stub as `papers/TBD/TBD-4_Xiao_2025_KnowledgeAggregationTransformer.pdf`; **at this analysis pass `papers/TBD/` is EMPTY and the file is absent** — so the **full text was NOT read for this note.** [evidence: OpenAlex API re-fetch 2026-09-22 (`oa_status: green`, `has_content.pdf: false`); directory listing of `papers/TBD/`]
 - **Pool ID:** TBD-4 | **Status:** selected, Crossref-verified 2026-09-15
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — full text NOT read; every field below is bounded by the indexed abstract)
 
-- **Problem / domain:** Time series & streaming strand of the BD+ML literature.
-- **Big-data context:** high-volume sensor/time-series data.
-- **ML methods:** transformer for multivariate time series classification.
-- **Abstract:** Over the years, various sophisticated deep learning algorithms have surfaced for multivariate time series classification (MTSC), notably the dual-network-based model. This model comprises two parallel networks tailored to time series data: one for local feature extraction and the other for global relation extraction. However, effectively integrating these dual networks poses a significant challenge. To address this, we propose a knowledge aggregation transformer network (KATN) for MTSC. KATN, composed of four aggregation transformer blocks, extracts abundant regularizations and connections hidden within the data. Each block incorporates a modified residual network (MResNet) for local feature extraction and a multi-head attention network for global relation extraction. Initially, the block merges MResNet's output feature with that of the multi-head attention network through an additive op…
+- **Evidence provenance:** primary evidence is the indexed abstract + metadata in `results/openalex_raw/IEEE_TBD.json` (lines 118–145), corroborated by `results/screen/IEEE_TBD.csv`, `trackers/notion-import/master.csv`, and a live OpenAlex API re-fetch on 2026-09-22. Although the paper is green-OA, no PDF was retrievable in this environment, so unstated fields are labelled **NOT AVAILABLE**.
+- **Problem / domain:** **Multivariate Time Series Classification (MTSC)**. The stated gap: dual-network MTSC models ("two parallel networks … one for local feature extraction and the other for global relation extraction") exist, but "effective integration of these dual networks poses a significant challenge." [evidence: OpenAlex abstract]
+- **Big-data context:** high-volume, multi-channel sensor/time-series data (the MTSC setting). The paper's framing is algorithmic efficiency of feature fusion rather than a named system/volume; **platform and data volume are NOT AVAILABLE** in the abstract. [evidence: OpenAlex abstract]
+- **ML methods / architecture:** **KATN (Knowledge Aggregation Transformer Network)** — composed of **four aggregation transformer blocks**. Each block combines: a **modified residual network (MResNet)** for *local* feature extraction and a **multi-head attention network** for *global* relation extraction. Integration mechanics per abstract: **additive merge** of MResNet output with the attention output → alignment via a **fully connected (dense) layer** → activation with **GELU** (Gaussian error linear unit). The design targets "long-range dependencies among multiple variables." [evidence: OpenAlex abstract]
+- **Data:** **Benchmarks named at abstract level:** evaluation vs. **6 state-of-the-art transformer variants**, and vs. **18 existing MTSC algorithms** across **13 UEA datasets**. Individual dataset names/sizes are NOT AVAILABLE in the abstract (UEA archive is the evaluation suite). [evidence: OpenAlex abstract]
+- **Evaluation + headline results (the pool's most concrete comparative protocol):**
+  - vs. 6 SOTA transformer variants: a **'win'/'tie'/'lose' record of 9/6/15** and the **lowest AVG_rank** score. [evidence: OpenAlex abstract]
+  - vs. 18 existing MTSC algorithms on **13 UEA datasets**: **lowest AVG_rank** among all compared methods. [evidence: OpenAlex abstract]
+- **Key findings (≤3, as far as the abstract supports):**
+  - Additive aggregation of local (residual) and global (attention) features is the proposed way to fuse the two parallel branches. [evidence: OpenAlex abstract]
+  - Rank-based comparison (AVG_rank across many datasets/algorithms) is the reported evidence form, rather than a single accuracy number. [evidence: OpenAlex abstract]
+- **Limitations the authors admit:** none stated in the abstract. [NOT AVAILABLE]
+- **Limitations we see (from the abstract surface only):** (a) results are reported as **rank aggregates** and a W/T/L record — no per-dataset accuracies, no variance/statistical significance, so magnitudes are hidden at abstract level; (b) no efficiency/cost numbers despite the "aggregation efficiency" framing (relevant to our platforms branch); (c) evaluation is confined to the **UEA archive**, whose series lengths are modest relative to true "big data" streaming settings — so the big-data-scale claim is only indirect; (d) novelty vs. prior dual-network MTSC models cannot be fully adjudicated from the abstract.
 
 ## Synthesis hooks
 
-- **Theme placement:** Time series & streaming (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.3 methods / §3.6 cross-cutting):** branch **B1 — scalable & interpretable learning methods** (per `notes/landscape-report.md` §Taxonomy, B1 = TBD-1, TBD-4, TBD-5, BDR-5, JoBD-5). The landscape report lists its mechanism as "aggregation transformers (local+global)" and its efficiency axis as "feature fusion efficiency." [evidence: `notes/landscape-report.md` §B1 table]
+- **Agrees with:** **AIR-5** (deep multivariate time-series survey) — KATN is an instance of the transformer-family MTSC models AIR-5 surveys, and supports AIR-5's premise that architecture matters for multivariate series; **TBD-2** — both exploit local+global temporal structure (though TBD-2 does so with an LLM and extra modalities); **JoBD-4** — same "deep model + multivariate time series" application family. [evidence: OpenAlex abstracts; AIR-5 note]
+- **Contradicts:** **AIR-5's reproducibility critique** in spirit — KATN reports only rank aggregates and a W/T/L record, with no seeds/variance/statistical tests at abstract level, which is exactly the reporting gap AIR-5's empirical audit flags in the deep-MTS literature. [evidence: OpenAlex abstract of TBD-4; AIR-5 note]
+- **Extends/enables:** **TBD-3** — both are attention-over-structure architectures (KATN over multivariate series, GraphLLM over graphs), enabling a §3.3 comparison of attention designs; provides the "purpose-built, non-LLM" contrast case to **TBD-2** for the same time-series territory. [evidence: OpenAlex abstracts]
+- **Unique contribution no other pool paper has:** the pool's clearest example of a **purpose-built transformer with a formal rank-based benchmarking protocol across a named public archive (UEA)**, and the only pool paper whose headline evidence is a **cross-dataset rank aggregate** rather than an accuracy percentage — useful for the review's "how do these papers measure success" discussion. [evidence: OpenAlex abstract; `notes/landscape-report.md` §B1]
+- **Quotable line (abstract-level — page number NOT AVAILABLE; cite by DOI):** "KATN significantly outperforms 6 state-of-the-art transformer variants, achieving a 'win'/'tie'/'lose' record of 9/6/15 and securing the lowest AVG_rank score." (abstract; DOI 10.1109/tbdata.2025.3594294) · *alt:* "effectively integrating these dual networks poses a significant challenge." (abstract, same DOI) [evidence: OpenAlex abstract]

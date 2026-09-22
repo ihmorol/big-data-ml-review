@@ -1,26 +1,38 @@
-# TBD-5 — Enhanced Approaches for Anomaly Detection in Streaming Data:
+# TBD-5 — Enhanced Approaches for Anomaly Detection in Streaming Data: Coupling Gaussian Distributions With Space Trees and Adaptive AutoEncoders
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Gunbilek E, Dağdevıren ZA, Bulut H (2026) Enhanced Approaches for Anomaly Detection in Streaming Data: Coupling Gaussian Distributions With Space Trees and Adaptive AutoEncoders. *IEEE Transactions on Big Data* 12(4):1318-1331. DOI: 10.1109/tbdata.2026.3679567
-- **Journal / year:** IEEE Transactions on Big Data / 2026 (2026-03-31)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 0 (OpenAlex, 2026-09-15)
-- **Access:** PAYWALLED - needs institutional access (arXiv check done 2026-09-16: NO open copy anywhere — OpenAlex/S2/Unpaywall all closed, no arXiv preprint, no author/repo PDF, no Scholar PDF link; full text only via IEEE Xplore doc 11458590 with institutional access, or ResearchGate full-text request to authors)
+- **Citation (Springer Basic):** Gunbilek E, Dağdevıren ZA, Bulut H (2026) Enhanced Approaches for Anomaly Detection in Streaming Data: Coupling Gaussian Distributions With Space Trees and Adaptive AutoEncoders. *IEEE Transactions on Big Data* 12(4):1318–1331. DOI: 10.1109/tbdata.2026.3679567
+- **Journal / year:** IEEE Transactions on Big Data / 2026 (published 2026-03-31) · **WoS indexed:** yes (SCIE, journal-level) · **Citations at access date:** 0 (OpenAlex, 2026-09-15)
+- **Access:** PAYWALLED (closed; IEEE Xplore, institutional access needed). Stub note records a 2026-09-16 open-copy search: **no arXiv preprint, no author/repo PDF, no Scholar PDF link** — full text only via IEEE Xplore (doc 11458590). **Full text NOT read.** [evidence: `results/openalex_raw/IEEE_TBD.json`; `results/screen/IEEE_TBD.csv`; OpenAlex `has_content.pdf: false`]
 - **Pool ID:** TBD-5 | **Status:** selected, Crossref-verified 2026-09-15
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — full text NOT read; every field below is bounded by the indexed abstract)
 
-- **Problem / domain:** Security & anomaly detection strand of the BD+ML literature.
-- **Big-data context:** data streams (velocity).
-- **ML methods:** statistical + ML anomaly detection.
-- **Abstract:** Processing, analyzing and continuously monitoring big data streams in real time is crucial for the security and efficiency of organizations and individuals. While machine learning and deep learning have greatly improved anomaly detection, they also have drawbacks, such as reliance on offline data and poor performance, especially with scarce or fluctuating data. To address this problem, we propose two enhanced methods for anomaly detection in streaming data: Gaussian Space Trees (GSTrees) and the Gaussian Weighted Adwin AutoEncoder (GWAAE). The effectiveness of these methods was evaluated on real datasets (ECG5000, Credit Card Fraud Detection, SMTP) processed as streaming data. For the ECG5000 dataset, GSTrees performed excellently on all metrics, consistently achieving over 94%, while GWAAE excelled with an ROC-AUC of over 89% and over 84% on all other metrics. For the SMTP dataset, the …
+- **Evidence provenance:** primary evidence is the indexed abstract + metadata in `results/openalex_raw/IEEE_TBD.json` (lines 6348–6373), corroborated by `results/screen/IEEE_TBD.csv` and `trackers/notion-import/master.csv`. Full text is closed; unstated fields are labelled **NOT AVAILABLE**.
+- **Problem / domain:** **real-time anomaly detection in big data streams.** Motivation: "Processing, analyzing and continuously monitoring big data streams in real time is crucial for the security and efficiency of organizations and individuals." The gap: existing ML/DL anomaly detectors have drawbacks — "reliance on offline data and poor performance, especially with scarce or fluctuating data." [evidence: OpenAlex abstract]
+- **Big-data context:** driven by data **velocity** (streaming/continuous monitoring). The paper's key stance is *online, no offline retraining* — methods designed to work on the stream rather than on a static offline dataset. No platform (Spark/Flink/edge) is named in the abstract; throughput is NOT AVAILABLE. [evidence: OpenAlex abstract]
+- **ML methods / architecture:** two proposed methods:
+  1. **Gaussian Space Trees (GSTrees)** — a tree/space-partitioning ensemble coupled with Gaussian distributional modelling.
+  2. **Gaussian Weighted Adwin AutoEncoder (GWAAE)** — an autoencoder combined with the **ADWIN adaptive-window** concept (drift-aware) and Gaussian weighting.
+  Both are presented as "enhanced methods for anomaly detection in streaming data." Exact layer counts/hyper-parameters are NOT AVAILABLE in the abstract. [evidence: OpenAlex abstract]
+- **Data:** three **named, real, public datasets processed as streaming data**: **ECG5000**, **Credit Card Fraud Detection**, and **SMTP**. Sizes are NOT AVAILABLE in the abstract. [evidence: OpenAlex abstract]
+- **Evaluation + headline results (the pool's most numerically detailed abstract):**
+  - **ECG5000:** GSTrees "performed excellently on all metrics, consistently achieving **over 94%**"; GWAAE "excelled with an **ROC-AUC of over 89%** and **over 84%** on all other metrics." [evidence: OpenAlex abstract]
+  - **SMTP:** "the **ROC-AUC of both proposed methods is above 80%**." [evidence: OpenAlex abstract]
+  - **Credit Card Fraud Detection:** "GSTrees and GWAAE successfully identified anomalies with a **recall of over 82%** and a **ROC-AUC of over 94%** and maintained this success with remarkably **low false negative and false positive rates**." [evidence: OpenAlex abstract]
+- **Key findings (≤3, as far as the abstract supports):**
+  - Gaussian-augmented space trees and an adaptive-window autoencoder both handle drifting/streaming data without offline retraining. [evidence: OpenAlex abstract]
+  - The two methods are complementary across datasets (GSTrees stronger on ECG5000 all-metrics; GWAAE stronger on ROC-AUC there). [evidence: OpenAlex abstract]
+  - Robustness is claimed via low FP/FN rates on the fraud dataset. [evidence: OpenAlex abstract]
+- **Limitations the authors admit:** none stated in the abstract. [NOT AVAILABLE]
+- **Limitations we see (from the abstract surface only):** (a) the numeric results are stated as *thresholds* ("over 94%", "over 89%", "above 80%") rather than precise values with variance — hard to compare rigorously; (b) no named baselines at abstract level, so "enhanced" is unanchored (vs. which prior method?); (c) the three datasets are moderate-scale tabular/stream benchmarks, so the "big data" framing rests on the *streaming* property, not on demonstrated high volume/throughput; (d) no statistical significance testing reported at abstract level; (e) tuning/drift-detection sensitivity (ADWIN window) is unquantified.
 
 ## Synthesis hooks
 
-- **Theme placement:** Security & anomaly detection (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.3 methods / §3.5 applications / §3.6 challenges):** branch **B1 — scalable & interpretable learning methods** (per `notes/landscape-report.md` §Taxonomy, B1 = TBD-1, TBD-4, TBD-5, BDR-5, JoBD-5); with a strong application pull toward anomaly/security detection (B3 adjacency). The landscape report tables it as "Gaussian trees + autoencoder", strength "streaming, no offline retraining", data "ECG5000, Credit Card Fraud, SMTP streams." [evidence: `notes/landscape-report.md` §B1]
+- **Agrees with:** **AIR-2** — same anomaly-detection domain and same core critique that traditional/offline detectors are inadequate for evolving data (AIR-2's "rule-based systems are no longer effective"; TBD-5's "reliance on offline data"); **JoBD-5** (GNN anomaly detection on network data) — complementary algorithmic family for the same task; **BDR-3** (fraud detection) — Credit Card Fraud Detection is a shared application theme. [evidence: OpenAlex abstracts; AIR-2 note]
+- **Contradicts:** provides a **non-neural / lightweight** counterpoint to the pool's heavier deep models — it implicitly argues that a Gaussian space-tree can match/beat deep autoencoders on streaming data, contrasting the "deeper is better" leaning of TBD-2/TBD-3/JoBD-3. [evidence: OpenAlex abstract of TBD-5; comparative framing from other abstracts]
+- **Extends/enables:** **TBD-1** — TBD-1's video-anomaly-detection case study and TBD-5's streaming detectors are two sides of anomaly detection (explaining vs. detecting), enabling a §3.6 synthesis; **JoBD-4** — both are streaming/prediction pipelines (though JoBD-4 uses Spark+TCN for forecasting, TBD-5 uses adaptive trees/AE for detection). [evidence: OpenAlex abstracts]
+- **Unique contribution no other pool paper has:** the pool's only paper evaluating **two complementary online detectors** (tree-ensemble vs. adaptive-window autoencoder) on **explicitly streamed public datasets**, and the only pool paper reporting **per-dataset recall/ROC-AUC thresholds with a stated concern for false-positive/negative rates** — the review's cleanest "streaming, drift-aware, no-retraining" case. [evidence: OpenAlex abstract; `notes/landscape-report.md` §B1]
+- **Quotable line (abstract-level — page number NOT AVAILABLE; cite by DOI):** "While machine learning and deep learning have greatly improved anomaly detection, they also have drawbacks, such as reliance on offline data and poor performance, especially with scarce or fluctuating data." (abstract; DOI 10.1109/tbdata.2026.3679567) · *alt:* "GSTrees and GWAAE successfully identified anomalies with a recall of over 82% and a ROC-AUC of over 94% and maintained this success with remarkably low false negative and false positive rates in the Credit Card Fraud Detection dataset." (abstract, same DOI) [evidence: OpenAlex abstract]

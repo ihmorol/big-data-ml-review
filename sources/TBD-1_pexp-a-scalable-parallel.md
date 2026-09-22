@@ -1,26 +1,32 @@
-# TBD-1 — PEXP: A Scalable Parallel Tree-Based Framework for Interpret
+# TBD-1 — PEXP: A Scalable Parallel Tree-Based Framework for Interpreting Models on Big Data
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Jiang W, Chang C, Huang T, et al (2026) PEXP: A Scalable Parallel Tree-Based Framework for Interpreting Models on Big Data. *IEEE Transactions on Big Data* 12(4):1177-1194. DOI: 10.1109/tbdata.2026.3668673
-- **Journal / year:** IEEE Transactions on Big Data / 2026 (2026-02-27)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 3 (OpenAlex, 2026-09-15)
-- **Access:** PAYWALLED - needs institutional access (arXiv copy pending check)
+- **Citation (Springer Basic):** Jiang W, Chang C-Y, Huang T-C, Chin Y-T, Roy DS (2026) PEXP: A Scalable Parallel Tree-Based Framework for Interpreting Models on Big Data. *IEEE Transactions on Big Data* 12(4):1177–1194. DOI: 10.1109/tbdata.2026.3668673
+- **Journal / year:** IEEE Transactions on Big Data / 2026 (published 2026-02-27) · **WoS indexed:** yes (SCIE, journal-level — per `trackers/papers-pool.md`) · **Citations at access date:** 3 (OpenAlex snapshot 2026-09-15); live OpenAlex API re-fetch 2026-09-22 returns 5 citations for 2026 in `counts_by_year`
+- **Access:** PAYWALLED (closed; IEEE Xplore, institutional access needed). No indexed free copy / preprint. **Full text not read.** [evidence: `results/openalex_raw/IEEE_TBD.json`; `results/screen/IEEE_TBD.csv`; OpenAlex API 2026-09-22]
 - **Pool ID:** TBD-1 | **Status:** selected, Crossref-verified 2026-09-15
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — full text NOT read; every field below is bounded by the indexed abstract)
 
-- **Problem / domain:** Scalable & interpretable ML strand of the BD+ML literature.
-- **Big-data context:** big data; parallel framework.
-- **ML methods:** tree-based parallel model interpretation.
-- **Abstract:** The proliferation of big data has fueled the success of deep learning; however, its inherent ”black box” nature poses significant challenges for its adoption in safety-critical domains. Existing interpretable machine learning methods offer partial solutions but often struggle with model fidelity, inconsistent explanations, a lack of holistic model understanding, and critically, computational inefficiency, especially when applied to models trained on large-scale datasets. To overcome these hurdles, this paper introduces Parallel Explainer (PEXP), an innovative parallel tree-based interpretation framework designed for scalability and comprehensive understanding. PEXP initiates by generating a localized sample set around a target instance through data distribution-aware perturbations. It then computes similarity scores and employs a kernel function to weight these samples effectively. Lever…
+- **Evidence provenance:** the ONLY primary evidence available is the indexed abstract + bibliographic metadata in `results/openalex_raw/IEEE_TBD.json` (lines 1864–1892), corroborated by `results/screen/IEEE_TBD.csv` and `trackers/notion-import/master.csv`. The DOI was resolved via OpenAlex (`api.openalex.org/works/https://doi.org/10.1109/tbdata.2026.3668673`, fetched 2026-09-22), which confirms title/authors/volume/issue/pages but exposes no full text (`has_content.pdf = false`). Any field the abstract does not state is labelled **NOT AVAILABLE** below rather than guessed.
+- **Problem / domain:** explaining "black box" deep-learning models on large-scale data. Deep learning's opacity "poses significant challenges for its adoption in safety-critical domains", and existing interpretable-ML methods "struggle with model fidelity, inconsistent explanations, a lack of holistic model understanding, and critically, computational inefficiency … on large-scale datasets." [evidence: OpenAlex abstract]
+- **Big-data context:** framed explicitly around data **volume** — the framework targets "models trained on large-scale datasets" and results are pitched as "particularly crucial for big data analytics." Parallelism is the stated scalability mechanism (parallel tree-based interpretation). No specific platform (Spark/Hadoop/GPU), dataset size, or throughput is named in the abstract. [evidence: OpenAlex abstract; platform specifics NOT AVAILABLE]
+- **ML methods / architecture:** **Parallel Explainer (PEXP)** — a parallel tree-based *post-hoc* interpretation framework. Pipeline per the abstract: (1) generate a localized sample set around a target instance via **data-distribution-aware perturbations**; (2) compute similarity scores and weight samples with a **kernel function**; (3) "Leveraging concepts from **Bagging and Boosting**", build **Parallel Ensemble Trees** as the interpretable surrogate; (4) emit **feature-importance-based explanations** and aggregate across samples for a **global** view of model behaviour. [evidence: OpenAlex abstract]
+- **Data:** **NOT AVAILABLE — full text not read.** No dataset is named in the abstract. The only evaluation context given is "Experimental results" (unspecified benchmarks) plus a single case study on **video anomaly detection in smart cities**, used to demonstrate interpretability of Transformer-based architectures. [evidence: OpenAlex abstract]
+- **Evaluation + headline results:** The abstract claims PEXP shows "significant advantages over mainstream interpretable methods in both runtime efficiency and the quality of explanations" — **qualitative only; no metric values, no named baselines, no tables.** [evidence: OpenAlex abstract]
+- **Key findings (≤3, as far as the abstract supports):**
+  - Model interpretation is treated as a *run-time/scalability* problem for large-scale models, addressed by parallel ensemble trees rather than a single surrogate. [evidence: OpenAlex abstract]
+  - Distribution-aware perturbation + kernel weighting is the proposed fix for explanation fidelity/consistency. [evidence: OpenAlex abstract]
+  - PEXP supports both local (per-instance) and global (aggregate) explanations. [evidence: OpenAlex abstract]
+- **Limitations the authors admit:** none stated in the abstract. [NOT AVAILABLE]
+- **Limitations we see (from the abstract surface only):** (a) headline "advantages" are unquantified — no numbers, datasets, or baseline names at abstract level, so scale claims are unevidenced until the full text is read; (b) explanation *fidelity* is asserted, not demonstrated with a ground-truth fidelity metric in the abstract; (c) single-domain case study (smart-city video anomaly detection) limits generality claims; (d) whether the parallelism is a data-parallel Spark-style implementation or an algorithmic decomposition is unclear from the abstract — a key gap for our platforms branch.
 
 ## Synthesis hooks
 
-- **Theme placement:** Scalable & interpretable ML (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.3 scalable ML methods / §3.6 cross-cutting):** branch **B1 — scalable & interpretable learning methods** (per `notes/landscape-report.md` §Taxonomy, B1 = TBD-1, TBD-4, TBD-5, BDR-5, JoBD-5). Sits at the intersection of interpretability (XAI) and scalability. [evidence: `notes/landscape-report.md`]
+- **Agrees with:** **BDR-1** — both make explainability inseparable from the pipeline rather than a bolt-on (BDR-1 for malware graphs; TBD-1 for model surrogates); **AIR-1** — shares the critique that neural systems are "plagued by opaqueness" and that explanation/evaluation must be paradigm-aware; **AIR-3** — echoes the model-centric interpretability gap as a barrier to high-stakes deployment. [evidence: OpenAlex abstracts of the named papers; `notes/landscape-report.md`]
+- **Contradicts:** nothing directly (no falsifiable empirical conflict at abstract level). It contrasts in *evidence type* with the pool's precision-reported papers (TBD-3, TBD-4, TBD-5), because it reports no numbers in the abstract.
+- **Extends/enables:** **BDR-5** and **JoBD-5** — supplies a scalability-first framing (parallelism) that those scalable-method papers can be compared against; **TBD-5** — its smart-city video-anomaly case study overlaps TBD-5's streaming-anomaly territory, letting our review compare "explain the detector" (TBD-1) vs "detect without retraining" (TBD-5). [evidence: OpenAlex abstracts]
+- **Unique contribution no other pool paper has:** the pool's only paper treating **explanation cost itself as the scalability bottleneck**, and the only one building an explainer from **parallel ensemble trees** with distribution-aware perturbation. [evidence: OpenAlex abstract; `notes/landscape-report.md` §B1]
+- **Quotable line (abstract-level — page number NOT AVAILABLE, cite by DOI until full text read):** "critically, computational inefficiency, especially when applied to models trained on large-scale datasets." (abstract; DOI 10.1109/tbdata.2026.3668673) · *alt:* "Experimental results demonstrate PEXP's significant advantages over mainstream interpretable methods in both runtime efficiency and the quality of explanations, particularly crucial for big data analytics." (abstract, same DOI) [evidence: OpenAlex abstract]
