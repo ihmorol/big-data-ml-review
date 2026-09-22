@@ -24,6 +24,7 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
+\usepackage{xltabular}%
 %%%%
 
 \raggedbottom
@@ -174,12 +175,19 @@ Fig.~\ref{fig5} returns to the selection method from the Introduction. It shows 
 
 Two consistency rules apply across these items. Every figure and table is cited from the running text, and the citation numbers in Table~\ref{tab1} match the paper's own numbering, not the internal identifiers used during screening. The figures themselves never display internal identifiers.
 
-\begin{table*}[t]
-\caption{Corpus summary: the 20 reviewed papers in citation order. ``Not available'' marks an item whose full text could not be read or whose abstract is not indexed; no unverified value is entered.}\label{tab1}
-\begin{tabular*}{\textwidth}{@{\extracolsep\fill}l p{3.0cm} p{1.7cm} p{2.6cm} p{3.4cm} p{3.2cm}@{}}
+{\footnotesize
+\begin{xltabular}{\textwidth}{@{}p{0.8cm} p{2.0cm} p{1.0cm} p{2.2cm} p{2.2cm} p{1.9cm}@{}}
+\caption{Corpus summary: the 20 reviewed papers in citation order. ``Not available'' marks an item whose full text could not be read or whose abstract is not indexed; no unverified value is entered.}\label{tab1}\\
 \toprule
 Ref. & Authors, year & Journal & Method family & Data and scale & Headline result \\
 \midrule
+\endfirsthead
+\toprule
+Ref. & Authors, year & Journal & Method family & Data and scale & Headline result \\
+\midrule
+\endhead
+\botrule
+\endlastfoot
 {[1]} & Xiao et al., 2025 & IEEE TBD & Aggregation transformer (local + global) & 13 UEA archive datasets; rank-based protocol & Lowest avg.\ rank vs 6 SOTA transformers (W/T/L 9/6/15); no per-dataset accuracies or variance \\
 {[2]} & Gunbilek et al., 2026 & IEEE TBD & Gaussian space trees + adaptive-window autoencoder; streaming & ECG5000, credit-card fraud, SMTP streams; sizes not stated & Threshold values only from abstract: $>$94\% (ECG), recall $>$82\% and ROC-AUC $>$94\% (fraud); abstract-level \\
 {[3]} & Zhang et al., 2025 & JoBD & Hyperbolic (Poincar\'e-ball) graph embedding + GAT; unsupervised & CICIDS2017 3.12M records; UNSW-NB15 2.54M; campus log 1.25M & F1 0.8366 / 0.9341 / 0.9913; edge weights $\approx$2$\times$ node augmentation; slowest model in its own tables \\
@@ -200,25 +208,29 @@ Ref. & Authors, year & Journal & Method family & Data and scale & Headline resul
 {[18]} & Haripriya et al., 2025 & JoBD & Adaptive federated aggregation (FedAvg to FedSGD switch) + differential privacy & 3 public datasets, 10 simulated non-IID clients; no cluster & Up to 96.3\% accuracy, $\approx$20\% less time and rounds; accuracy 96.5\% to 94.5\% under strong privacy \\
 {[19]} & Waseem et al., 2025 & AIR & Review: five generative families for synthetic healthcare data & No own data; cited scales to 250k patients and 20 hospitals & No family wins everywhere; FID and SSIM do not track downstream usefulness \\
 {[20]} & Vats et al., 2026 & AIR & Review: deep multivariate time-series taxonomy + reproducibility audit & 17 benchmarks; largest SMD 1.42M $\times$ 38; single GPU audit & Broad trends reproduce, exact numbers often do not; single-run results overstate stability \\
-\botrule
-\end{tabular*}
-\footnotetext{Ref. numbers are citation numbers in this manuscript. TBD is IEEE Transactions on Big Data, BDR is Big Data Research, JoBD is Journal of Big Data, AIR is Artificial Intelligence Review. W/T/L is win/tie/loss.}
-\end{table*}
+\end{xltabular}
+}
 
-\begin{table*}[t]
-\caption{Taxonomy mapping: branch, papers, and a representative contribution. Each paper appears in exactly one branch.}\label{tab2}
-\begin{tabular*}{\textwidth}{@{\extracolsep\fill}l p{4.2cm} p{2.2cm} p{8.2cm}@{}}
+\noindent{\footnotesize Ref. numbers are citation numbers in this manuscript. TBD is IEEE Transactions on Big Data, BDR is Big Data Research, JoBD is Journal of Big Data, AIR is Artificial Intelligence Review. W/T/L is win/tie/loss.}
+
+\begin{xltabular}{\textwidth}{@{}p{0.9cm} p{3.2cm} p{1.7cm} p{5.4cm}@{}}
+\caption{Taxonomy mapping: branch, papers, and a representative contribution. Each paper appears in exactly one branch.}\label{tab2}\\
 \toprule
 Branch & Theme & Papers & Representative contribution \\
 \midrule
+\endfirsthead
+\toprule
+Branch & Theme & Papers & Representative contribution \\
+\midrule
+\endhead
+\botrule
+\endlastfoot
 B1 & Scalable and interpretable learning methods & {[1]}, {[2]}, {[3]}, {[4]}, {[5]} & A rank-based aggregation transformer, drift-aware streaming detectors, a hyperbolic graph embedding, a scaled classical estimator, and a parallel explainer; four of the five optimize a resource rather than accuracy. \\
 B2 & Platforms, pipelines, and infrastructure & {[7]}, {[8]}, {[9]} & A three-layer stack: distributed-training economics in time, communication, and energy, a Spark cluster engine, and a Kafka and Spark Streaming fog/cloud tier. No paper connects the layers. \\
 B3 & Applications and domains & {[10]}, {[11]}, {[12]}, {[13]}, {[14]} & Security, telecom, finance, agriculture, and affective computing; method-building concentrates where the data has native graph or stream structure, and the ``big data'' label loosens elsewhere. \\
 B4 & Foundation models and large language models & {[6]}, {[15]}, {[16]}, {[17]} & The classical-to-foundation-model arc, a multimodal industrial LLM, an LLM coupled to graph learning, and an agentic survey; none is tested under streaming or cluster constraints. \\
 B5 & Privacy, governance, and evaluation & {[18]}, {[19]}, {[20]} & Adaptive federated aggregation with a privacy--utility table, a comparative review of synthetic-data generation, and the corpus's only empirical reproducibility audit. \\
-\botrule
-\end{tabular*}
-\end{table*}
+\end{xltabular}
 
 \begin{figure*}[t]
 \centering
