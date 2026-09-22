@@ -12,3 +12,21 @@ venv/
 Thumbs.db
 desktop.ini
 *.swp
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.toc
+paper/*.synctex.gz
+paper/manuscript.txt
+paper/final_pass.txt
+paper/p1.txt
+paper/p2.txt
+paper/p3.txt
+paper/b.txt
+paper/pass1.txt
+paper/pass2.txt
