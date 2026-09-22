@@ -1,26 +1,35 @@
-# BDR-4 — Heterogeneous Graph-based Risk Assessment for Internet Finan
+# BDR-4 — Heterogeneous Graph-based Risk Assessment for Internet Financial Companies with Company Big Data
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Liu Q, Qiu Y, Jia Y, et al (2026) Heterogeneous Graph-based Risk Assessment for Internet Financial Companies with Company Big Data. *Big Data Research* 45:100620-100620. DOI: 10.1016/j.bdr.2026.100620
-- **Journal / year:** Big Data Research / 2026 (2026-06-02)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 0 (OpenAlex, 2026-09-15)
-- **Access:** OPEN ACCESS
+- **Citation (Springer Basic):** Liu Q, Qiu Y, Jia Y, et al (2026) Heterogeneous Graph-based Risk Assessment for Internet Financial Companies with Company Big Data. *Big Data Research* 45:100620. DOI: 10.1016/j.bdr.2026.100620
+- **Journal / year:** Big Data Research / 2026 (published 2026-06-02) · **WoS indexed:** yes (SCIE, journal-level — per `trackers/papers-pool.md`) · **Citations at access date:** 0 (OpenAlex snapshot 2026-09-15; live OpenAlex API re-fetch 2026-09-22 also returns 0)
+- **Access:** **OPEN ACCESS — green** via an author preprint. OpenAlex `is_oa: true`, `oa_status: green`; Semantic Scholar resolves a green copy at SSRN (`https://doi.org/10.2139/ssrn.4741435`). The published-version landing page is `https://doi.org/10.1016/j.bdr.2026.100620`. **Full text NOT read** (SSRN preprint page was Cloudflare-blocked at retrieval time; the published version is not in the workspace). [evidence: `results/openalex_raw/BDR.json`; OpenAlex + Semantic Scholar metadata 2026-09-22]
 - **Pool ID:** BDR-4 | **Status:** selected (rev2), Crossref-verified 2026-09-15
+- **Full author list:** Qigang Liu, Yuxin Qiu, Yuhang Jia, Yinfan Wang, Maoguo Wu. [evidence: OpenAlex metadata]
+- **OpenAlex work ID:** W4392248993 · **References in paper:** 25 · **Semantic Scholar CorpusId:** 288920715 · **SSRN green-copy ID:** 4741435. [evidence: OpenAlex + Semantic Scholar metadata]
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — **abstract NOT AVAILABLE**; fields below are title/topic-level only, not a substitute for the abstract)
 
-- **Problem / domain:** Applications & domains strand of the BD+ML literature.
-- **Big-data context:** company big data (explicit in title).
-- **ML methods:** heterogeneous graph-based risk assessment.
-- **Abstract:** [abstract not indexed - retrieve from publisher page when reading full text]
+- **⚠ Evidence-provenance warning:** this paper has **no indexed abstract** in any source checked. Confirmed absent (`"abstract": ""` / `null`) in: `results/openalex_raw/BDR.json` (lines 1181–1207), the live OpenAlex API (`works/https://doi.org/10.1016/j.bdr.2026.100620`, 2026-09-22), Crossref (`api.crossref.org/works/10.1016/j.bdr.2026.100620` — no `abstract` field), and Semantic Scholar (`abstract: null`). The green OA copy (SSRN abstract_id 4741435) was **Cloudflare-blocked** ("Just a moment…" challenge) on retrieval attempts, as was the publisher landing page. [evidence: `results/openalex_raw/BDR.json`; OpenAlex/Crossref/Semantic Scholar metadata 2026-09-22] **Every content field below is therefore labelled NOT AVAILABLE — abstract not indexed / preprint access blocked, and nothing is inferred beyond the title and OpenAlex topic tag.**
+- **Problem / domain:** title indicates **risk assessment for internet financial companies** — i.e., credit/operational risk scoring of online-lending/fintech firms. [evidence: title; OpenAlex topic tag "Big Data Technologies and Applications"] The specific research gap is not stated in any retrievable text. [NOT AVAILABLE — abstract not indexed / preprint access blocked]
+- **Big-data context:** the title frames the work around "**Company Big Data**" — natively relational, multi-source firm-level business data. The method class (heterogeneous graph) implies multi-modal entity types, but no volume/scale figure is retrievable. [evidence: title; scale specifics NOT AVAILABLE]
+- **ML methods / architecture:** title indicates a **heterogeneous graph-based** risk-assessment method — i.e., a heterogeneous graph (multi-relation, multi-type nodes/edges) representation with graph learning for risk prediction. [evidence: title] The specific GNN architecture, node/edge types, and learning objective are **NOT AVAILABLE** (abstract not indexed / preprint access blocked). [NOT AVAILABLE]
+- **Data:** **NOT AVAILABLE — abstract not indexed / preprint access blocked.** No company dataset named, no node/edge counts, no temporal window. [NOT AVAILABLE]
+- **Evaluation + headline results:** **NOT AVAILABLE — abstract not indexed / preprint access blocked.** No metrics, baselines, or numbers can be reported. [NOT AVAILABLE]
+- **Key findings:** **NOT AVAILABLE.** Only bibliographic facts are recordable now: a 2026 Big Data Research original research article with 25 references, 0 citations, and one green OA preprint (SSRN). [evidence: OpenAlex/Crossref/Semantic Scholar metadata]
+- **Limitations the authors admit:** **NOT AVAILABLE — abstract not indexed / preprint access blocked.**
+- **Limitations we see:** cannot be assessed — no abstract is retrievable, so there is no surface to critique. The *evidentiary* limitation for our review is that BDR-4 is currently describable only at title level, even though a free preprint exists; the obstacle is access (Cloudflare), not paywalling.
 
 ## Synthesis hooks
 
-- **Theme placement:** Applications & domains (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.5 applications):** branch **B3 — applications and domains** (per `notes/landscape-report.md` §6; B3 = BDR-1, BDR-4, JoBD-1, JoBD-3, AIR-2). The landscape report calls it "the corpus's clearest case of graph learning deployed on natively relational business data." [evidence: `notes/landscape-report.md` §6]
+- **Agrees with:** **BDR-1**, **JoBD-5**, and **TBD-3** — all graph-learning contributions; BDR-4 extends the family from program graphs (BDR-1) and network graphs (JoBD-5) to financial-entity graphs. [evidence: `notes/landscape-report.md` §6, §9; titles of the named papers]
+- **Contradicts:** nothing — no falsifiable claim is available to contradict. [evidence: no available abstract]
+- **Extends/enables:** **BDR-1** and **JoBD-5** — supplies the financial-domain instantiation of graph learning, so the review can show graph methods spanning security, network, and finance domains; supports the landscape report's pattern that "domains with native graph structure ([6], [9], [15]) … attract the most method-building." [evidence: `notes/landscape-report.md` §6]
+- **Unique contribution no other pool paper has:** the pool's **only graph-learning paper on financial/company relational data** — the single case where the graph is the native schema of business records rather than an engineered artifact (unlike CFG/FCG or network-traffic graphs). [evidence: title; `notes/landscape-report.md` §6]
+- **Quotable line:** **NOT AVAILABLE** — no abstract text is retrievable to quote (title only: "Heterogeneous Graph-based Risk Assessment for Internet Financial Companies with Company Big Data," DOI 10.1016/j.bdr.2026.100620). [NOT AVAILABLE — abstract not indexed / preprint access blocked]
+- **Table 1 row data:** Internet-financial-company risk assessment (applications/domains) | Heterogeneous graph-based risk assessment (title-level only) | "Company Big Data" (from title) — natively relational firm-level data; no scale figures retrievable | **NOT AVAILABLE** — no dataset or scale figures | **NOT AVAILABLE** — no metrics, no baselines | **NOT AVAILABLE** — abstract not indexed; green SSRN preprint exists but was Cloudflare-blocked at retrieval.
+
+### Retrieval action required (for the team)
+BDR-4 has a **free green preprint (SSRN abstract_id 4741435)**, so it is retrievable despite the missing indexed abstract. A team member should open the SSRN preprint (or the published DOI with institutional access) from a normal browser session and transcribe: (1) the abstract verbatim, (2) the company dataset and its scale (nodes/edges/companies), (3) the heterogeneous-graph model and risk task, (4) headline metrics and baselines. The blocker is bot-protection, not a paywall.

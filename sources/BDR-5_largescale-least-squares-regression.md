@@ -1,26 +1,38 @@
-# BDR-5 — Large-scale least squares regression based on fast spectral 
+# BDR-5 — Large-scale least squares regression based on fast spectral embedding and random Fourier feature mapping
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Li X, Liu J (2026) Large-scale least squares regression based on fast spectral embedding and random Fourier feature mapping. *Big Data Research* 43:100589-100589. DOI: 10.1016/j.bdr.2026.100589
-- **Journal / year:** Big Data Research / 2026 (2026-01-20)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 0 (OpenAlex, 2026-09-15)
-- **Access:** PAYWALLED - needs institutional access (arXiv copy pending check)
+- **Citation (Springer Basic):** Li X, Liu J (2026) Large-scale least squares regression based on fast spectral embedding and random Fourier feature mapping. *Big Data Research* 43:100589. DOI: 10.1016/j.bdr.2026.100589
+- **Journal / year:** Big Data Research / 2026 (published 2026-01-20) · **WoS indexed:** yes (SCIE, journal-level — per `trackers/papers-pool.md`) · **Citations at access date:** 0 (OpenAlex snapshot 2026-09-15; live OpenAlex API re-fetch 2026-09-22 also returns 0)
+- **Access:** **PAYWALLED — closed** (Elsevier ScienceDirect, institutional access needed). OpenAlex `is_oa: false`, `oa_status: closed`; no indexed free copy or preprint found. **Full text NOT read.** [evidence: `results/openalex_raw/BDR.json`; OpenAlex API 2026-09-22; `results/screen/BDR.csv`]
 - **Pool ID:** BDR-5 | **Status:** selected, Crossref-verified 2026-09-15
+- **Full author list:** Xingyu Li, Jinglei Liu. [evidence: OpenAlex + Semantic Scholar metadata]
+- **OpenAlex work ID:** W7124966162 · **References in paper:** 28 · **Semantic Scholar CorpusId:** 284949801 · **DBLP key:** journals/bdr/LiL26. [evidence: OpenAlex + Semantic Scholar metadata]
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — **abstract NOT AVAILABLE**; fields below are title/topic-level only, not a substitute for the abstract)
 
-- **Problem / domain:** Scalable & interpretable ML strand of the BD+ML literature.
-- **Big-data context:** large-scale data.
-- **ML methods:** fast spectral embedding + random Fourier features regression.
-- **Abstract:** [abstract not indexed in OpenAlex - retrieve from publisher page when reading full text]
+- **⚠ Evidence-provenance warning:** this paper has **no indexed abstract** in any source checked. Confirmed absent (`"abstract": ""` / `null`) in: `results/openalex_raw/BDR.json` (lines 1743–1768), the live OpenAlex API (`works/https://doi.org/10.1016/j.bdr.2026.100589`, 2026-09-22), Crossref (`api.crossref.org/works/10.1016/j.bdr.2026.100589` — no `abstract` field), and Semantic Scholar (`abstract: null`). The publisher landing page (DOI/ScienceDirect) returned a JS/CAPTCHA shell and no OA surrogate exists. [evidence: `results/openalex_raw/BDR.json`; OpenAlex/Crossref/Semantic Scholar metadata 2026-09-22] **Every content field below is labelled NOT AVAILABLE — abstract not indexed / paywalled, and nothing is inferred beyond the title and OpenAlex topic tags.**
+- **Problem / domain:** title indicates **large-scale least-squares regression** — a classical, non-deep-learning supervised-learning problem at big-data scale. [evidence: title] The specific gap (computational cost of least squares on large n/d?) is not stated in any retrievable text. [NOT AVAILABLE — abstract not indexed / paywalled]
+- **Big-data context:** driven by scale of data for a classical estimator — the title's "large-scale" plus the "fast spectral embedding" + "random Fourier feature mapping" method pair indicate a complexity/scalability lever rather than volume-per-se. No dataset size or complexity figure is retrievable. [evidence: title; scale specifics NOT AVAILABLE]
+- **ML methods / architecture:** title indicates two named technique components combined for large-scale least squares:
+  1. **Fast spectral embedding** (approximating the spectral/manifold structure efficiently), and
+  2. **Random Fourier feature mapping** (a.k.a. random Fourier features / RFF — random-feature approximation of a shift-invariant kernel, converting a kernel least-squares problem into a linear one in a finite-dimensional feature space).
+  The precise algorithm, the spectral-embedding approximation used, and the theoretical guarantees are **NOT AVAILABLE — abstract not indexed / paywalled**. [evidence: title; method details NOT AVAILABLE]
+- **Data:** **NOT AVAILABLE — abstract not indexed / paywalled.** No dataset named, no dimensionality (n, d) or scale figures. [NOT AVAILABLE]
+- **Evaluation + headline results:** **NOT AVAILABLE — abstract not indexed / paywalled.** No metrics (e.g., RMSE, runtime/speed-up), baselines, or numbers can be reported. [NOT AVAILABLE]
+- **Key findings:** **NOT AVAILABLE.** Only bibliographic facts are recordable now: a 2026 Big Data Research original research article with 28 references and 0 citations. [evidence: OpenAlex/Crossref metadata]
+- **Limitations the authors admit:** **NOT AVAILABLE — abstract not indexed / paywalled.**
+- **Limitations we see:** cannot be assessed — no abstract is retrievable, so there is no surface to critique. The *evidentiary* limitation for our review is that BDR-5 is currently describable only at title level; it must be read before any scalar or comparative claim is made.
 
 ## Synthesis hooks
 
-- **Theme placement:** Scalable & interpretable ML (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.3 scalable ML methods):** branch **B1 — scalable and interpretable learning methods** (per `notes/landscape-report.md` §4; B1 = TBD-1, TBD-4, TBD-5, BDR-5, JoBD-5). The landscape report calls it "a striking counterpoint to the deep-learning default of the rest of the corpus, and one of the few branch papers whose claims cannot be checked here (no abstract indexed; title-level only until accessed)." [evidence: `notes/landscape-report.md` §4]
+- **Agrees with:** **TBD-1** — both treat scalability as the first-class problem (TBD-1 for explanation cost; BDR-5 for classical regression cost); **TBD-5**, **JoBD-5** — both optimize a resource (latency / representation efficiency), consistent with the branch pattern that "scalable ML has become mostly a systems constraint." [evidence: `notes/landscape-report.md` §4]
+- **Contradicts:** provides a **classical/non-deep counterpoint** to the corpus's deep-learning default — BDR-5's title suggests a kernel-approximation regression method competing with deep models on large-scale data, contrasting the deep leaning of TBD-4/TBD-2/TBD-3/JoBD-3. [evidence: title; `notes/landscape-report.md` §4]
+- **Extends/enables:** **TBD-1** — both sit in the scalable-methods branch as "computational-cost" papers (TBD-1 computes explanations at scale; BDR-5 computes a linear estimator at scale); supports the branch's resource-over-accuracy framing. [evidence: `notes/landscape-report.md` §4]
+- **Unique contribution no other pool paper has:** the pool's **only classical statistical-learning / regression method paper** — no other selection develops a non-deep estimator (and the landscape report notes the corpus has "no purely theoretical/statistical-learning contribution" elsewhere). It is the branch's sole representative of scaling *classical* learning rather than deep learning. [evidence: title; `notes/landscape-report.md` §4, §3]
+- **Quotable line:** **NOT AVAILABLE** — no abstract text exists to quote (title only: "Large-scale least squares regression based on fast spectral embedding and random Fourier feature mapping," DOI 10.1016/j.bdr.2026.100589). [NOT AVAILABLE — abstract not indexed / paywalled]
+- **Table 1 row data:** Large-scale classical regression (scalable/interp. methods) | Fast spectral embedding + random Fourier feature mapping for large-scale least squares (title-level only) | "Large-scale" (from title) — scalability lever is algorithmic (embedding + RFF), no complexity/scale figures retrievable | **NOT AVAILABLE** — no dataset or scale figures | **NOT AVAILABLE** — no metrics, no baselines | **NOT AVAILABLE** — abstract not indexed; full text paywalled.
+
+### Retrieval action required (for the team)
+BDR-5 is **fully paywalled with no abstract anywhere**. A team member with Elsevier/ScienceDirect institutional access must open `https://doi.org/10.1016/j.bdr.2026.100589` and transcribe: (1) the abstract verbatim, (2) the datasets and their scale/dimensionality, (3) the algorithm (spectral-embedding + RFF formulation, any complexity guarantees), (4) headline metric/runtime results and baselines. Until then, no scalar or comparative claim about BDR-5 may be written; its branch placement rests on the title alone.

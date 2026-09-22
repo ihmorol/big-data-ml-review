@@ -2,25 +2,34 @@
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Ghodsi S, Moeini A (2026) Opinion fraud detection on massive datasets by spark. *Big Data Research* 43:100590-100590. DOI: 10.1016/j.bdr.2026.100590
-- **Journal / year:** Big Data Research / 2026 (2026-01-21)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 0 (OpenAlex, 2026-09-15)
-- **Access:** PAYWALLED - needs institutional access (arXiv copy pending check)
+- **Citation (Springer Basic):** Ghodsi S, Moeini A (2026) Opinion fraud detection on massive datasets by spark. *Big Data Research* 43:100590. DOI: 10.1016/j.bdr.2026.100590
+- **Journal / year:** Big Data Research / 2026 (published 2026-01-21) · **WoS indexed:** yes (SCIE, journal-level — per `trackers/papers-pool.md`) · **Citations at access date:** 0 (OpenAlex snapshot 2026-09-15; live OpenAlex API re-fetch 2026-09-22 also returns 0)
+- **Access:** **PAYWALLED — closed** (Elsevier ScienceDirect, institutional access needed). OpenAlex `is_oa: false`, `oa_status: closed`; no indexed free copy or preprint found. **Full text NOT read.** [evidence: `results/openalex_raw/BDR.json`; OpenAlex API 2026-09-22; `results/screen/BDR.csv`]
 - **Pool ID:** BDR-3 | **Status:** selected, Crossref-verified 2026-09-15
+- **Full author list:** Shahab Ghodsi, Ali Moeini. [evidence: OpenAlex + Semantic Scholar metadata]
+- **OpenAlex work ID:** W7125200298 · **References in paper:** 6 · **Semantic Scholar CorpusId:** 285028491 · **DBLP key:** journals/bdr/GhodsiM26. [evidence: OpenAlex + Semantic Scholar metadata]
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — **abstract NOT AVAILABLE**; fields below are title/topic-level only, not a substitute for the abstract)
 
-- **Problem / domain:** Platforms & infrastructure strand of the BD+ML literature.
-- **Big-data context:** massive datasets; Spark cluster.
-- **ML methods:** fraud detection ML on Spark.
-- **Abstract:** [abstract not indexed in OpenAlex - retrieve from publisher page when reading full text]
+- **⚠ Evidence-provenance warning:** this paper has **no indexed abstract** in any source checked. Confirmed absent (`abstract_inverted_index: null` / `"abstract": ""`) in: `results/openalex_raw/BDR.json` (lines 1769–1794), the live OpenAlex API (`works/https://doi.org/10.1016/j.bdr.2026.100590`, 2026-09-22), Crossref (`api.crossref.org/works/10.1016/j.bdr.2026.100590` — no `abstract` field), Semantic Scholar (`abstract: null`), and the third-party index colab.ws (`"abstract":null`). Publisher retrieval was blocked: ScienceDirect (DOI resolution and the article page) returned a JS/CAPTCHA shell, and no OA surrogate exists. [evidence: `results/openalex_raw/BDR.json`; OpenAlex/Crossref/Semantic Scholar/colab.ws metadata 2026-09-22] **Consequently every content field below is labelled NOT AVAILABLE — abstract not indexed / paywalled, and nothing is inferred beyond the paper's title and OpenAlex topic tags.**
+- **Problem / domain:** title indicates **opinion/review fraud detection** (fake reviews / opinion spam). [evidence: title; OpenAlex topic tags "Spam and Phishing Detection", "Misinformation and Its Impacts"] No abstract statement of the specific gap. [NOT AVAILABLE — abstract not indexed / paywalled]
+- **Big-data context:** title indicates work on "**massive datasets**" executed "**by spark**" — i.e., a cluster-computing (Apache Spark) setting motivated by data **volume**. Spark is the only platform named, and only via the title. No throughput, cluster size, or data-size figure. [evidence: title; scale specifics NOT AVAILABLE — abstract not indexed / paywalled]
+- **ML methods / architecture:** **NOT AVAILABLE — abstract not indexed / paywalled.** The specific detection algorithm(s) (feature-based/ML/ensemble), the Spark implementation details, and the pipeline are all unstated. Only the OpenAlex topic tag "Imbalanced Data Classification Techniques" hints at the methodological class. [evidence: OpenAlex topic tag; method NOT AVAILABLE]
+- **Data:** **NOT AVAILABLE — abstract not indexed / paywalled.** No dataset named, no scale figures. (The title's "massive datasets" is not a dataset name.) [NOT AVAILABLE]
+- **Evaluation + headline results:** **NOT AVAILABLE — abstract not indexed / paywalled.** No metrics, baselines, or numbers can be reported. [NOT AVAILABLE]
+- **Key findings:** **NOT AVAILABLE — abstract not indexed / paywalled.** The only factual observations recordable now are bibliographic: it is a 2026 Big Data Research original research article with 6 references and 0 citations. [evidence: OpenAlex/Crossref metadata]
+- **Limitations the authors admit:** **NOT AVAILABLE — abstract not indexed / paywalled.**
+- **Limitations we see:** cannot be assessed — the abstract itself is unavailable, so there is no surface to critique. The *evidentiary* limitation for our review is that this paper is currently describable only at title level; it must be read (or fetched) before any scalar claim is made about it.
 
 ## Synthesis hooks
 
-- **Theme placement:** Platforms & infrastructure (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.4 platforms):** branch **B2 — platforms, pipelines, and infrastructure** (per `notes/landscape-report.md` §5; B2 = BDR-2, BDR-3, JoBD-4). The landscape report calls it "the corpus's single unambiguous Spark contribution … and with no indexed abstract its specifics (dataset, scale, algorithm) must come from the full text." [evidence: `notes/landscape-report.md` §5]
+- **Agrees with:** **JoBD-4** — both are Spark-based big-data pipelines (JoBD-4 = fog/cloud streaming with TCN; BDR-3 = cluster batch Spark); **BDR-2** — both belong to the infrastructure stack; **TBD-5** — shared fraud/anomaly-detection application theme (TBD-5 evaluates on a Credit Card Fraud dataset). [evidence: `notes/landscape-report.md` §5; OpenAlex abstracts of the named papers]
+- **Contradicts:** nothing — no falsifiable claim is available to contradict. As an abstract-less paper it sits *outside* the corpus's number-reporting papers by lack of retrievable content, not by conflicting results. [evidence: no available abstract]
+- **Extends/enables:** **JoBD-4** and **BDR-2** — BDR-3 anchors the "cluster engine" layer of the infrastructure stack that JoBD-4 (streaming) and BDR-2 (distributed training economics) complete. [evidence: `notes/landscape-report.md` §5]
+- **Unique contribution no other pool paper has:** the pool's **only unambiguous Apache Spark / cluster-computing contribution** — its role in the review is to mark that classic cluster stacks still anchor production workloads even as the LLM/streaming wave rises. [evidence: `notes/landscape-report.md` §5]
+- **Quotable line:** **NOT AVAILABLE** — no abstract text exists to quote (title only: "Opinion fraud detection on massive datasets by spark," DOI 10.1016/j.bdr.2026.100590). [NOT AVAILABLE — abstract not indexed / paywalled]
+- **Table 1 row data:** Opinion/review fraud detection (platforms/infrastructure) | **NOT AVAILABLE — abstract not indexed / paywalled** (title indicates Spark-based execution); OpenAlex topic tag: Imbalanced Data Classification | Apache Spark (from title) — "massive datasets"; no cluster/scale figures | **NOT AVAILABLE** — no dataset, no scale figures | **NOT AVAILABLE** — no metrics, no baselines | **NOT AVAILABLE** — abstract not indexed; full text paywalled.
+
+### Retrieval action required (for the team)
+This is the highest-priority retrieval gap in BDR-1..5: the paper is **fully paywalled with no abstract anywhere**. A team member with Elsevier/ScienceDirect institutional access must open `https://doi.org/10.1016/j.bdr.2026.100590` and transcribe: (1) the abstract verbatim, (2) dataset name and scale, (3) the Spark pipeline and detection algorithm, (4) headline metric values and baselines. Until then, no scalar claim about BDR-3 may be written.

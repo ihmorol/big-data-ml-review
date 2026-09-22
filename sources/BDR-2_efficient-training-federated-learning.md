@@ -2,25 +2,37 @@
 
 ## Bibliographic
 
-- **Citation (Springer Basic):** Teixeira R, Almeida L, Antunes M, et al (2025) Efficient training: Federated learning cost analysis. *Big Data Research* 40:100510-100510. DOI: 10.1016/j.bdr.2025.100510
-- **Journal / year:** Big Data Research / 2025 (2025-02-20)
-- **WoS status:** SCIE (WoS) - journal-level, verified via secondary sources
-- **Impact signal:** cited by 9 (OpenAlex, 2026-09-15)
-- **Access:** OPEN ACCESS
+- **Citation (Springer Basic):** Teixeira R, Almeida L, Antunes M, et al (2025) Efficient training: Federated learning cost analysis. *Big Data Research* 40:100510. DOI: 10.1016/j.bdr.2025.100510
+- **Journal / year:** Big Data Research / 2025 (published 2025-02-20) · **WoS indexed:** yes (SCIE, journal-level — per `trackers/papers-pool.md`) · **Citations at access date:** 9 (OpenAlex snapshot 2026-09-15; live OpenAlex API re-fetch 2026-09-22 also returns 9)
+- **Access:** OPEN ACCESS (hybrid, CC-BY, published version). [evidence: `results/openalex_raw/BDR.json`; OpenAlex `primary_location.license: cc-by`] **Full text not read** (not in workspace; no local PDF).
 - **Pool ID:** BDR-2 | **Status:** selected, Crossref-verified 2026-09-15
+- **Full author list:** Rafael Teixeira, Leonardo Almeida, Mário Antunes, Diogo Gomes, Rui L. Aguiar. [evidence: OpenAlex metadata]
+- **OpenAlex work ID:** W4407794158 · **References in paper:** 51. [evidence: OpenAlex metadata]
 
-## Content (abstract-level — confirm all specifics against full text)
+## Content (abstract-level only — full text NOT read; every field below is bounded by the indexed abstract)
 
-- **Problem / domain:** Federated & privacy-preserving learning strand of the BD+ML literature.
-- **Big-data context:** distributed/edge training.
-- **ML methods:** federated learning training-cost analysis.
-- **Abstract:** With the rapid development of 6G, Artificial Intelligence (AI) is expected to play a pivotal role in network management, resource optimization, and intrusion detection. However, deploying AI models in 6G networks faces several challenges, such as the lack of dedicated hardware for AI tasks and the need to protect user privacy. To address these challenges, Federated Learning (FL) emerges as a promising solution for distributed AI training without the need to move data from users' devices. This paper investigates the performance and costs of different FL approaches regarding training time, communication overhead, and energy consumption. The results show that FL can significantly accelerate the training process while reducing the data transferred across the network. However, the effectiveness of FL depends on the specific FL approach and the network conditions.
+- **Evidence provenance:** primary evidence is the indexed abstract + metadata in `results/openalex_raw/BDR.json` (lines 118–146), corroborated by `results/screen/BDR.csv` and `trackers/notion-import/master.csv`; abstract verbatim confirmed via OpenAlex API re-fetch 2026-09-22 (`api.openalex.org/works/https://doi.org/10.1016/j.bdr.2025.100510`). Any field the abstract does not state is labelled **NOT AVAILABLE** rather than guessed.
+- **Problem / domain:** **federated learning (FL) cost/performance in 6G networks.** Motivation: with 6G, AI is expected to drive "network management, resource optimization, and intrusion detection," but deploying AI models in 6G faces obstacles — "the lack of dedicated hardware for AI tasks and the need to protect user privacy." FL is positioned as the solution because it enables "distributed AI training without the need to move data from users' devices." [evidence: OpenAlex abstract]
+- **Big-data context:** driven by **distributed/edge scale** — training spread across user devices (no central data movement) in a 6G network setting. The paper's resource axes are *training time, communication overhead, and energy consumption*, i.e. the cost of coordinating distributed learning rather than a single-machine data volume. No specific platform, device count, or dataset scale is named in the abstract. [evidence: OpenAlex abstract; platform + scale specifics NOT AVAILABLE]
+- **ML methods / architecture:** a **comparative cost analysis of different FL approaches** — it investigates "the performance and costs of different FL approaches regarding training time, communication overhead, and energy consumption." The abstract does **not** name the FL variants (e.g., FedAvg/FedProx/centralized baselines) or the model architecture. Evaluation method (simulation vs. testbed) is NOT AVAILABLE at abstract level. [evidence: OpenAlex abstract]
+- **Data:** **NOT AVAILABLE — no dataset named in the abstract.** Whether synthetic/emulated 6G workloads or real network traces were used, and their scale, are not stated. [evidence: OpenAlex abstract]
+- **Evaluation + headline results:** stated **qualitatively, with no numeric values in the abstract.** Two claims only:
+  - "FL can significantly accelerate the training process while reducing the data transferred across the network." [evidence: OpenAlex abstract]
+  - "the effectiveness of FL depends on the specific FL approach and the network conditions." [evidence: OpenAlex abstract]
+  No timing/energy/bandwidth figures, no named baselines, no tables are reported at abstract level. [evidence: OpenAlex abstract]
+- **Key findings (≤3, as far as the abstract supports):**
+  - Federated learning speeds up training and reduces network data transfer relative to the centralized alternative it is compared against. [evidence: OpenAlex abstract]
+  - The magnitude of the benefit is conditional — it varies with the chosen FL approach and the prevailing network conditions. [evidence: OpenAlex abstract]
+  - Cost must be evaluated on three axes jointly (time, communication, energy), not accuracy alone. [evidence: OpenAlex abstract]
+- **Limitations the authors admit:** none stated explicitly in the abstract; the abstract's own caveat that "the effectiveness of FL depends on the specific FL approach and the network conditions" is the closest to an admitted limitation. [evidence: OpenAlex abstract]
+- **Limitations we see (from the abstract surface only):** (a) the headline results carry **no numbers** — "significantly accelerate" is unquantified, so the cost claims are unevidenced until the full text is read; (b) no named datasets, FL algorithms, or parameter settings at abstract level, so "depends on the specific FL approach" cannot be pinned to a known method; (c) no accuracy or model-quality comparison is reported alongside the cost axes, so the privacy/time/energy savings are not traded off against model fidelity; (d) energy-consumption measurement methodology is unstated; (e) no statistical significance testing reported.
 
 ## Synthesis hooks
 
-- **Theme placement:** Federated & privacy-preserving learning (see notes/landscape-report.md taxonomy).
-- **Agrees with:** [fill from full text]
-- **Contradicts:** [fill from full text]
-- **Extends/enables:** [fill from full text]
-- **Unique contribution:** [fill from full text — what does no other pool paper do?]
-- **Quotable line:** [fill with page number]
+- **Theme placement (§3.4 platforms / §3.6 cross-cutting):** branch **B2 — platforms, pipelines, and infrastructure** (per `notes/landscape-report.md` §5; B2 = BDR-2, BDR-3, JoBD-4), and it is the branch's **privacy story** as well — the landscape report flags BDR-2 as a **straddler**: "federated learning as privacy mechanism *and* as 6G infrastructure." [evidence: `notes/landscape-report.md` §3, §5, §9]
+- **Agrees with:** **JoBD-2** — both are federated-learning contributions (JoBD-2 adds adaptive aggregation over healthcare data; BDR-2 prices the federated paradigm itself); **AIR-1** — its decentralised cloud-edge efficiency imperative motivates the FL deployment setting; **JoBD-4** — shared interest in the fog/cloud distributed-computing layer. [evidence: OpenAlex abstracts of the named papers; `notes/landscape-report.md` §5, §9]
+- **Contradicts:** participates in the corpus's defining **privacy-vs-scale tension** — BDR-2's premise is that data should not move (privacy), whereas the scale-maximizing branch (**AIR-3**, **AIR-1**, **TBD-2**) assumes capability comes from centralizing/pretraining on everything available. The landscape report states "No pool paper addresses the contradiction; [7] BDR-2 comes closest by pricing federated training in communication and energy terms." [evidence: `notes/landscape-report.md` §9]
+- **Extends/enables:** **JoBD-2** — supplies the cost/energy vocabulary (time, communication, energy) that JoBD-2's privacy framework does not report; **BDR-3** and **JoBD-4** — together the three delineate an infrastructure stack (cluster engine BDR-3, fog/cloud streaming JoBD-4, distributed-training economics BDR-2). [evidence: `notes/landscape-report.md` §5]
+- **Unique contribution no other pool paper has:** the pool's only paper that **prices federated training** across training time, communication overhead, and energy consumption for a 6G deployment — i.e., the only one treating FL as an *economics/energy* question rather than a privacy-mechanism or accuracy question. [evidence: OpenAlex abstract; `notes/landscape-report.md` §5]
+- **Quotable line (abstract-level — page number NOT AVAILABLE; cite by DOI until full text read):** "the results show that FL can significantly accelerate the training process while reducing the data transferred across the network. However, the effectiveness of FL depends on the specific FL approach and the network conditions." (abstract; DOI 10.1016/j.bdr.2025.100510) · *alt:* "Federated Learning (FL) emerges as a promising solution for distributed AI training without the need to move data from users' devices." (abstract, same DOI) [evidence: OpenAlex abstract]
+- **Table 1 row data:** Federated / privacy-preserving learning in 6G networks (platforms + governance) | Federated Learning — comparative cost analysis of different FL approaches across training time, communication overhead, and energy consumption | Not reported in abstract — distributed device training in a 6G setting; no platform or device count named | Not reported in abstract — no dataset or scale figures | Investigates and compares the performance/cost of different FL approaches in 6G, concluding FL accelerates training and cuts transferred data, but that effectiveness is conditional on the FL variant and network conditions.
